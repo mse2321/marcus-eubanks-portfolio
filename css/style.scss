@@ -434,7 +434,11 @@ body {
 
 /* Jumbotron */
 .jumbotron {
-  background: url('images/me-background-green.png') cover no-repeat;
+  background: url('../images/me-background-green.jpg') no-repeat;
+  height: 2000px;
+}
+.jumbotron h1 {
+  color: fff;
 }
 
 /* Navigation */
