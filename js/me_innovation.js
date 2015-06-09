@@ -11,7 +11,15 @@ angular.module('me-innovation', ['ngRoute'])
 	        templateUrl: 'contact.html',
 	        controller: 'contactController'
 	      }).
+	      when('/projects', {
+	        templateUrl: 'projects.html',
+	        controller: 'projectsController'
+	      }).
+	      when('/index', {
+	        templateUrl: 'jumbotron.html',
+	        controller: 'jumboController'
+	      }).
 	      otherwise({
-	        redirectTo: '/phones'
+	        redirectTo: '/about'
 	      });
 	  }]);

@@ -1,3 +1,4 @@
-// JavaScript Document
-angular.module('me-innovation', [])
-	.controller('contactController')
+angular.module('me-innovation')
+	.controller('aboutController', function($scope){
+
+    });)
