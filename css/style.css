@@ -356,8 +356,26 @@ td,
 th {
   padding: 0; }
 
-/* End of Normalize */
+/* ========================================  End of Normalize  =============================================================*/
 body {
   font-family: Helvetica, Arial, sans-serif; }
+
+/* Jumbotron */
+.jumbotron {
+  background: url("images/me-background-green.png") cover no-repeat; }
+
+/* Navigation */
+.navbar-nav {
+  float: right;
+  margin-right: 30rem; }
+
+.navbar-brand > img {
+  margin-top: -10px;
+  margin-left: 40px; }
+
+/* Footer */
+footer {
+  margin-top: 830px;
+  padding-left: 60px; }
 
 /*# sourceMappingURL=style.css.map */
