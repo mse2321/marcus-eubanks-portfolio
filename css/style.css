@@ -357,6 +357,8 @@ th {
   padding: 0; }
 
 /* ========================================  End of Normalize  =============================================================*/
+/* SASS declarations */
+/* General */
 body {
   font-family: Helvetica, Arial, sans-serif;
   background: url("../images/me-background-green.jpg") no-repeat center center fixed;
@@ -413,6 +415,52 @@ section {
 
 #gallery a:hover, a:focus {
   color: #49F211; }
+
+/* Contact Form */
+label {
+  float: left;
+  width: 5em;
+  text-align: left; }
+
+clearFit {
+  clear: both; }
+
+input {
+  margin-left: .3em;
+  margin-bottom: .5em; }
+
+input[type="radio"] {
+  margin-left: 0; }
+
+input[type="checkbox"] {
+  margin-left: 0; }
+
+input[type="submit"], input[type="reset"] {
+  color: black; }
+
+input[type="text"] {
+  width: 20%; }
+
+input#phone {
+  width: 20%;
+  margin-bottom: 2em; }
+
+.longLabel {
+  float: none;
+  width: 100%; }
+
+textarea {
+  height: 10em;
+  width: 30%;
+  margin: 2em 0em 2em 0em; }
+
+fieldset {
+  border: none; }
+
+legend {
+  color: #49F211;
+  font-weight: bold;
+  padding-bottom: .8em; }
 
 /* Footer */
 footer {
