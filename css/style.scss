@@ -459,11 +459,19 @@ section {
   margin-top: -10px;
   margin-left: 40px;
 }
+#linkedIn {
+  float: right;
+  margin: 1em 4em 0 -6em; 
+}
+#gitHub {
+  float: right;
+  margin: 1em 6.5em 0 -6em; 
+}
 
 /* Body */
 .contentBack {
   background-color: rgba(0, 0, 0, 0.4); 
-  padding: 40px;
+  padding: 40px 60px;
   color: white;
   margin-top: 40px;
 }
