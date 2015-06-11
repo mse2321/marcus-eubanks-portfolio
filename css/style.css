@@ -358,15 +358,24 @@ th {
 
 /* ========================================  End of Normalize  =============================================================*/
 body {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  background: url("../images/me-background-green.jpg") no-repeat center center fixed;
+  background-size: cover; }
+
+section {
+  margin-top: -20px; }
 
 /* Jumbotron */
 .jumbotron {
-  background: url("../images/me-background-green.jpg") no-repeat;
-  height: 2000px; }
+  height: 400px;
+  margin: 200px 100px 50px 100px;
+  border-radius: 20px;
+  padding: 20px 20px 20px 40px;
+  background-color: #666;
+  border: 5px solid #ccc; }
 
-.jumbotron h1 {
-  color: fff; }
+.jumbotron > h1 {
+  color: #fff; }
 
 /* Navigation */
 .navbar-nav {
@@ -377,9 +386,17 @@ body {
   margin-top: -10px;
   margin-left: 40px; }
 
+/* Body */
+.contentBack {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  color: white;
+  margin-top: 40px; }
+
 /* Footer */
 footer {
-  margin-top: 830px;
-  padding-left: 60px; }
+  padding: 10px 50px 10px 60px;
+  background-color: #fff;
+  margin-top: 250px; }
 
 /*# sourceMappingURL=style.css.map */
