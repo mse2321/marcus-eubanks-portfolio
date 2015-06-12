@@ -371,7 +371,8 @@ body {
 
 #melogo {
   float: right;
-  margin: 50px 50px 0 0; }
+  margin: 50px 50px 0 0;
+  width: 40%; }
 
 /* Jumbotron */
 .jumbotron {
