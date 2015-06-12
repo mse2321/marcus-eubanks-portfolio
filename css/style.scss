@@ -437,39 +437,81 @@ body {
   background: url('../images/me-background-green.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-section {
-  margin-top: -20px;
+#contentSection {
+  margin-top: -850px;
+  width: 85%;
+  float: right;
+}
+#melogo {
+  float: right;
+  margin: 50px 50px 0 0;
 }
 
 /* Jumbotron */
 .jumbotron {
-  height: 400px;
-  margin: 200px 100px 50px 100px;
-  border-radius: 20px;
-  padding: 20px 20px 20px 40px;
-  background-color: #666;
-  border: 5px solid #ccc;
+  height: 120px;
+  width: 40%;
+  margin-top: 60px;
+  border-radius: 100px 0px 0px 100px;
+  padding: 10px 30px 0px 0 ;
+  background-color: rgba(0, 0, 0, 0.6);
+  float: right;
+  text-align: right;
 }
 .jumbotron > h1 {
   color: #fff;
+  font-size: 36px;
+  margin-bottom: 1px;
+}
+.jumbotron > p {
+  color: #ccc;
+  font-size: 16px;
 }
 
 /* Navigation */
+.navbar {
+  height: 925px;
+  width: 60px;
+  z-index: 9999;
+  border-radius: 0;
+}
 .navbar-nav {
-  float: right;
-  margin-right: 30rem;
+  float: left;
+  margin-top: 400px;
+}
+.navbar-nav > li {
+  display:block;
+  margin: 5px 0px;
+  background-color: $meinnovation-green;
+  width: 200%;
+  border-radius: 0 20px 20px 0;
+}
+.navbar-nav > li:hover {
+  display:block;
+  margin: 5px 0px;
+  background-color: #666;
+  width: 200%;
+  border-radius: 0 20px 20px 0;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #666;
+  font-size: 18px;
+  padding: 10px 20px 10px 10px;
+  text-align: right;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: white;
 }
 .navbar-brand > img{
   margin-top: -10px;
   margin-left: 40px;
 }
-#linkedIn {
-  float: right;
-  margin: 1em 4em 0 -6em; 
+#icons {
+  margin: 2em 0 0 1.2em;
+  float: left;
 }
-#gitHub {
-  float: right;
-  margin: 1em 6.5em 0 -6em; 
+#linkedIn {
+  margin-bottom: 1em;
 }
 
 /* Body */
@@ -478,6 +520,9 @@ section {
   padding: 40px 60px;
   color: white;
   margin-top: 40px;
+}
+#swipeArrow {
+  background-color: rgba(0, 0, 0, 0.4)
 }
 
 /* Projects */
@@ -541,16 +586,15 @@ textarea {
 fieldset {
   border: none;
 }
-legend {
-  color: $meinnovation-green;
-  font-weight: bold;
-  padding-bottom: .8em; 
-}
-
 
 /* Footer */
 footer {
   padding: 10px 50px 10px 60px;
-  background-color: #fff;
-  margin-top: 250px;
+  color: #fff;
+  margin-top: -70px;
+  float: right;
+  position: fixed-bottom;
+}
+small {
+  font-size: 1em;
 }

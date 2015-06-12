@@ -24,30 +24,22 @@
 </head>
 <body ng-app="me-innovation">
 	<header>
+		<a href="#/index">
+            <img id="melogo" src="images/melogo_whiteGreen.png" alt="ME Innovation Icon" />
+        </a>
 		<nav class="navbar navbar-default">
-			<div>
+			<div id="icons">
                 <a href="http://www.linkedin.com/in/MEInnovation">
                 	<img id="linkedIn" src="images/linkedIn_black20x20.png" alt="LinkedIn Icon" />
                 </a>
+                <br />
                 <a href="https://github.com/mse2321">
                 	<img id="gitHub" src="images/gitHub_black_20x20.png" alt="GitHub Icon" />
                 </a>
             </div>
-			<div class="container-fluid" id="navbox">
-				<div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      	<a class="navbar-brand" href="#/index">
-						<img src="images/melogo_whiteGreen.png" alt="ME Innovation" />
-					</a>
-    			</div>
 					
 				<ul class="nav navbar-nav">
-					<li role="presentation" class="active"><a href="#/index">Home</a></li>
+					<li role="presentation"><a href="#/index">Home</a></li>
 					<li role="presentation"><a href="#/about">About ME</a></li>
 					<li role="presentation"><a href="#/projects">Projects</a></li>
 					<li role="presentation"><a href="#/contact">Contact</a></li>
@@ -55,7 +47,10 @@
 			</div>
 		</nav>
 	</header>
-	<section ng-view></section>
+	<section id="contentSection" ng-view>
+		<span id="swipeArrow">
+		</span>
+	</section>
 	<footer>
 		<small>&copy; 2015 ME Innovation</small>
 	</footer>
