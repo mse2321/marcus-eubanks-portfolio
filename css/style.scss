@@ -489,19 +489,21 @@ body {
 .navbar-nav > li {
   display:block;
   margin: 5px 0px;
-  background-color: $meinnovation-green;
+  background-image: linear-gradient(to bottom, $meinnovation-green 0px, #ccc 150%);
+  background-repeat: repeat-x;
   width: 200%;
   border-radius: 0 20px 20px 0;
 }
 .navbar-nav > li:hover {
   display:block;
   margin: 5px 0px;
-  background-color: #666;
+  background-image: linear-gradient(to bottom, #333 0px, #ccc 150%);
+  background-repeat: repeat-x;
   width: 200%;
   border-radius: 0 20px 20px 0;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #666;
+  color: #333;
   font-size: 18px;
   padding: 10px 20px 10px 10px;
   text-align: right;
