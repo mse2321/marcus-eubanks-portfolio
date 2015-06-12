@@ -360,9 +360,13 @@ th {
 /* SASS declarations */
 /* General */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 16px;
   background: url("../images/future-bg.jpg") no-repeat center center fixed;
   background-size: cover; }
+
+strong {
+  color: #FF5FB7; }
 
 #contentSection {
   margin-top: -800px;
@@ -374,12 +378,14 @@ body {
   margin: 50px 50px 0 0;
   width: 30%; }
 
+h1, h2, h3, h4, h5 {
+  font-family: 'Orbitron', sans-serif; }
+
 /* Jumbotron */
 .jumbotron {
   height: 200px;
   width: 40%;
   margin-top: 100px;
-  border-radius: 100px 0px 0px 100px;
   padding: 10px 30px 0px 0;
   background-color: rgba(0, 0, 0, 0.6);
   float: right;
@@ -422,7 +428,7 @@ body {
 .navbar-nav > li:hover {
   display: block;
   margin: 5px 0px;
-  background-image: linear-gradient(to bottom, #9A4268 0px, #ccc 150%);
+  background-image: linear-gradient(to bottom, #FF5FB7 0px, #ccc 150%);
   background-repeat: repeat-x;
   width: 200%;
   border-radius: 0 20px 20px 0; }
@@ -479,7 +485,7 @@ body {
   color: #ccc; }
 
 #gallery a:hover, a:focus {
-  color: #49F211; }
+  color: #FF5FB7; }
 
 /* Contact Form */
 label {
@@ -532,5 +538,194 @@ footer {
 
 small {
   font-size: 1em; }
+
+/* Mobile Styling */
+@media screen and (max-width: 500px) {
+  #melogo {
+    width: 70%;
+    margin: 40px 30px 0 0px; }
+
+  .jumbotron {
+    margin: 0 15px 0 0;
+    height: 200px;
+    width: 90%;
+    padding: 10px 30px 10px 30px;
+    text-align: center; }
+
+  .jumbotron > h1 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 10px; }
+
+  .jumbotron > p {
+    font-size: 16px; }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center; }
+
+  h2 {
+    font-size: 1.25em;
+    text-align: center; }
+
+  h3 {
+    font-size: 1em;
+    text-align: center; }
+
+  .columnLayout {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .columnGrid {
+    width: 100%;
+    padding: 1em 0em 1em 0; }
+
+  .navbar {
+    width: 7%; }
+
+  .navbar-nav li, .navbar-nav li:hover {
+    width: 330%; }
+
+  a:visited.selected {
+    color: #999; }
+
+  label {
+    width: 5em;
+    float: none; }
+
+  input {
+    margin-left: 0em;
+    margin-bottom: .25em; }
+
+  textarea {
+    height: 10em;
+    margin: 2em auto 2em auto;
+    display: block; }
+
+  footer {
+    text-align: center;
+    color: #333;
+    margin: 0 auto; }
+
+  section {
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto 1em auto; }
+
+  .mobileRemove {
+    display: none; }
+
+  input[type=submit] {
+    width: 12em;
+    height: 2em;
+    font-size: 1em;
+    margin: 0 auto 1em auto;
+    display: block; }
+
+  input[type=reset] {
+    width: 12em;
+    height: 2em;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto 1em auto; }
+
+  #checkboxes {
+    display: block;
+    margin: 0em auto 1em auto;
+    padding-left: .45em; }
+
+  #fields {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding-left: .45em; }
+
+  fieldset {
+    display: block;
+    margin: 0 auto; }
+
+  input[id="emailAdd"] {
+    width: 70%;
+    margin-left: .8%; }
+
+  .wrappedElement {
+    border: 0.25em solid #FF0098; }
+
+  .wrappedElementHide {
+    display: none; }
+
+  img.wrappedElement {
+    border-color: #FF0098;
+    border-width: .20em; }
+
+  div.wrappedElement {
+    padding: .4em; }
+
+  .buttonNav {
+    padding: 0em;
+    border-radius: 0em;
+    width: 100%; }
+
+  .buttonNav div {
+    border: solid .1em #aaa;
+    padding: .4em .4em .4em .8em;
+    border-radius: 1em;
+    background-color: #000;
+    text-shadow: none;
+    text-align: center;
+    display: block;
+    margin-bottom: .2em; }
+
+  .buttonNav div:hover {
+    border: solid .1em #aaa;
+    padding: .4em .4em .4em .8em;
+    border-radius: 1em;
+    background-color: #FF0098;
+    text-shadow: none;
+    text-align: center;
+    display: block;
+    margin-bottom: .2em; }
+
+  button {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 0em;
+    padding: 0em;
+    margin: 0em;
+    border: none;
+    box-shadow: none; }
+
+  button:hover {
+    background-color: #FF0098;
+    color: #fff;
+    font-size: 1.25em;
+    border-radius: 0em;
+    padding: 0em;
+    margin: 0em;
+    border: none;
+    box-shadow: none; }
+
+  #results {
+    padding: 1.7em;
+    margin-bottom: 3.6em;
+    color: #fff;
+    font-weight: bold;
+    background-color: #FF0098;
+    border-radius: .4em; }
+
+  #jqueryShow {
+    padding: 10px; }
+
+  #clear {
+    background-color: transparent;
+    color: #fff; }
+
+  #clear:hover {
+    background-color: transparent;
+    color: #fff; }
+
+  #icons {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
