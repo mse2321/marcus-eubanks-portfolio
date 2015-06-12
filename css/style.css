@@ -394,6 +394,12 @@ body {
   font-size: 16px; }
 
 /* Navigation */
+.navbar-default {
+  background-image: linear-gradient(to left, #ccc 0px, #666 90%);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075); }
+
 .navbar {
   height: 925px;
   width: 60px;
@@ -432,11 +438,11 @@ body {
   margin-left: 40px; }
 
 #icons {
-  margin: 2em 0 0 1.2em;
+  margin: 2em 0 0 .9em;
   float: left; }
 
 #linkedIn {
-  margin-bottom: 1em; }
+  margin-bottom: 1.2em; }
 
 /* Body */
 .contentBack {
