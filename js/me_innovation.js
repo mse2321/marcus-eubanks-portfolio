@@ -23,9 +23,15 @@ angular.module('me-innovation', ['ngRoute'])
 	        redirectTo: '/index'
 	      });
 	  }]);
+$( document ).ready(function() {
 
-$("#nav li").click(function() 
-{
-	$("#nav").hide("slow");
-	$("#nav").show("slow");
+    $("#nav > li > a").click(function() 
+	{
+		$("#nav").hide("slow");
+	});
+
+	$("nav").mouseover(function() 
+	{
+		$("#nav").show("slow");
+	});
 });
