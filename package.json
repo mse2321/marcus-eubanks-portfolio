@@ -2,7 +2,7 @@
   "name": "marcus-eubanks-portfolio",
   "version": "1.0.0",
   "description": "ME Innovation Site",
-  "main": "grunt.js",
+  "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
