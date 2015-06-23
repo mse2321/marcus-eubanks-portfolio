@@ -632,130 +632,155 @@ small {
   #melogo {
     width: 70%;
     margin: 40px 30px 0 0px;
-    }
+  }
   .jumbotron {
     margin: 0 15px 0 0;
     height: 200px;
     width: 90%;
     padding: 10px 30px 10px 30px;
     text-align: center;
-    }
+  }
     .jumbotron > h1 {
       color: #fff;
       font-size: 22px;
       margin-bottom: 10px;
-    }
+  }
     .jumbotron > p {
       font-size: 16px;
-    }
+  }
 
   h1 {
     font-size: 1.5em;
-    text-align: center; }
+    text-align: center; 
+  }
 
   h2 {
     font-size: 1.25em;
-    text-align: center; }
+    text-align: center; 
+  }
 
   h3 {
     font-size: 1em;
-    text-align: center; }
+    text-align: center; 
+  }
 
   .columnLayout {
     width: 100%;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto; 
+  }
 
   .columnGrid {
     width: 100%;
-    padding: 1em 0em 1em 0; }
+    padding: 1em 0em 1em 0; 
+  }
 
   .navbar {
     width: 7%;
-    }
+  }
 
   .navbar-nav li, .navbar-nav li:hover{
-    width: 330%;
+    width: 250%;
   }
 
   a:visited.selected {
-    color: #999; }
-
+    color: #999; 
+  }
+  .no-display-mobile {
+    display: none;
+  }
   label {
     width: 5em;
-    float: none; }
+    float: none; 
+  }
 
   input {
     margin-left: 0em;
-    margin-bottom: .25em; }
+    margin-bottom: .25em; 
+  }
 
   textarea {
     height: 10em;
     margin: 2em auto 2em auto;
-    display: block; }
+    display: block; 
+  }
 
   footer {
     text-align: center;
     color: #333;
-    margin: 0 auto; }
+    margin: 0 auto; 
+  }
 
   section {
     vertical-align: middle;
     width: 100%;
-    margin: 0 auto 1em auto; }
+    margin: 0 auto 1em auto; 
+  }
 
   .mobileRemove {
-    display: none; }
+    display: none; 
+  }
 
   input[type=submit] {
     width: 12em;
     height: 2em;
     font-size: 1em;
     margin: 0 auto 1em auto;
-    display: block; }
+    display: block; 
+  }
 
   input[type=reset] {
     width: 12em;
     height: 2em;
     font-size: 1em;
     display: block;
-    margin: 0 auto 1em auto; }
+    margin: 0 auto 1em auto; 
+  }
 
   #checkboxes {
     display: block;
     margin: 0em auto 1em auto;
-    padding-left: .45em; }
+    padding-left: .45em; 
+  }
 
   #fields {
     display: block;
     margin: 0 auto 0 auto;
-    padding-left: .45em; }
+    padding-left: .45em; 
+  }
 
   fieldset {
     display: block;
-    margin: 0 auto;}
+    margin: 0 auto;
+  }
   
   input[id="emailAdd"] {
   width: 70%;
-    margin-left: .8%;}
+    margin-left: .8%;
+  }
 
   .wrappedElement {
-    border: 0.25em solid #FF0098; }
+    border: 0.25em solid #FF0098; 
+  }
 
   .wrappedElementHide {
-    display: none; }
+    display: none; 
+  }
 
   img.wrappedElement {
     border-color: #FF0098;
-    border-width: .20em; }
+    border-width: .20em; 
+  }
 
   div.wrappedElement {
-    padding: .4em; }
+    padding: .4em; 
+  }
 
   .buttonNav {
     padding: 0em;
     border-radius: 0em;
-    width: 100%; }
+    width: 100%; 
+  }
 
   .buttonNav div {
     border: solid .1em #aaa;
@@ -765,7 +790,8 @@ small {
     text-shadow: none;
     text-align: center;
     display: block;
-    margin-bottom: .2em; }
+    margin-bottom: .2em; 
+  }
 
   .buttonNav div:hover {
     border: solid .1em #aaa;
@@ -775,7 +801,8 @@ small {
     text-shadow: none;
     text-align: center;
     display: block;
-    margin-bottom: .2em; }
+    margin-bottom: .2em; 
+  }
 
   button {
     background-color: transparent;
@@ -785,7 +812,8 @@ small {
     padding: 0em;
     margin: 0em;
     border: none;
-    box-shadow: none; }
+    box-shadow: none; 
+  }
 
   button:hover {
     background-color: #FF0098;
@@ -795,7 +823,8 @@ small {
     padding: 0em;
     margin: 0em;
     border: none;
-    box-shadow: none; }
+    box-shadow: none; 
+  }
 
   #results {
     padding: 1.7em;
@@ -803,20 +832,24 @@ small {
     color: #fff;
     font-weight: bold;
     background-color: #FF0098;
-    border-radius: .4em; }
+    border-radius: .4em; 
+  }
 
   #jqueryShow {
-    padding: 10px; }
+    padding: 10px; 
+  }
 
   #clear {
     background-color: transparent;
-    color: #fff; }
+    color: #fff; 
+  }
 
   #clear:hover {
     background-color: transparent;
-    color: #fff; }
+    color: #fff; 
+  }
 
   #icons {
     display: none;
-    } 
+  } 
 }

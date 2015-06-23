@@ -585,10 +585,13 @@ small {
     width: 7%; }
 
   .navbar-nav li, .navbar-nav li:hover {
-    width: 330%; }
+    width: 250%; }
 
   a:visited.selected {
     color: #999; }
+
+  .no-display-mobile {
+    display: none; }
 
   label {
     width: 5em;
