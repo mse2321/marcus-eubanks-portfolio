@@ -51,6 +51,6 @@ grunt.loadNpmTasks('grunt-contrib-concat');
 // Creating our custom commands or tasks
 //grunt.registerTask('marcus', ['jshint', 'qunit']);
 
-grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'watch']);
 
 };
