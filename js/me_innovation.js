@@ -34,4 +34,8 @@ $( document ).ready(function() {
 	{
 		$("#nav").show("slow");
 	});
+	
+	/*if (($(window).width()) < "700") {
+		$("label[for='name'], label[for='emailAdd'], label[for='phone']").append("<br />");
+	}*/
 });

@@ -442,7 +442,6 @@ strong {
   color: $meinnovation-magenta;
 }
 #contentSection {
-  margin-top: -800px;
   width: 85%;
   float: right;
 }
@@ -484,14 +483,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-  height: 925px;
+  height: 100%;
   width: 60px;
   z-index: 9999;
   border-radius: 0;
+  position: absolute;
 }
 .navbar-nav {
   float: left;
-  margin-top: 400px;
+  margin-top: 200%;
 }
 .navbar-nav > li {
   display:block;
@@ -544,7 +544,7 @@ h1, h2, h3, h4, h5 {
 /* Body */
 .contentBack {
   background-color: rgba(0, 0, 0, 0.4); 
-  padding: 40px 60px;
+  padding: 20px 60px;
   color: white;
   margin-top: 40px;
 }
@@ -616,11 +616,13 @@ fieldset {
 
 /* Footer */
 footer {
-  padding: 10px 50px 10px 60px;
+  padding: 2em 4em 1em 5em;
   color: #fff;
-  margin-top: -70px;
-  float: right;
-  position: fixed-bottom;
+  text-align: right;
+  clear: both;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 small {
   font-size: 1em;
@@ -628,15 +630,15 @@ small {
 }
 
 /* Mobile Styling */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
   
   #melogo {
     width: 70%;
     margin: 40px 30px 0 0px;
   }
   .jumbotron {
-    margin: 0 15px 0 0;
-    height: 200px;
+    margin: 1em 1em 0 0;
+    height: 250px;
     width: 90%;
     padding: 10px 30px 10px 30px;
     text-align: center;
@@ -691,7 +693,7 @@ small {
     display: none;
   }
   label {
-    width: 5em;
+    width: 100%;
     float: none; 
   }
 
@@ -704,6 +706,7 @@ small {
     height: 10em;
     margin: 2em auto 2em auto;
     display: block; 
+	width: 90%;
   }
 
   footer {
@@ -715,7 +718,7 @@ small {
   section {
     vertical-align: middle;
     width: 100%;
-    margin: 0 auto 1em auto; 
+    margin: 0 -.3em; 
   }
 
   .mobileRemove {
@@ -755,8 +758,8 @@ small {
     margin: 0 auto;
   }
   
-  input[id="emailAdd"] {
-  width: 70%;
+  input[id="emailAdd"], input[id="name"], input[id="phone"], input#phone {
+  width: 100%;
     margin-left: .8%;
   }
 
@@ -853,4 +856,14 @@ small {
   #icons {
     display: none;
   } 
+  .contentBack {
+	padding: 1em;
+	margin:3em 1em 0 1em;
+  }
+  #contentSection {
+	width: 95%;
+  }
+  #formSection {
+	margin: 0 -0.2em;
+  }
 }
