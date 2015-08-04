@@ -452,6 +452,7 @@ strong {
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Orbitron', sans-serif;
+  line-height: 150%;
 }
 
 /* Jumbotron */
@@ -485,9 +486,9 @@ h1, h2, h3, h4, h5 {
 .navbar {
   height: 100%;
   width: 60px;
-  z-index: 9999;
   border-radius: 0;
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
 }
 .navbar-nav {
   float: left;
@@ -578,7 +579,8 @@ clearFit {
 
 input {
   margin-left: .3em;
-  margin-bottom: .5em; 
+  margin-bottom: .5em;
+  color: #000; 
 }
 
 input[type="radio"] {
@@ -609,6 +611,7 @@ textarea {
   height: 10em;
   width: 30%;
   margin: 2em 0em 2em 0em; 
+  color: #000;
 }
 fieldset {
   border: none;
@@ -681,6 +684,10 @@ small {
   .navbar {
     width: 7%;
   }
+  
+  .navbar-nav {
+  	margin-top: 1000%;
+  }
 
   .navbar-nav li, .navbar-nav li:hover{
     width: 250%;
@@ -713,6 +720,7 @@ small {
     text-align: center;
     color: #333;
     margin: 0 auto; 
+	position: relative;
   }
 
   section {
