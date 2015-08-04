@@ -25,17 +25,11 @@ angular.module('me-innovation', ['ngRoute'])
 	  }]);
 $( document ).ready(function() {
 
-    $("#nav > li > a").click(function() 
+	$("#nav > li > a").hide();
+	
+	$("nav").click(function() 
 	{
-		$("#nav").hide("slow");
-	});
-
-	$("nav").mouseover(function() 
-	{
-		$("#nav").show("slow");
+		$("#nav > li > a").toggle("fast");
 	});
 	
-	/*if (($(window).width()) < "700") {
-		$("label[for='name'], label[for='emailAdd'], label[for='phone']").append("<br />");
-	}*/
 });
