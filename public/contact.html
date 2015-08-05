@@ -1,9 +1,9 @@
-<div ng-controller="contactController" class="contentBack">
+<div data-ng-controller="ContactController as vm" class="contentBack">
 	<h1>Contact</h1>
 	<section id="formSection">
 		<div class="contentBlock">
             <p>Please fill out this form to find out more about my skills and freelance availability</p>
-			<form name="contactForm" data-ng-controller="ContactControllerTwo as vm" data-ng-submit="contactForm.$valid && vm.sendMail()">
+			<form name="contactForm" data-ng-submit="contactForm.$valid && vm.sendMail()">
                  <fieldset>		
             		<div id="fields">                     
                     	<label for="name">Name*:</label>
