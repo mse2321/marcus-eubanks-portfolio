@@ -1,0 +1,43 @@
+<div ng-controller="contactController" class="contentBack">
+	<h1>Contact</h1>
+	<section id="formSection">
+		<div class="contentBlock">
+            <p>Please fill out this form to find out more about my skills and freelance availability</p>
+			<form name="contactForm" data-ng-controller="ContactControllerTwo as vm" data-ng-submit="contactForm.$valid && vm.sendMail()">
+                 <fieldset>		
+            		<div id="fields">                     
+                    	<label for="name">Name*:</label>
+                       	<input type="text" name="name" id="name" data-ng-model="vm.contact.name" required>
+                        <br class="clearFit" />
+                        <label for="emailAdd">Email*:</label>
+                        <input type="text" name="emailAdd" id="emailAdd" data-ng-model="vm.contact.emailAdd" required>
+                        <br class="clearFit" />
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" id="phone" data-ng-model="vm.contact.phone">
+                        <br />
+                    </div>
+                    <div id="checkboxes">
+                        <label class="longLabel">Where do you need help?</label>
+                    	<br class="clearFit" />
+                        <input type="checkbox" name="checkval[]" value="Design" data-ng-model="vm.contact.checkval[]">
+                        	Graphic Design
+                        <br />
+                        <input type="checkbox" name="checkval[]" value="Marketing" data-ng-model="vm.contact.checkval[]">
+                        	Marketing
+                        <br />
+                        <input type="checkbox" name="checkval[]" value="Web Development" data-ng-model="vm.contact.checkval[]">
+                        	Web Development
+                        <br />
+                       	<!--<input type="checkbox" name="checkval[]" value="Programming" data-ng-model="vm.contact.checkval[]">
+                            Mobile Development
+                        <br /> -->
+                    </div>
+                    <textarea name="message" placeholder="Type in your message here" data-ng-model="vm.contact.message"></textarea>
+                    <br />
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Clear">  		
+                </fieldset>  
+            </form>
+		</div>
+	</section>
+</div>
