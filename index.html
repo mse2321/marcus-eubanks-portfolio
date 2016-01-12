@@ -20,6 +20,59 @@
 	<script src="js/about.js"></script>
 	<script src="js/projects.js"></script>
 	<script src="js/jumbotron.js"></script>
+	<script>
+	angular.module('gallery', []).
+
+	  directive('gallery', function() {
+	    return {
+	      restrict: 'E',
+	      transclude: true,
+	      scope: {},
+	      controller: function($scope, $element) {
+	        var photos = $scope.photos = [];
+
+	        $scope.select = function(photo) {
+	          angular.forEach(photos, function(photo) {
+	            photo.selected = false;
+	          });
+	          photo.selected = true;
+	        }
+
+	        this.addPhoto= function(photo) {
+	          if (photos.length == 0) $scope.select(photo);
+	          photos.push(photo);
+	        }
+	      },
+	      
+	      template:
+	        '<div class="photo_nav">' +
+	          '<ul class="nav nav-thumbs">' +
+	            '<li ng-repeat="photo in photos" ng-class="{active:photo.selected}" class="thumb">' +
+	              '<a href="" ng-click="select(photo)"><img src="{{photo.thumb}}"></a>' +
+	            '</li>' +
+	          '</ul>' +
+	          '<div class="tab-content" ng-transclude></div>' +
+	        '</div>',
+	      replace: true
+	    };
+	  }).
+	  
+	  directive('photo', function() {
+	    return {
+	      require: '^gallery',
+	      restrict: 'E',
+	      transclude: true,
+	      scope: { thumb: '@' },
+	      link: function(scope, element, attrs, galleryCtrl) {
+	        galleryCtrl.addPhoto(scope);
+	      },
+	      template:
+	        '<div class="photo_data" ng-class="{active: selected}" ng-transclude>' +
+	        '</div>',
+	      replace: true
+	    };
+	  })
+	</script>
 </head>
 <body ng-app="me-innovation">
 	<header>
