@@ -441,9 +441,18 @@ body {
 
 #melogo {
   float: right;
-  margin: 30px 50px 0 0;
+  margin: 20px 50px 0 0;
   width: 20%;
 }
+
+#intro {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  font-size: 18px;
+
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Orbitron', sans-serif;
   line-height: 150%;
@@ -470,6 +479,7 @@ h2 {
   height: 650px;
 }
 
+/* Navigation Buttons */
 #arrowDown {
   margin: 2em auto;
   outline: 1px solid #000;
@@ -510,7 +520,8 @@ photo {
 }
 
 photo h2 {
-  font-size: 18px;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 photo ul li{
@@ -523,6 +534,28 @@ photo img {
   outline: 1px solid #fff;
   height: 550px;
   width: 100%;
+}
+
+.metadata {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: -550px;
+  height: 552px;
+  padding-right: 20px;
+  z-index: 9999;
+  color: #ddd;
+}
+.subdata-link {
+  margin-top: 20px;
+}
+
+.subdata-link a{
+  color: $meinnovation-magenta;
+  cursor: pointer;
+}
+
+.subdata-link a:hover{
+  color: #fff;
 }
 
 /* About ME */
