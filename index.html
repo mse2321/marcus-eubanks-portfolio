@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="ME Innovation - the online portfolio for Marcus Eubanks.">
 	<title>ME Innovation | Marcus Eubanks Portfolio Site</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/jquery1113.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular.js"></script>
 	<script src="js/angular-route.min.js"></script>
@@ -79,29 +81,115 @@
 		<a href="#/index">
             <img id="melogo" src="images/meInnovationNew.png" alt="ME Innovation Icon" />
         </a>
-		<nav class="navbar navbar-default">
-			<div id="icons">
-                <a href="http://www.linkedin.com/in/MEInnovation">
-                	<img id="linkedIn" src="images/linkedin_gray_32x32.png" alt="LinkedIn Icon" />
-                </a>
-                <br />
-                <a href="https://github.com/mse2321">
-                	<img id="gitHub" src="images/github_gray_32x32.png" alt="GitHub Icon" />
-                </a>
-            </div>
-					
-				<ul class="nav navbar-nav" id="nav">
-					<li role="presentation"><a href="#/index">Home</a></li>
-					<li role="presentation"><a href="#/about">About ME</a></li>
-					<li role="presentation"><a href="#/projects">Projects</a></li>
-				</ul>
-			</div>
-		</nav>
 	</header>
-	<section id="contentSection" ng-view>
-	</section>
+	<div id="fullpage">
+		<div class="section">
+			<div id="artwork_wrap" class="contentBack">
+  				<div id="artwork_data">
+					<gallery>
+  
+					    <photo thumb="../../thumb?thumb_id=ahFzfmRhdmlkLWRldmlsbGllcnI6CxIMUGhvdG9nYWxsZXJ5IhRkZWZhdWx0X3Bob3RvZ2FsbGVyeQwLEgxQaG90b0dhbGxlcnkYjJ4DDA" class="paneguy">
+					      <div class="photo_wrap">
+					        <div class="photo_veiw">
+					          <img src="#">
+					        </div><!-- - /photo_veiw - -->
+					      </div><!-- - /photo_wrap - -->
+					      <div class="metadata_wrap">
+
+					     <!--<div class="metadata">
+					          <ul>
+					            <li class="art_title"><h2>ME Innovation Remixed</h2></li>
+					            <li class="subdata">Boston University Web Application Development Course Final Project</li>
+					            <li class="subdata">Technologies: jQuery, JavaScript, Bootstrap, HTML5, CSS3</li>
+					            <li class="subdata"><a href="#" target="_blank">Click to View</a></li>
+					          </ul>
+					        </div>--><!-- - /metadata - -->
+
+					      </div><!-- - /metadata_wrap - -->
+					    </photo>
+
+						<aside id="arrowRight">
+				    			<img src="#" alt="" />
+						</aside>
+					</gallery>
+				</div>
+			</div>
+			<div id="arrowDown">
+		    	<img src="#" alt="" />
+		    </div>
+		</div>
+		<div class="section">
+			<div class="contentBack">
+			    <h1>About ME</h1>
+			    <p>My goal is to BLAH BLAH BLAH BLAH BLAH.</p>
+			                    
+			    <section class="row">
+			    	<div class="col-xs-12 col-md-4 stats">
+			    		<h2>Tools</h2>
+			            <ul>
+			                <li>Word, Excel, PowerPoint, Visio</li>
+			                <li>Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks</li>
+			                <li>Eclipse IDE</li>
+			                <li>Google Analytics</li>
+			                <li>Sublime Text</li>
+			                <li>SVN</li>
+			                <li>Github/Git</li>
+			                <li>WAMP</li>
+			            </ul>
+			        </div>
+			        <div class="col-xs-12 col-md-4 stats">
+			        	<h2>Technologies</h2>
+			            <ul>
+			                <li>HTML5/CSS3</li>
+			                <li>JavaScript</li>
+			                <!--<li>Java 8</li>-->
+			                <li>SQL</li>
+			                <li>SASS</li>
+			                <li>JQuery</li>
+			                <li>Bootstrap</li>
+			                <li>Angular</li>
+			                <li>Gulp</li>
+			                <!--<li>Node.js</li>-->
+			                <!--<li>MongoDB with Mongoose</li>-->
+			            </ul>
+			        </div>
+			        <div class="col-xs-12 col-md-4 stats">
+			        	<h2>In Progress</h2>
+			            <ul>
+			                <li>Android</li>
+			                <li>Swift</li>
+			                <li>Java 8</li>
+			                <li>Google App Engine</li>
+			            </ul>
+			        </div>
+		    	</section>
+		    </div>
+		    <div id="arrowDown">
+		    	<img src="#" alt="" />
+		    </div>
+		</div>
+		<div class="section">
+			<div id="arrowUp">
+		    	<img src="#" alt="" />
+		    </div>
+			<div class="contentBack">
+				<h1>Contact</h1>
+				<div class="containerContact">
+					<div class="col-xs-12 col-md-4 containerContactColumn">
+						<img src="images/email-512.png" alt="Send ME an email" />
+					</div>
+					<div class="col-xs-12 col-md-4 containerContactColumn">
+						<img src="images/github-512.png" alt="Check out my GitHub Repositories" />
+					</div>
+					<div class="col-xs-12 col-md-4 containerContactColumn">
+						<img src="images/linkedIn-512.png" alt="Look at my LinkedIn Profile" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<footer>
-		<small>&copy; 2015 ME Innovation</small>
+		<p>&copy;2016 ME Innovation</p>
 	</footer>
 </body>
 </html>

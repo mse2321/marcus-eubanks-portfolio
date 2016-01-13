@@ -23,6 +23,8 @@ angular.module('me-innovation', ['ngRoute'])
 	  }]);
 $( document ).ready(function() {
 	"use strict";
+	$('#fullpage').fullpage();
+	
 	$("#nav > li > a").hide();
 	
 	$("nav").click(function() 
