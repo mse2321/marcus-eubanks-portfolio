@@ -358,22 +358,34 @@ th {
 
 /* ========================================  End of Normalize  =============================================================*/
 /* SASS declarations */
+@font-face {
+  font-family: 'EntypoRegular';
+  src: url("../fonts/entypo.eot");
+  src: url("../fonts/entypo.eot?#iefix") format("embedded-opentype"), url("../fonts/entypo.woff") format("woff"), url("../fonts/entypo.ttf") format("truetype"), url("../fonts/entypo.svg#EntypoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* General */
 body {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 20px;
   background: url("../images/future-bg.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 500; }
+
+header {
+  position: fixed;
+  top: 0; }
 
 #melogo {
-  float: right;
-  margin: 20px 50px 0 0;
+  position: fixed;
+  right: 40px;
+  top: 20px;
   width: 20%; }
 
 #intro {
   position: fixed;
   top: 50px;
-  left: 20px;
+  left: 40px;
   font-size: 18px; }
 
 h1, h2, h3, h4, h5 {
@@ -381,7 +393,7 @@ h1, h2, h3, h4, h5 {
   line-height: 150%; }
 
 h1 {
-  color: #FF5FB7;
+  color: #ff4081;
   font-size: 40px; }
 
 h2, h3, h4, h5 {
@@ -395,41 +407,62 @@ h2 {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px 100px;
   color: #fff;
-  height: 650px; }
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  top: 120px;
+  z-index: 750; }
 
 /* Navigation Buttons */
+.arrowWrap {
+  position: fixed;
+  top: 19em;
+  z-index: 1000; }
+
 #arrowDown {
-  margin: 2em auto;
-  outline: 1px solid #000;
-  width: 20%; }
+  position: absolute;
+  bottom: 90px;
+  left: 48.7%;
+  z-index: 800; }
 
 #arrowUp {
-  margin: 0 auto 2em auto;
-  outline: 1px solid #000;
-  width: 20%; }
+  position: absolute;
+  top: 10px;
+  left: 48.7%;
+  z-index: 800; }
+
+.symbol {
+  font-family: 'EntypoRegular';
+  font-size: 400px;
+  line-height: 10px;
+  color: #e0e0e0; }
+
+.symbol:hover {
+  color: #ff4081; }
 
 #arrowRight {
-  position: fixed;
-  right: 3em;
-  top: 19em;
-  outline: 1px solid #000;
-  width: 5%;
-  height: 300px;
-  float: right; }
+  position: absolute;
+  right: 25px;
+  top: 200px; }
 
 #arrowLeft {
-  position: fixed;
-  right: 3em;
-  top: 26em;
-  outline: 1px solid #000;
-  width: 5%;
-  height: 300px;
-  float: right; }
+  position: absolute;
+  left: 25px;
+  top: 200px; }
 
-/* Projects */
+/* Gallery */
+#gallery_wrap {
+  padding: 20px 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  top: 50px; }
+
 photo {
   display: inline-block;
-  width: 95%; }
+  width: 80%; }
 
 photo h2 {
   font-size: 30px;
@@ -458,7 +491,7 @@ photo img {
   margin-top: 20px; }
 
 .subdata-link a {
-  color: #FF5FB7;
+  color: #ff4081;
   cursor: pointer; }
 
 .subdata-link a:hover {

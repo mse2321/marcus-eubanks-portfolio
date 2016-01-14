@@ -19,9 +19,6 @@
 	<script src="js/angular-route.min.js"></script>
 	<script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
     <script src="js/me_innovation.js"></script>
-	<script src="js/about.js"></script>
-	<script src="js/projects.js"></script>
-	<script src="js/jumbotron.js"></script>
 	<script>
 	angular.module('gallery', []).
 
@@ -85,41 +82,39 @@
 	</header>
 	<div id="fullpage">
 		<div class="section">
-			<div id="artwork_wrap" class="contentBack">
-  				<div id="artwork_data">
-					<gallery>
-  
-					    <photo thumb="../../thumb?thumb_id=ahFzfmRhdmlkLWRldmlsbGllcnI6CxIMUGhvdG9nYWxsZXJ5IhRkZWZhdWx0X3Bob3RvZ2FsbGVyeQwLEgxQaG90b0dhbGxlcnkYjJ4DDA" class="paneguy">
-					      <div class="photo_wrap">
-					        <div class="photo_veiw">
-					          <img src="#">
-					        </div><!-- - /photo_veiw - -->
-					      </div><!-- - /photo_wrap - -->
-					      <div class="metadata_wrap">
+			<div class="contentBack">
+				<div id="gallery_wrap">
+	  				<div id="artwork_data">
+	  					<div class="symbol" id="arrowLeft">&#59237;</div>
+	  					<div class="symbol" id="arrowRight">&#59238;</div>
+						<gallery>
+						    <photo thumb="../../thumb?thumb_id=ahFzfmRhdmlkLWRldmlsbGllcnI6CxIMUGhvdG9nYWxsZXJ5IhRkZWZhdWx0X3Bob3RvZ2FsbGVyeQwLEgxQaG90b0dhbGxlcnkYjJ4DDA" class="paneguy">
+						      <div class="photo_wrap">
+						        <div class="photo_veiw">
+						          <img src="#">
+						        </div>
+						      </div>
+						      <div class="metadata_wrap">
 
-					     <div class="metadata">
-					          <ul>
-					            <li class="art_title"><h2>ME Innovation Remixed</h2></li>
-					            <li class="subdata">Boston University Web Application Development Course Final Project</li>
-					            <li class="subdata">Technologies: jQuery, JavaScript, Bootstrap, HTML5, CSS3</li>
-					            <li class="subdata subdata-link"><a href="#" target="_blank">Click to View</a></li>
-					          </ul>
-					        </div><!-- - /metadata - -->
+						     <div class="metadata">
+						          <ul>
+						            <li class="art_title"><h2>ME Innovation Remixed</h2></li>
+						            <li class="subdata">Boston University Web Application Development Course Final Project</li>
+						            <li class="subdata">Technologies: jQuery, JavaScript, Bootstrap, HTML5, CSS3</li>
+						            <li class="subdata subdata-link"><a href="#" target="_blank">Click to View</a></li>
+						          </ul>
+						        </div>
 
-					      </div><!-- - /metadata_wrap - -->
-					    </photo>
-
-						<aside id="arrowRight">
-				    			<img src="#" alt="" />
-						</aside>
-					</gallery>
+						      </div>
+						    </photo>
+						</gallery>
+					</div>
 				</div>
+				<div class="symbol" id="arrowDown">&#9662;</div>
 			</div>
-			<div id="arrowDown">
-		    	<img src="#" alt="" />
-		    </div>
 		</div>
 		<div class="section">
+			<div class="symbol" id="arrowUp">&#9652;</div>
 			<div class="contentBack">
 			    <h1>About ME</h1>
 			    <p>My goal is to BLAH BLAH BLAH BLAH BLAH.</p>
@@ -164,15 +159,11 @@
 			            </ul>
 			        </div>
 		    	</section>
-		    </div>
-		    <div id="arrowDown">
-		    	<img src="#" alt="" />
+		    	<div id="arrowDown" class="symbol">&#9662;</div>
 		    </div>
 		</div>
 		<div class="section">
-			<div id="arrowUp">
-		    	<img src="#" alt="" />
-		    </div>
+		    <div class="symbol" id="arrowUp">&#9652;</div>
 			<div class="contentBack">
 				<h1>Contact</h1>
 				<div class="containerContact">
