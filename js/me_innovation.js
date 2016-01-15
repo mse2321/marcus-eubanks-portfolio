@@ -2,10 +2,11 @@
 
 var demo = angular.module("demo", []);
 	demo.controller("ctrl", function($scope, $http){
+			$scope.id = "1";
 			$scope.title = "ME Innovation Remixed";
 			$scope.tech = "HTML5, CSS3, JavaScript, jQuery, BootStrap, SASS";
 			$scope.desc = "Boston University Web Development Course Term Project";
-			$scope.url = "http://www.meinnovation.net/termproject/index.html";
+			$scope.link = "http://www.meinnovation.net/termproject/index.html";
 			$scope.image = "images/sample-image1.jpg";
 			//$http.get();
 	});
