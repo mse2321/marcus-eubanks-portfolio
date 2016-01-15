@@ -13,67 +13,14 @@
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/jquery1113.js"></script>
+    <script src="js/velocity.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/angular.js"></script>
-	<script src="js/angular-route.min.js"></script>
 	<script src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
     <script src="js/me_innovation.js"></script>
-	<script>
-	angular.module('gallery', []).
-
-	  directive('gallery', function() {
-	    return {
-	      restrict: 'E',
-	      transclude: true,
-	      scope: {},
-	      controller: function($scope, $element) {
-	        var photos = $scope.photos = [];
-
-	        $scope.select = function(photo) {
-	          angular.forEach(photos, function(photo) {
-	            photo.selected = false;
-	          });
-	          photo.selected = true;
-	        }
-
-	        this.addPhoto= function(photo) {
-	          if (photos.length == 0) $scope.select(photo);
-	          photos.push(photo);
-	        }
-	      },
-	      
-	      template:
-	        '<div class="photo_nav">' +
-	          '<ul class="nav nav-thumbs">' +
-	            '<li ng-repeat="photo in photos" ng-class="{active:photo.selected}" class="thumb">' +
-	              '<a href="" ng-click="select(photo)"><img src="{{photo.thumb}}"></a>' +
-	            '</li>' +
-	          '</ul>' +
-	          '<div class="tab-content" ng-transclude></div>' +
-	        '</div>',
-	      replace: true
-	    };
-	  }).
-	  
-	  directive('photo', function() {
-	    return {
-	      require: '^gallery',
-	      restrict: 'E',
-	      transclude: true,
-	      scope: { thumb: '@' },
-	      link: function(scope, element, attrs, galleryCtrl) {
-	        galleryCtrl.addPhoto(scope);
-	      },
-	      template:
-	        '<div class="photo_data" ng-class="{active: selected}" ng-transclude>' +
-	        '</div>',
-	      replace: true
-	    };
-	  })
-	</script>
 </head>
-<body ng-app="me-innovation">
+<body>
 	<header>
 		<p id="intro">Marcus Eubanks - Front-End Developer/Designer</p>
 		<a href="#">
@@ -87,21 +34,21 @@
 	  				<div id="artwork_data">
 	  					<div class="symbol" id="arrowLeft">&#59237;</div>
 	  					<div class="symbol" id="arrowRight">&#59238;</div>
-						<gallery>
-						    <photo thumb="../../thumb?thumb_id=ahFzfmRhdmlkLWRldmlsbGllcnI6CxIMUGhvdG9nYWxsZXJ5IhRkZWZhdWx0X3Bob3RvZ2FsbGVyeQwLEgxQaG90b0dhbGxlcnkYjJ4DDA" class="paneguy">
+						<gallery ng-app="demo" ng-controller="ctrl">
+						    <photo class="paneguy">
 						      <div class="photo_wrap">
 						        <div class="photo_veiw">
-						          <img src="#">
+						          <img src="{{ image }}">
 						        </div>
 						      </div>
 						      <div class="metadata_wrap">
 
 						     <div class="metadata">
 						          <ul>
-						            <li class="art_title"><h2>ME Innovation Remixed</h2></li>
-						            <li class="subdata">Boston University Web Application Development Course Final Project</li>
-						            <li class="subdata">Technologies: jQuery, JavaScript, Bootstrap, HTML5, CSS3</li>
-						            <li class="subdata subdata-link"><a href="#" target="_blank">Click to View</a></li>
+						            <li class="art_title"><h2>{{ title }}</h2></li>
+						            <li class="subdata" id="desc">{{ desc }}</li>
+						            <li class="subdata" id="tech">{{ tech }}</li>
+						            <li class="subdata subdata-link"><a href="{{ url }}" target="_blank"><button>Click to View</button></a></li>
 						          </ul>
 						        </div>
 
@@ -110,11 +57,11 @@
 						</gallery>
 					</div>
 				</div>
-				<div class="symbol" id="arrowDown">&#9662;</div>
+				<div class="symbol ui-button" id="arrowDown">&#9662;</div>
 			</div>
 		</div>
 		<div class="section">
-			<div class="symbol" id="arrowUp">&#9652;</div>
+			<div class="symbol ui-button" id="arrowUp">&#9652;</div>
 			<div class="contentBack">
 			    <h1>About ME</h1>
 			    <p>My goal is to BLAH BLAH BLAH BLAH BLAH.</p>
@@ -159,22 +106,22 @@
 			            </ul>
 			        </div>
 		    	</section>
-		    	<div id="arrowDown" class="symbol">&#9662;</div>
+		    	<div id="arrowDown" class="symbol ui-button">&#9662;</div>
 		    </div>
 		</div>
 		<div class="section">
-		    <div class="symbol" id="arrowUp">&#9652;</div>
+		    <div class="symbol ui-button" id="arrowUp">&#9652;</div>
 			<div class="contentBack">
 				<h1>Contact</h1>
 				<div class="containerContact">
 					<div class="col-xs-12 col-md-4 containerContactColumn">
-						<img src="images/email-512.png" alt="Send ME an email" />
+						<a href="mailto:mse233@gmail.com"><img id="emailIcon" src="images/email-512.png" alt="Send ME an email" /></a>
 					</div>
 					<div class="col-xs-12 col-md-4 containerContactColumn">
-						<img src="images/github-512.png" alt="Check out my GitHub Repositories" />
+						<a href="https://github.com/mse2321"><img id="gitHub" src="images/github-512.png" alt="Check out my GitHub Repositories" /></a>
 					</div>
 					<div class="col-xs-12 col-md-4 containerContactColumn">
-						<img src="images/linkedIn-512.png" alt="Look at my LinkedIn Profile" />
+						<a href="http://www.linkedin.com/in/meinnovation"><img id="linkedIn" src="images/linkedIn-512.png" alt="Look at my LinkedIn Profile" /></a>
 					</div>
 				</div>
 			</div>
