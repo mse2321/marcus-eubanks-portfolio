@@ -22,24 +22,22 @@ $( document ).ready(function() {
 
 	$("img").click(toggleOverlay);
 
-	$("#arrowRight").click(toggleOverlay);
+	$(".metadata").click(toggleOverlay);
 
-	$("#arrowLeft").click(toggleOverlay);
-
-	$(".ui-button").velocity({color: '#ff4081'}, {loop: 15, delay: 1000});
+	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 
 	if ( $(window).width() < 1024) {
 		$(".stats ul").hide();
 	}
 
-	$(".stats-heading").click(toggleStats); //want to have only the clicked on section to toggle
+	$("div.stats-heading").click(toggleStats); //want to have only the clicked on section to toggle
 
 	function toggleOverlay() {
 		$(".metadata").toggle("slide");
 	}
 
 	function toggleStats() {
-		$(".stats ul").toggle("slide");
+		$(this).next().slideToggle();
 	}
 	
 	function iconSwap() {
