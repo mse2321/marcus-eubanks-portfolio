@@ -670,7 +670,7 @@ small {
 }
 
 /* Mobile Styling */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   body {
     height:100%;
     min-height:100%;
@@ -678,14 +678,15 @@ small {
     font-size: 16px;
   }
   #melogo {
-    width: 70%;
-    margin: 10px 30px 0 0px;
+    width: 60%;
+    margin: 0px auto;
   }
   #intro {
-    font-size: 16px;
+    font-size: 1em;
     position: fixed;
     top: 95px;
-    left: 20px;
+    text-align: center;
+    margin: 0 auto;
 
   }
 
@@ -886,8 +887,13 @@ small {
   }
 
   .containerContact img {
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
+  }
+
+  #emailIcon {
+    width: 32%;
+    margin-top: 20px;
   }
 
   #linkedIn, #gitHub, #emailIcon {
@@ -907,7 +913,7 @@ small {
 
 }
 
-@media screen and (min-width: 700px) and (max-width: 1000px) {
+@media screen and (min-width: 650px) and (max-width: 1000px) {
   
   #melogo {
     width: 60%;
@@ -928,7 +934,6 @@ small {
     font-size: 1em;
     text-align: center; 
   }
-
 
 
   
