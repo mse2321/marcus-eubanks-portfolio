@@ -27,7 +27,7 @@ $( document ).ready(function() {
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 
-	if ( $(window).width() < 1024) {
+	if ( $(window).width() < 991) {
 		$(".stats ul").hide();
 	}
 
