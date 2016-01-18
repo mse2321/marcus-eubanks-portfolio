@@ -670,24 +670,32 @@ small {
 }
 
 /* Mobile Styling */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 579px) {
   body {
     height:100%;
     min-height:100%;
     overflow-y: scroll;
     font-size: 16px;
   }
+
+  header {
+    position: intial;
+    text-align: center;
+    top: 1em;
+  }
+
   #melogo {
-    width: 60%;
+    width: 55%;
     margin: 0px auto;
+    position: initial;
+    right: 0;
+    top: 0;
   }
   #intro {
     font-size: 1em;
-    position: fixed;
-    top: 95px;
-    text-align: center;
-    margin: 0 auto;
-
+    position: initial;
+    margin: 1em auto 0 auto;
+    left: 0;
   }
 
   p {
@@ -727,14 +735,20 @@ small {
   #arrowDown {
     position: absolute;
     bottom: 45px;
-    left: 41%;
+    left: 0;
+    right: 0;
     z-index: 800;
+    text-align: center;
+    margin: 0 auto;
   }
   #arrowUp {
     position: absolute;
     top: 95px;
-    left: 41%;
+    left: 0;
+    right: 0;
     z-index: 800;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .symbol, .gallery-symbol {
@@ -760,6 +774,265 @@ small {
   }
 
   /* Gallery */
+
+  #gallery_wrap {
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    top: 0;
+  }
+
+  photo {
+    display: inline-block;
+    width: 100%;
+    position:absolute;
+  }
+
+  #desc {
+    margin-bottom: 10px;
+  }
+
+  photo h2 {
+    font-size: 30px;
+    margin: 0.8em 0.83em 1.4em -0.83em;
+  }
+
+  photo ul li{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  photo img {
+    width: 100%;
+    position: absolute;
+    margin: 5% auto 0 auto;
+  }
+
+  .metadata {
+    position: absolute;
+    right: 0;
+    background-color: rgba(62, 69, 81, 0.95);
+    margin-top: 0;
+    width: 100%;
+    padding: 0 0.2% 0 0.5%;
+    height: 400px;
+    z-index: 9999;
+    color: #ddd;
+  }
+
+  .meta-ul {
+    margin: 0;
+    padding: 0.8em;
+    text-align: center;
+  }
+  .subdata-link {
+    margin-top: 40px;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  button {
+    background: linear-gradient(#ff80ab, $meinnovation-magenta);
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    border: none;
+    box-shadow: 4px 4px 8px #3E4551;
+  }
+
+  #arrowLeft:hover, #arrowRight:hover, ui-button-active{
+    color: $meinnovation-magenta;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .ui-button {
+    color: #e0e0e0;
+  }
+
+  button:hover{
+    background: linear-gradient(#fafafa, #9e9e9e);
+    color: $meinnovation-magenta;
+  }
+
+  /* About ME */
+  .stats {
+    margin: 0;
+    width: 100%;
+  }
+
+  .stats ul li {
+    font-size: 18px;
+  }
+  .stats ul {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 25px 15px 15px 15px;
+    margin-top: -1px;
+  }
+
+  .stats-heading {
+    background: linear-gradient(#ff80ab, $meinnovation-magenta);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px #3E4551;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+
+  .stats-heading h2 {
+    margin:0;
+    z-index: 900;
+  }
+
+  .stats-heading:hover {
+    background: linear-gradient(#fafafa, #9e9e9e);
+    color: $meinnovation-magenta;
+  }
+
+  /* Contact */
+
+  .containerContact {
+    margin: 0.5em auto 0 auto;
+  }
+
+  .containerContactColumn,  {
+    text-align: center;
+  }
+
+  .containerContact img, #emailIcon {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  #linkedIn, #gitHub, #emailIcon {
+    margin: 5% auto 0 auto;
+  }
+
+  /* Footer */
+  footer {
+    color: #000;
+    bottom: 1%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+  }
+  small {
+    font-size: 1em;
+  }
+
+}
+
+@media screen and (min-width: 580px) and (max-width: 799px) {
+  
+  body {
+    height:100%;
+    min-height:100%;
+    overflow-y: scroll;
+    font-size: 16px;
+  }
+
+  header {
+    position: intial;
+    text-align: center;
+    top: 1em;
+  }
+
+  #melogo {
+    width: 55%;
+    margin: 0px auto;
+    position: initial;
+    right: 0;
+    top: 0;
+  }
+  #intro {
+    font-size: 1em;
+    position: initial;
+    margin: 1em auto 0 auto;
+    left: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center; 
+  }
+
+  h2 {
+    font-size: 1.25em;
+    text-align: center; 
+  }
+
+  h3 {
+    font-size: 1em;
+    text-align: center; 
+  }
+
+  .contentBack {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    color: #ddd;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    top: 200px;
+    z-index: 750
+  }
+
+    /* Navigation Buttons */
+
+  #arrowDown {
+    position: absolute;
+    bottom: 57px;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #arrowUp {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .symbol, .gallery-symbol {
+    font-size: 250px;
+    line-height: 10px;
+  }
+
+  .gallery-symbol {
+    position: absolute;
+    opacity: 0.3;
+    text-shadow: 4px 4px 8px #4B515D;
+    z-index: 1000;
+  }
+
+  #arrowRight {
+    right: 5px;
+    top: 60px;
+  }
+
+  #arrowLeft {
+    left: 5px;
+    top: 60px;
+  }
+
+    /* Gallery */
 
   #gallery_wrap {
     padding: 0px;
@@ -841,7 +1114,7 @@ small {
     color: $meinnovation-magenta;
   }
 
-  /* About ME */
+    /* About ME */
   .stats {
     margin: 0;
     width: 100%;
@@ -879,45 +1152,67 @@ small {
   /* Contact */
 
   .containerContact {
-    margin: 1em auto 0 auto;
-  }
-
-  .containerContactColumn,  {
-    text-align: center;
-  }
-
-  .containerContact img {
-    width: 30%;
     margin: 0 auto;
   }
 
-  #emailIcon {
-    width: 32%;
-    margin-top: 20px;
+  .containerContact img, #emailIcon {
+    width: 21%;
+    margin: 0 auto;
   }
 
   #linkedIn, #gitHub, #emailIcon {
-    margin: 20px auto;
+    margin: 5% auto 0 auto;
   }
 
-  /* Footer */
+  #emailIcon {
+    margin-top: 2%;
+  }
+
+    /* Footer */
   footer {
-    position: fixed;
     color: #000;
     bottom: 1%;
-    left: 30%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
   }
   small {
     font-size: 1em;
   }
 
+  
 }
 
-@media screen and (min-width: 650px) and (max-width: 1000px) {
-  
+@media screen and (min-width: 800px) and (max-width: 991px) {
+
+   body {
+    height:100%;
+    min-height:100%;
+    overflow-y: scroll;
+    font-size: 16px;
+  }
+
+  header {
+    position: intial;
+    text-align: center;
+    top: 1em;
+  }
+
   #melogo {
-    width: 60%;
-    margin: 40px 30px 0 0px;
+    width: 35%;
+    margin: 0px auto;
+    right: 2em;
+    top: 1em;
+  }
+  #intro {
+    font-size: 1em;
+    margin: 1em auto 0 auto;
+    left: 2em;
+    top: 1.5em;
+  }
+
+  p {
+    text-align: center;
   }
 
   h1 {
@@ -935,6 +1230,210 @@ small {
     text-align: center; 
   }
 
+  .contentBack {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 20px;
+    color: #ddd;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    top: 150px;
+    z-index: 750
+  }
 
-  
+    /* Navigation Buttons */
+
+  #arrowDown {
+    position: absolute;
+    bottom: 57px;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #arrowUp {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 800;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .symbol, .gallery-symbol {
+    font-size: 250px;
+    line-height: 10px;
+  }
+
+  .gallery-symbol {
+    position: absolute;
+    opacity: 0.3;
+    text-shadow: 4px 4px 8px #4B515D;
+    z-index: 1000;
+  }
+
+  #arrowRight {
+    right: 5px;
+    top: 220px;
+    font-size: 300px;
+  }
+
+  #arrowLeft {
+    left: 5px;
+    top: 220px;
+    font-size: 300px;
+  }
+
+    /* Gallery */
+
+  #gallery_wrap {
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    top: 0;
+  }
+
+  photo {
+    display: inline-block;
+    width: 100%;
+    position:absolute;
+  }
+
+  #desc {
+    margin-bottom: 10px;
+  }
+
+  photo h2 {
+    font-size: 30px;
+    margin: 0.8em 0.83em 1.4em -0.83em;
+  }
+
+  photo ul li{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  photo img {
+    width: 100%;
+    position: absolute;
+    margin: 5% auto 0 auto;
+  }
+
+  .metadata {
+    position: absolute;
+    right: 0;
+    background-color: rgba(62, 69, 81, 0.95);
+    margin-top: 0;
+    width: 100%;
+    padding: 0 0.2% 0 0.5%;
+    height: 400px;
+    z-index: 9999;
+    color: #ddd;
+  }
+  .subdata-link {
+    margin-top: 40px;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  button {
+    background: linear-gradient(#ff80ab, $meinnovation-magenta);
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+    border: none;
+    box-shadow: 4px 4px 8px #3E4551;
+  }
+  #arrowLeft:hover, #arrowRight:hover, ui-button-active{
+    color: $meinnovation-magenta;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .ui-button {
+    color: #e0e0e0;
+  }
+
+  button:hover{
+    background: linear-gradient(#fafafa, #9e9e9e);
+    color: $meinnovation-magenta;
+  }
+
+    /* About ME */
+  .stats {
+    margin: 0 auto;
+    width: 80%;
+    float: none;
+  }
+
+  .stats ul li {
+    font-size: 18px;
+  }
+  .stats ul {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 25px 15px 15px 15px;
+    margin-top: -1px;
+  }
+
+  .stats-heading {
+    background: linear-gradient(#ff80ab, $meinnovation-magenta);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 8px #3E4551;
+    cursor: pointer;
+    margin: 0.4em 0;
+  }
+
+  .stats-heading h2 {
+    margin:0;
+    z-index: 900;
+  }
+
+  .stats-heading:hover {
+    background: linear-gradient(#fafafa, #9e9e9e);
+    color: $meinnovation-magenta;
+  }
+
+  /* Contact */
+
+  .containerContact {
+    margin: 0 auto;
+  }
+
+  .containerContact img, #emailIcon {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  #linkedIn, #gitHub, #emailIcon {
+    margin: 5% auto 0 auto;
+  }
+
+  #emailIcon {
+    margin-top: 2%;
+  }
+
+    /* Footer */
+  footer {
+    color: #000;
+    bottom: 1%;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+  }
+  small {
+    font-size: 1em;
+  }
+
+
 }
