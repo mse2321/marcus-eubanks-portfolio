@@ -60,6 +60,14 @@ $( document ).ready(function() {
 
 	$("div.stats-heading").click(toggleStats);
 
+	//window.onresize = resize;
+
+	function matchHeight() {
+		var photo_height = $("photo img").height() + 2;
+		console.log(photo_height);
+		$(".metadata").css("height", photo_height);
+	}
+
 	function toggleOverlay() {
 		$(".metadata").toggle("slide");
 	}

@@ -46,7 +46,7 @@ gulp.task('html', function() {
 
 // JavaScript build task, removes whitespace and concatenates all files
 gulp.task('scripts', function() {
-  return browserify('js/me-innovation.js')
+  return browserify('js/me_innovation.js')
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
