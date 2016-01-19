@@ -17,7 +17,11 @@
 	if ($result->num_rows > 0) {
 		// outputs row data
 		while($row = $result->fetch_assoc()) {
-			echo "id: " . $row["ID"] . "<br />Title: " . $row["Title"] . "<br />Desc: " . $row["Description"] . "<br />Tech: " . $row["Technologies"] . "<br />Image: " . $row["Image"];
+			$id[] =  $row["ID"];
+			$title[] = $row["Title"];
+			$tech[] = $row["Technologies"];
+			$desc[] = $row["Description"];
+			$image[] = $row["Image"];
 		}
 	} else {
 		echo "Something didn't work right!";

@@ -394,13 +394,13 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   color: #4dd0e1;
-  font-size: 40px; }
+  font-size: 35px; }
 
 h2, h3, h4, h5 {
   color: white; }
 
 h2 {
-  font-size: 34px; }
+  font-size: 30px; }
 
 /* Body */
 .contentBack {
@@ -485,7 +485,7 @@ photo img {
   margin-top: -0.6%;
   width: 40%;
   padding: 0 0.5% 0 0.5%;
-  height: 614px;
+  height: 30.7em;
   z-index: 9999;
   color: #ddd; }
 
@@ -500,7 +500,7 @@ button {
   cursor: pointer;
   color: white;
   text-align: center;
-  width: 30%;
+  width: 50%;
   border: none;
   box-shadow: 4px 4px 8px #3E4551; }
 
@@ -1215,7 +1215,7 @@ small {
   /* General */
   body {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     background: url("../images/future-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     z-index: 500; }
@@ -1319,7 +1319,7 @@ small {
     margin-bottom: 10px; }
 
   photo h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px; }
 
   photo ul li {
@@ -1334,18 +1334,21 @@ small {
 
   .metadata {
     position: absolute;
-    right: 3%;
+    right: 8%;
     background-color: rgba(62, 69, 81, 0.95);
-    margin-top: -0.6%;
-    width: 40%;
+    margin-top: 7.8%;
+    width: 50%;
     padding: 0 0.5% 0 0.5%;
-    height: 614px;
+    height: 20.4em;
     z-index: 9999;
     color: #ddd; }
 
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
+
+  .subdata {
+    font-size: 16px; }
 
   button {
     background: linear-gradient(#ff80ab, #ff4081);
@@ -1354,7 +1357,7 @@ small {
     cursor: pointer;
     color: white;
     text-align: center;
-    width: 30%;
+    width: 80%;
     border: none;
     box-shadow: 4px 4px 8px #3E4551; }
 

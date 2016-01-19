@@ -31,31 +31,21 @@
 		<div class="section">
 			<div class="contentBack">
 				<div id="gallery_wrap">
-	  				<div id="artwork_data">
-	  					<div class="gallery-symbol" id="arrowLeft">&#59237;</div>
-	  					<div class="gallery-symbol" id="arrowRight">&#59238;</div>
 						<gallery ng-app="demo" ng-controller="ctrl">
-						    <photo class="paneguy">
-						      <div class="photo_wrap">
-						        <div class="photo_veiw">
-						          <img src="{{ image }}">
+							<div class="gallery-symbol" id="arrowLeft" ng-click="lastItem()">&#59237;</div>
+	  						<div class="gallery-symbol" id="arrowRight" ng-click="nextItem()">&#59238;</div>
+						    <photo>
+						        <img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}">
+						        <div class="metadata">
+						        	<ul class="meta-ul">
+						            	<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
+						            	<li class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</li>
+						            	<li class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</li>
+						            	<li class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)"><a href="{{ item.link }}" target="_blank"><button>Click to View</button></a></li>
+						          	</ul>
 						        </div>
-						      </div>
-						      <div class="metadata_wrap">
-
-						     <div class="metadata">
-						          <ul class="meta-ul">
-						            <li class="art_title"><h2>{{ title }}</h2></li>
-						            <li class="subdata" id="desc">{{ desc }}</li>
-						            <li class="subdata" id="tech">{{ tech }}</li>
-						            <li class="subdata subdata-link"><a href="{{ link }}" target="_blank"><button>Click to View</button></a></li>
-						          </ul>
-						        </div>
-
-						      </div>
 						    </photo>
 						</gallery>
-					</div>
 				</div>
 				<div class="symbol ui-button" id="arrowDown">&#9662;</div>
 			</div>
