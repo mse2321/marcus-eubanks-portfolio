@@ -555,7 +555,8 @@ h2 {
 photo {
   display: inline-block;
   width: 80%;
-  position:absolute;
+  position: relative;
+  margin-left: 10%;
 }
 
 #desc {
@@ -574,9 +575,10 @@ photo ul li{
 }
 
 photo img {
-  width: 80%;
+  width: 100%;
   position: absolute;
-  margin: -0.5% 10% 0 17%;
+  margin: -5% 0 0 0;
+  z-index:-200;
 }
 
 .metadata {
@@ -623,6 +625,11 @@ button:hover{
 }
 
 /* About ME */
+
+#intro_mobile {
+  display: none;
+}
+
 .stats {
   margin: 0 10px;
   width: 30%;
@@ -671,22 +678,6 @@ small {
 
 /* Mobile Styling */
 
-@media screen and (max-height: 500px) {
-  
-    .contentBack {
-    background-color: rgba(0, 0, 0, 0.4); 
-    padding: 20px;
-    color: #ddd;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 750
-  }
-
-}
-
 
 @media screen and (max-width: 579px) {
   body {
@@ -709,12 +700,20 @@ small {
     right: 0;
     top: 0;
   }
+
   #intro {
+    display: none;
+  }
+
+  #intro_mobile {
+    display: block;
     font-size: 1em;
     position: initial;
-    margin: 1em auto 0 auto;
+    margin: 60% auto 0 auto;
     left: 0;
+    z-index: 5000;
   }
+
 
   p {
     text-align: center;
@@ -723,7 +722,8 @@ small {
   h1 {
     font-size: 1.5em;
     text-align: center;
-    margin-top: 1em; 
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
   }
 
   h2 {
@@ -743,8 +743,8 @@ small {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 10px;
-    top: 150px;
+    bottom: 50px;
+    top: 11%;
     z-index: 750
   }
 
@@ -752,7 +752,7 @@ small {
 
   #arrowDown {
     position: absolute;
-    bottom: 45px;
+    bottom: 35px;
     left: 0;
     right: 0;
     z-index: 800;
@@ -761,7 +761,7 @@ small {
   }
   #arrowUp {
     position: absolute;
-    top: 95px;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: 800;
@@ -769,8 +769,8 @@ small {
     margin: 0 auto;
   }
 
-  .symbol, .gallery-symbol {
-    font-size: 200px;
+  .symbol {
+    font-size: 100px;
     line-height: 10px;
   }
 
@@ -779,6 +779,8 @@ small {
     opacity: 0.3;
     text-shadow: 4px 4px 8px #4B515D;
     z-index: 1000;
+    line-height: 10px;
+    font-size: 200px;
   }
 
   #arrowRight {
@@ -806,6 +808,7 @@ small {
     display: inline-block;
     width: 100%;
     position:absolute;
+    margin: 0;
   }
 
   #desc {
@@ -837,7 +840,7 @@ small {
     margin-top: 0;
     width: 100%;
     padding: 0 0.2% 0 0.5%;
-    height: 100%;
+    height: 400px;
     z-index: 9999;
     color: #ddd;
   }
@@ -881,15 +884,16 @@ small {
   }
 
   /* About ME */
+
   .stats {
     margin: 0;
     width: 100%;
   }
 
-  .stats ul li {
+  .stats-ul li, .stats-overlay ul li {
     font-size: 18px;
   }
-  .stats ul {
+  .stats-ul {
     border: 3px solid #fff;
     border-radius: 10px;
     padding: 25px 15px 15px 15px;
@@ -902,12 +906,31 @@ small {
     padding: 1px;
     box-shadow: 4px 4px 8px #3E4551;
     cursor: pointer;
-    margin: 5px 0;
+    margin: 0.7em 0;
+  }
+
+  .stats-overlay {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 0;
+    margin: -30px auto 0 -15px;
+    background-color: rgba(62, 69, 81, 0.95);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+  }
+
+  .stats-overlay ul {
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    margin-top: -1px;
   }
 
   .stats-heading h2 {
     margin:0;
-    z-index: 900;
+    z-index: -900;
   }
 
   .stats-heading:hover {
@@ -918,21 +941,26 @@ small {
   /* Contact */
 
   .containerContact {
-    margin: 0.5em auto 0 auto;
+    margin: 2.5em auto 0 auto;
   }
 
   .containerContactColumn,  {
     text-align: center;
+    width: 33%;
   }
 
   .containerContact img, #emailIcon {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
   }
 
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto;
     display: inline-block;
+  }
+
+  #emailIcon {
+    margin-top: 18%;
   }
 
   /* Footer */
@@ -971,12 +999,21 @@ small {
     right: 0;
     top: 0;
   }
+
   #intro {
-    font-size: 1em;
-    position: initial;
-    margin: 1em auto 0 auto;
-    left: 0;
+    display: none;
   }
+
+  #intro_mobile {
+    display: block;
+    font-size: 1em;
+    position: relative;
+    margin: 45% auto 0 auto;
+    background-color: black;
+    z-index: 1200;
+    padding: 5px;
+  }
+
 
   p {
     text-align: center;
@@ -1005,7 +1042,7 @@ small {
     left: 0;
     right: 0;
     bottom: 80px;
-    top: 200px;
+    top: 100px;
     z-index: 750
   }
 
@@ -1016,16 +1053,16 @@ small {
     bottom: 57px;
     left: 0;
     right: 0;
-    z-index: 800;
+    z-index: 9999;
     text-align: center;
     margin: 0 auto;
   }
   #arrowUp {
     position: absolute;
-    top: 130px;
+    top: 30px;
     left: 0;
     right: 0;
-    z-index: 800;
+    z-index: 9999;
     text-align: center;
     margin: 0 auto;
   }
@@ -1045,11 +1082,13 @@ small {
   #arrowRight {
     right: 5px;
     top: 60px;
+    z-index: 9999;
   }
 
   #arrowLeft {
     left: 5px;
     top: 60px;
+    z-index: 9999;
   }
 
     /* Gallery */
@@ -1067,6 +1106,8 @@ small {
     display: inline-block;
     width: 100%;
     position:absolute;
+    z-index: 1000;
+    margin: 0;
   }
 
   #desc {
@@ -1087,7 +1128,7 @@ small {
   photo img {
     width: 100%;
     position: absolute;
-    margin: 5% auto 0 auto;
+    margin: 2% auto 0 auto;
   }
 
   .metadata {
@@ -1158,6 +1199,25 @@ small {
     margin-top: -1px;
   }
 
+  .stats-overlay {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 0;
+    margin: -70px auto 0 -15px;
+    background-color: rgba(62, 69, 81, 0.95);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+  }
+
+  .stats-overlay ul {
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    margin-top: -1px;
+  }
+
   .stats-heading {
     background: linear-gradient(#ff80ab, $meinnovation-magenta);
     border-radius: 10px;
@@ -1180,12 +1240,17 @@ small {
   /* Contact */
 
   .containerContact {
-    margin: 0 auto;
+    margin: 2em auto 0 auto;
   }
 
   .containerContact img, #emailIcon {
-    width: 21%;
+    width: 60%;
     margin: 0 auto;
+  }
+
+  .containerContactColumn,  {
+    text-align: center;
+    width: 33%;
   }
 
   #linkedIn, #gitHub, #emailIcon {
@@ -1194,7 +1259,7 @@ small {
   }
 
   #emailIcon {
-    margin-top: 2%;
+    margin-top: 10%;
   }
 
     /* Footer */
@@ -1233,12 +1298,6 @@ small {
     right: 2em;
     top: 1em;
   }
-  #intro {
-    font-size: 1em;
-    margin: 1em auto 0 auto;
-    left: 2em;
-    top: 1.5em;
-  }
 
   p {
     text-align: center;
@@ -1266,8 +1325,8 @@ small {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 80px;
-    top: 150px;
+    bottom: 70px;
+    top: 100px;
     z-index: 750
   }
 
@@ -1275,7 +1334,7 @@ small {
 
   #arrowDown {
     position: absolute;
-    bottom: 57px;
+    bottom: 45px;
     left: 0;
     right: 0;
     z-index: 800;
@@ -1284,7 +1343,7 @@ small {
   }
   #arrowUp {
     position: absolute;
-    top: 80px;
+    top: 45px;
     left: 0;
     right: 0;
     z-index: 800;
@@ -1293,7 +1352,7 @@ small {
   }
 
   .symbol, .gallery-symbol {
-    font-size: 250px;
+    font-size: 200px;
     line-height: 10px;
   }
 
@@ -1306,13 +1365,13 @@ small {
 
   #arrowRight {
     right: 5px;
-    top: 220px;
+    top: 150px;
     font-size: 300px;
   }
 
   #arrowLeft {
     left: 5px;
-    top: 220px;
+    top: 150px;
     font-size: 300px;
   }
 
@@ -1331,6 +1390,7 @@ small {
     display: inline-block;
     width: 100%;
     position:absolute;
+    margin: 0;
   }
 
   #desc {
@@ -1351,7 +1411,7 @@ small {
   photo img {
     width: 100%;
     position: absolute;
-    margin: 5% auto 0 auto;
+    margin: 0 auto 0 auto;
   }
 
   .metadata {
@@ -1435,6 +1495,26 @@ small {
     z-index: 900;
   }
 
+  .stats-overlay {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 0;
+    margin: -70px auto 0 -15px;
+    background-color: rgba(62, 69, 81, 0.95);
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: block;
+  }
+
+  .stats-overlay ul {
+    border: none;
+    border-radius: 0;
+    padding: 15px;
+    margin-top: -1px;
+  }
+
+
   .stats-heading:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: $meinnovation-magenta;
@@ -1443,11 +1523,16 @@ small {
   /* Contact */
 
   .containerContact {
-    margin: 0 auto;
+    margin: 5% auto 0 auto;
+  }
+
+  .containerContactColumn,  {
+    text-align: center;
+    width: 33%;
   }
 
   .containerContact img, #emailIcon {
-    width: 15%;
+    width: 60%;
     margin: 0 auto;
   }
 
@@ -1457,7 +1542,7 @@ small {
   }
 
   #emailIcon {
-    margin-top: 2%;
+    margin-top: 15%;
   }
 
     /* Footer */
@@ -1500,7 +1585,7 @@ small {
 
   #intro {
     position: fixed;
-    top: 50px;
+    top: 30px;
     left: 40px;
     font-size: 18px;
 
@@ -1532,8 +1617,8 @@ small {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 100px;
-    top: 120px;
+    bottom: 60px;
+    top: 80px;
     z-index: 750
   }
 
@@ -1541,7 +1626,7 @@ small {
 
   #arrowDown {
     position: absolute;
-    bottom: 87px;
+    bottom: 110px;
     left: 0;
     right: 0;
     z-index: 800;
@@ -1550,7 +1635,7 @@ small {
   }
   #arrowUp {
     position: absolute;
-    top: 5.3em;
+    top: 0.15em;
     left: 0;
     right: 0;
     z-index: 800;
@@ -1565,6 +1650,10 @@ small {
     cursor: pointer;
     color: #e0e0e0;
     text-shadow: 4px 4px 8px #4B515D;
+  }
+
+  .symbol {
+    font-size: 300px;
   }
 
   #arrowRight {
@@ -1584,7 +1673,7 @@ small {
   /* Gallery */
 
   #gallery_wrap {
-    padding: 20px 100px;
+    padding: 10px 100px;
     position: absolute;
     left: 0;
     right: 0;
@@ -1594,8 +1683,9 @@ small {
 
   photo {
     display: inline-block;
-    width: 80%;
-    position:absolute;
+    width: 100%;
+    position:relative;
+    margin: 0;
   }
 
   #desc {
@@ -1614,9 +1704,10 @@ small {
   }
 
   photo img {
-    width: 80%;
+    width: 100%;
     position: absolute;
-    margin: 8% 10% 0 12%;
+    margin: 1% 0 0 0;
+    z-index: -200;
   }
 
   .metadata {
@@ -1675,7 +1766,7 @@ small {
 
   .stats ul li {
     list-style-type: none;
-    font-size: 18px;
+    font-size: 20px;
   }
   .stats ul {
     border: 3px solid #fff;
@@ -1716,6 +1807,82 @@ small {
   }
   small {
     font-size: 1em;
+  }
+
+}
+
+@media screen and (max-height: 500px) {
+
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+  }
+
+  .contentBack {
+    bottom: 60px;
+    top: 15%;
+    z-index: 750;
+  }
+
+  #arrowDown {
+    bottom: 5px;
+    z-index: 800;
+  }
+  #arrowUp {
+    top: 75px;
+    z-index: 800;
+  }
+
+  .symbol {
+    font-size: 80px;
+  }
+
+  .gallery-symbol {
+    z-index: 1000;
+    font-size: 200px;
+  }
+
+  #about_info {
+    display: none;
+  }
+
+  .stats-ul li {
+    font-size: 14px;
+  }
+  .stats-ul {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 25px 15px 15px 15px;
+    margin-top: -1px;
+  }
+
+  .stats-heading {
+    background: linear-gradient(#ff80ab, $meinnovation-magenta);
+    border-radius: 10px;
+    padding: 1px;
+    box-shadow: 4px 4px 8px #3E4551;
+    cursor: pointer;
+    margin: 0.4em 0;
+  }
+
+  .stats-heading h2 {
+    margin:0;
+    z-index: 900;
+    font-size: 16px;
+  }
+
+  .containerContact {
+    margin: 2em auto 0 auto;
+  }
+
+  #emailIcon {
+    margin-top: 1.25em;
   }
 
 }

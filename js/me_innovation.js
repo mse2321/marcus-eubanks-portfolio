@@ -34,8 +34,18 @@ var demo = angular.module("demo", []);
 // Automatically matches height of gallery overlay to photo size. Only works during intitial load.
 $(window).load(function matchHeight() {
 	var photo_height = $("photo img").height() + 2;
+	//var windowWidth = 2000;
+	var windowWidth = parseInt($(window).width());
+
 	console.log(photo_height);
-	$(".metadata").css("height", photo_height);
+	console.log(windowWidth);
+	
+	if (windowWidth > 991) {
+		$(".metadata").css("height", photo_height);
+	} else {
+		return false;
+	};
+
 });
 
 $( document ).ready(function() {
@@ -54,26 +64,38 @@ $( document ).ready(function() {
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 
-	if ( $(window).width() < 991) {
-		$(".stats ul").hide();
-	}
+	$(".stats-overlay").hide();
 
-	$("div.stats-heading").click(toggleStats);
+	$(".stats-ul li").hide();
+	$(".stats-ul").hide();
 
-	//window.onresize = resize;
+	if ( $(window).width() < 799) {
+		$("div.stats-heading").click(toggleStats);
+		$(".stats-overlay").click(toggleStatsOverlay);
+	} else if ($(window).width() > 798 && $(window).width() < 992) {
+		$("div.stats-heading").click(toggleStatsUl);
+		$(".stats-ul li").show();
+	};
 
-	function matchHeight() {
-		var photo_height = $("photo img").height() + 2;
-		console.log(photo_height);
-		$(".metadata").css("height", photo_height);
-	}
+	if ($(window).width() > 991) {
+		$(".stats-ul li").show();
+		$(".stats-ul").show();
+	};
 
 	function toggleOverlay() {
 		$(".metadata").toggle("slide");
 	}
 
 	function toggleStats() {
+		$(this).prev().slideToggle();
+	}
+
+	function toggleStatsUl() {
 		$(this).next().slideToggle();
+	}
+
+	function toggleStatsOverlay() {
+		$(this).slideToggle();
 	}
 
 	function iconSwap() {
