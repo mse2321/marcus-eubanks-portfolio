@@ -1,14 +1,14 @@
 // JavaScript Document
+var demo = angular.module("demo", ['hmTouchEvents']);
 
-var demo = angular.module("demo", []);
 	demo.controller("ctrl", function($scope){
 		//$http.get("server-connection.php?action=get_data");
 
 		$scope.items = [
-			{title: "ME Innovation Remixed", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, SASS", desc: "Boston University Web Development Course Term Project", link: "http://www.meinnovation.net/termproject/index.html", image: "images/sample-image1.jpg"},
-			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, Spotify API", desc: "Thinkful Front End Course Capstone Project", link: "http://mse2321.github.io/muzak/", image: "images/sample-image2.jpg"},
-			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "images/sample-image3.jpg"},
-			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "images/sample-image4.jpg"}
+			{title: "ME Innovation Remixed", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, SASS", desc: "Boston University Web Development Course Term Project", link: "http://www.meinnovation.net/termproject/index.html", image: "build/img/sample-image1.jpg", image2: "build/img/sample-image1_mobile_vert.jpg"},
+			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, Spotify API", desc: "Thinkful Front End Course Capstone Project", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2.jpg", image2: "build/img/sample-image2_mobile_vert.jpg"},
+			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3.jpg", image2: "build/img/sample-image3_mobile_vert.jpg"},
+			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4.jpg", image2: "build/img/sample-image4_mobile_vert.jpg"}
 		];
 			
 		$scope.defaultIndex = 0;
@@ -29,17 +29,16 @@ var demo = angular.module("demo", []);
 			$scope.defaultIndex = ($scope.defaultIndex > 0) ? --$scope.defaultIndex : $scope.items.length -1;
 		};
 
+		$scope.overlay = function() {
+			$(".metadata").toggle("slide");
+		}
 	});
 
 // Automatically matches height of gallery overlay to photo size. Only works during intitial load.
 $(window).load(function matchHeight() {
-	var photo_height = $("photo img").height() + 2;
-	//var windowWidth = 2000;
+	var photo_height = $("photo img").height();
 	var windowWidth = parseInt($(window).width());
 
-	console.log(photo_height);
-	console.log(windowWidth);
-	
 	if (windowWidth > 991) {
 		$(".metadata").css("height", photo_height);
 	} else {
@@ -50,6 +49,7 @@ $(window).load(function matchHeight() {
 
 $( document ).ready(function() {
 	"use strict";
+
 	$('#fullpage').fullpage();
 	
 	$("#nav > li > a").hide();
@@ -57,10 +57,6 @@ $( document ).ready(function() {
 	$(".metadata").hide();
 
 	$(".metadata").hide();
-
-	$("img").click(toggleOverlay);
-
-	$(".metadata").click(toggleOverlay);
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 
@@ -101,24 +97,26 @@ $( document ).ready(function() {
 	function iconSwap() {
 	
 		$("#linkedIn").hover(function() {
-			$("#linkedIn").attr("src", "images/linkedIn-512_selected.png");
+			$("#linkedIn").attr("src", "build/img/linkedIn-512_selected.png");
 		});
 		$("#linkedIn").mouseleave(function() {
-			$("#linkedIn").attr("src", "images/linkedIn-512.png");
+			$("#linkedIn").attr("src", "build/img/linkedIn-512.png");
 		});
 		$("#gitHub").hover(function() {
-			$("#gitHub").attr("src", "images/gitHub-512_selected.png");
+			$("#gitHub").attr("src", "build/img/gitHub-512_selected.png");
 		});
 		$("#gitHub").mouseleave(function() {
-			$("#gitHub").attr("src", "images/gitHub-512.png");
+			$("#gitHub").attr("src", "build/img/gitHub-512.png");
 		});
 		$("#emailIcon").hover(function() {
-			$("#emailIcon").attr("src", "images/email-512_selected.png");
+			$("#emailIcon").attr("src", "build/img/email-512_selected.png");
 		});
 		$("#emailIcon").mouseleave(function() {
-			$("#emailIcon").attr("src", "images/email-512.png");
+			$("#emailIcon").attr("src", "build/img/email-512.png");
 		});
-	}	
-	
-	iconSwap();
+	}
+
+	if ($(window).width() > 700) {
+		iconSwap();
+	};
 });
