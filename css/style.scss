@@ -556,9 +556,9 @@ h2 {
 
 photo {
   display: inline-block;
-  width: 80%;
+  width: 60%;
   position: relative;
-  margin-left: 10%;
+  margin-left: 18%;
 }
 
 #desc {
@@ -571,6 +571,16 @@ photo {
 
 .slide-animation2 {
     display: none;
+}
+
+.slide_selection {
+  margin-top: 480px;
+  margin-left: 23%;
+}
+
+.slide_selection img{
+  width: 15%;
+  margin: 10px;
 }
 
 photo h2 {

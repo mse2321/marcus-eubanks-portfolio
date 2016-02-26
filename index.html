@@ -35,11 +35,13 @@
 			<div class="contentBack">
 				<div id="gallery_wrap">
 						<gallery ng-app="demo" ng-controller="ctrl">
-							<div class="gallery-symbol" id="arrowLeft" ng-click="lastItem()">&#59237;</div>
-	  						<div class="gallery-symbol" id="arrowRight" ng-click="nextItem()">&#59238;</div>
+							<!--<div class="gallery-symbol" id="arrowLeft" ng-click="lastItem()">&#59237;</div>
+	  						<div class="gallery-symbol" id="arrowRight" ng-click="nextItem()">&#59238;</div>-->
 						    <photo>
+						    	<!-- Old code
 						        <img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
 						        <img id="gallery_image" class="slide-animation2" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image2 }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
+						    	-->
 						        <div class="metadata" hm-tap="overlay()">
 						        	<ul class="meta-ul">
 						            	<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
@@ -49,6 +51,9 @@
 						          	</ul>
 						        </div>
 						    </photo>
+						    <div class="slide_selection">
+						    	<img ng-repeat="item in items" ng-src="{{ item.image }}" ng-click="image-swap()">
+						    </div>
 						</gallery>
 				</div>
 				<p id="intro_mobile">Marcus Eubanks - Front-End Developer/Designer</p>
