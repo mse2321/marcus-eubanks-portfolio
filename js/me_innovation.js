@@ -6,15 +6,15 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
           templateUrl: 'intro.html',
           controller: 'ctrl'
         })
-        .when('/home', {
+        .when('/gallery', {
           templateUrl: 'gallery.html',
           controller: 'gallery'
         })
-        .when('/meal', {
+        .when('/about', {
           templateUrl: 'about.html',
           controller: 'ctrl'
         })
-        .when('/earnings', {
+        .when('/contact', {
           templateUrl: 'contact.html',
           controller: 'ctrl'
         })
@@ -65,9 +65,9 @@ $(window).load(function matchHeight() {
 $( document ).ready(function() {
 	"use strict";
 
-	$('#fullpage').fullpage();
-	
-	$("#nav > li > a").hide();
+	/*$('.nav li a').click(function(){
+    	$('.navbar-collapse').collapse('hide');
+	});*/
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 

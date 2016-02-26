@@ -55,55 +55,55 @@ h2 {
   top: 120px;
   z-index: 750; }
 
-/* Navigation Buttons */
-#arrowDown {
-  position: absolute;
-  bottom: 90px;
-  left: 47%;
-  z-index: 800;
-  display: none; }
+/* Navigation */
+nav {
+  z-index: 9999;
+  width: 400px; }
 
-#arrowUp {
-  position: absolute;
-  top: 10px;
-  left: 47%;
-  z-index: 800;
-  display: none; }
+#nav_links {
+  list-style-type: none;
+  padding: 0; }
 
-.symbol, .gallery-symbol {
-  font-family: 'EntypoRegular';
-  font-size: 400px;
-  line-height: 10px;
+#nav_links a {
+  display: inline-block;
+  margin: 10px 0;
+  color: white; }
+
+.collapse_nav {
+  background-color: black;
+  color: white;
+  margin-left: 40px;
+  padding: 10px;
+  z-index: 9999; }
+
+.nav-toggle {
+  display: block;
+  background: linear-gradient(#ff80ab, #ff4081);
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 10px 0;
   cursor: pointer;
-  color: #e0e0e0;
-  text-shadow: 4px 4px 8px #4B515D; }
-
-#arrowRight {
-  position: absolute;
-  right: 25px;
-  top: 30%;
-  color: #e0e0e0; }
-
-#arrowLeft {
-  position: absolute;
-  left: 25px;
-  top: 30%;
-  color: #e0e0e0; }
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  width: 50px;
+  border: none;
+  box-shadow: 4px 4px 8px #3E4551; }
 
 /* Gallery */
 #gallery_wrap {
   padding: 20px 100px;
   position: absolute;
-  left: 0;
   right: 0;
   bottom: 50px;
   top: 50px; }
 
 photo {
   display: inline-block;
-  width: 60%;
+  width: 90%;
   position: relative;
-  margin-left: 18%; }
+  margin-left: 15%; }
 
 #desc {
   margin-bottom: 10px; }
@@ -111,16 +111,9 @@ photo {
 .slide-animation {
   display: block; }
 
-.slide-animation2 {
-  display: none; }
-
 .slide_selection {
   margin-top: 480px;
   margin-left: 23%; }
-
-.slide_selection img {
-  width: 15%;
-  margin: 10px; }
 
 photo h2 {
   font-size: 30px;
@@ -140,7 +133,6 @@ photo img {
 #metadata {
   position: absolute;
   left: 0;
-  background-color: rgba(62, 69, 81, 0.95);
   margin-top: -1%;
   width: 40%;
   padding: 0 0.5% 0 0.5%;
@@ -165,11 +157,6 @@ button {
   width: 50%;
   border: none;
   box-shadow: 4px 4px 8px #3E4551; }
-
-#arrowLeft:hover, #arrowRight:hover, ui-button-active {
-  color: #ff4081;
-  cursor: pointer;
-  text-decoration: none; }
 
 .ui-button {
   color: #e0e0e0; }
