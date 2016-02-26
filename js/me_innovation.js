@@ -1,7 +1,32 @@
 // JavaScript Document
-var demo = angular.module("demo", ['hmTouchEvents']);
+var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
+
+	demo.config(['$routeProvider', function($routeProvider){
+        $routeProvider.when('/', {
+          templateUrl: 'intro.html',
+          controller: 'ctrl'
+        })
+        .when('/home', {
+          templateUrl: 'gallery.html',
+          controller: 'gallery'
+        })
+        .when('/meal', {
+          templateUrl: 'about.html',
+          controller: 'ctrl'
+        })
+        .when('/earnings', {
+          templateUrl: 'contact.html',
+          controller: 'ctrl'
+        })
+        .otherwise('/error',  {
+          template: '<p>Error - Page Not Found</p>'
+        });
+      }])
 
 	demo.controller("ctrl", function($scope){
+		// general controller for views
+	});
+	demo.controller("gallery", function($scope){
 		//$http.get("server-connection.php?action=get_data");
 
 		$scope.items = [
@@ -21,21 +46,7 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 		$scope.newIndex = function(index) {
 			return $scope.defaultIndex === index;
 		};
-
-/*
-		$scope.nextItem = function() {
-			$scope.defaultIndex = ($scope.defaultIndex < $scope.items.length - 1) ? ++$scope.defaultIndex : 0;
-		};
-
-		$scope.lastItem = function() {
-			$scope.defaultIndex = ($scope.defaultIndex > 0) ? --$scope.defaultIndex : $scope.items.length -1;
-		};
-
-		$scope.overlay = function() {
-			$(".metadata").toggle("slide");
-		}
-
-*/		
+	
 	});
 
 // Automatically matches height of gallery overlay to photo size. Only works during intitial load.
@@ -57,10 +68,6 @@ $( document ).ready(function() {
 	$('#fullpage').fullpage();
 	
 	$("#nav > li > a").hide();
-
-	$(".metadata").hide();
-
-	$(".metadata").hide();
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 

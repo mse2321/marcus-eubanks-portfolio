@@ -1,0 +1,30 @@
+<div id="main_wrap">
+	<div id="gallery_wrap">
+		<gallery>
+			<!--
+				<div class="gallery-symbol" id="arrowLeft" ng-click="lastItem()">&#59237;</div>
+		  		<div class="gallery-symbol" id="arrowRight" ng-click="nextItem()">&#59238;</div>
+		  	-->
+			<photo>
+			<!-- Old code
+				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
+				<img id="gallery_image" class="slide-animation2" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image2 }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
+			-->
+				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}">
+				<img id="gallery_image" class="slide-animation2" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image2 }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
+				<div class="slide_selection">
+					<img ng-repeat="item in items" ng-src="{{ item.image }}" ng-click="image-swap()">
+				</div>
+			</photo>
+		</gallery>
+	</div>
+
+	<div id="metadata">
+		<ul class="meta-ul">
+			<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
+			<li class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</li>
+			<li class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</li>
+			<li class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)"><a href="{{ item.link }}" target="_blank"><button>Click to View</button></a></li>
+		</ul>
+	</div>
+</div>
