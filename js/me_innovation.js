@@ -17,10 +17,12 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 			$scope.defaultIndex = index;
 		};
 
+		// sets the new index to determine what image shows
 		$scope.newIndex = function(index) {
 			return $scope.defaultIndex === index;
 		};
 
+/*
 		$scope.nextItem = function() {
 			$scope.defaultIndex = ($scope.defaultIndex < $scope.items.length - 1) ? ++$scope.defaultIndex : 0;
 		};
@@ -32,6 +34,8 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 		$scope.overlay = function() {
 			$(".metadata").toggle("slide");
 		}
+
+*/		
 	});
 
 // Automatically matches height of gallery overlay to photo size. Only works during intitial load.
