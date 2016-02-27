@@ -1,5 +1,5 @@
-<div id="main_wrap">
-	<div id="gallery_wrap" class="col-xs-12 col-md-8">
+<div id="main_wrap" class="section">
+	<div id="gallery_wrap" class="col-xs-12 col-md-8" ng-controller="gallery">
 		<gallery>
 			<!--
 				<div class="gallery-symbol" id="arrowLeft" ng-click="lastItem()">&#59237;</div>
@@ -10,14 +10,14 @@
 				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
 				<img id="gallery_image" class="slide-animation2" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image2 }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
 			-->
-				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()">
+				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()">
 			</photo>
 			<div class="slide_selection">
 				<ol class="carousel-indicators">
 					<li data-target="#carousel-example-generic" class="active"></li>
-					<li data-target="#carousel-example-generic" class="active"></li>
-					<li data-target="#carousel-example-generic" class="active"></li>
-					<li data-target="#carousel-example-generic" class="active"></li>
+					<li data-target="#carousel-example-generic"></li>
+					<li data-target="#carousel-example-generic"></li>
+					<li data-target="#carousel-example-generic"></li>
 				</ol>
 			</div>
 		</gallery>

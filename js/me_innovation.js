@@ -65,11 +65,9 @@ $(window).load(function matchHeight() {
 $( document ).ready(function() {
 	"use strict";
 
-	/*$('.nav li a').click(function(){
-    	$('.navbar-collapse').collapse('hide');
-	});*/
-
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
+
+	$('#fullpage').fullpage();
 
 	$(".stats-overlay").hide();
 

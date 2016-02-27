@@ -246,7 +246,8 @@ body {
 
 header {
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 9999; }
 
 #melogo {
   position: fixed;
@@ -301,10 +302,12 @@ nav {
   color: white; }
 
 .collapse_nav {
-  background-color: black;
+  background-color: #666;
+  border-radius: 10px;
   color: white;
   margin-left: 40px;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 9999; }
 
 .nav-toggle {
   display: block;
@@ -363,7 +366,7 @@ photo img {
 #metadata {
   position: absolute;
   left: 0;
-  margin-top: -1%;
+  margin-top: 0;
   width: 40%;
   padding: 0 0.5% 0 0.5%;
   height: 100%;
