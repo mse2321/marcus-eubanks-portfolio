@@ -303,7 +303,7 @@ nav {
 
 .collapse_nav {
   background-color: #666;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   color: white;
   margin-left: 40px;
   padding: 10px;
@@ -332,6 +332,10 @@ nav {
   bottom: 50px;
   top: 50px; }
 
+.carousel-indicators li, .carousel-indicators .active {
+  height: 20px;
+  width: 20px; }
+
 photo {
   display: inline-block;
   width: 90%;
@@ -346,7 +350,7 @@ photo {
 
 .slide_selection {
   margin-top: 480px;
-  margin-left: 23%; }
+  margin-left: 36%; }
 
 photo h2 {
   font-size: 30px;

@@ -46,6 +46,14 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		$scope.newIndex = function(index) {
 			return $scope.defaultIndex === index;
 		};
+
+		$scope.nextItem = function() {
+			$scope.defaultIndex = ($scope.defaultIndex < $scope.items.length - 1) ? ++$scope.defaultIndex : 0;
+		};
+
+		$scope.lastItem = function() {
+			$scope.defaultIndex = ($scope.defaultIndex > 0) ? --$scope.defaultIndex : $scope.items.length -1;
+		};
 	
 	});
 
@@ -67,7 +75,9 @@ $( document ).ready(function() {
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
 
-	$('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+		anchors:['slide1', 'slide2', 'slide3', 'slide4']
+	});
 
 	$(".stats-overlay").hide();
 
