@@ -132,7 +132,12 @@ nav {
 .carousel-indicators li, .carousel-indicators .active {
   height: 20px;
   width: 20px;
-} 
+}
+
+.carousel-indicators {
+  top: 80%;
+  margin-left: -21%;
+}
 
 photo {
   display: inline-block;
@@ -170,6 +175,7 @@ photo img {
   position: absolute;
   margin: -5% 0 0 0;
   z-index: 8000;
+  border: 5px solid #ccc;
 }
 
 #metadata {
@@ -226,7 +232,7 @@ button:hover{
 
 .stats ul li {
   list-style-type: none;
-  font-size: 1.4em;
+  font-size: 1em;
 }
 .stats ul {
   border: 3px solid #fff;
@@ -385,6 +391,7 @@ small {
 
   .carousel-indicators {
     top: 50%;
+    margin-left: -28%;
   }    
 
   photo h2 {
@@ -400,11 +407,11 @@ small {
   }
 
   photo img {
-    width: 100%;
+    width: 95%;
     position: absolute;
-    margin: 3% auto 0 auto;
+    margin: 3% auto 0 2.5%;
     z-index: 8000;
-    border: 2px solid #ccc;
+    border: 5px solid #ccc;
   }
 
   #metadata {
@@ -473,6 +480,7 @@ small {
     border-radius: 10px;
     padding: 25px 15px 15px 15px;
     margin-top: -1px;
+    display: none;
   }
 
   .stats-heading {

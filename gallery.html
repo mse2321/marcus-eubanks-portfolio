@@ -1,11 +1,11 @@
-<div id="main_wrap">
+<div id="main_wrap" class="section">
 	<div id="gallery_wrap" class="col-xs-12 col-md-8">
 		<gallery>
-			<photo ng-click="overlay()">
-				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()">
+			<photo>
+				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 			</photo>
 			<div class="slide_selection">
-				<ol class="carousel-indicators">
+				<ol class="carousel-indicators" ng-repeat="item in items">
 					<li data-target="#gallery_image" data-slide-to="{{ item.image[0] }}" class="active"></li>
 					<li data-target="#gallery_image" data-slide-to="{{ item.image[1] }}"></li>
 					<li data-target="#gallery_image" data-slide-to="{{ item.image[2] }}"></li>
@@ -15,7 +15,7 @@
 		</gallery>
 	</div>
 
-	<div id="metadata" class="col-xs-12 col-md-4">
+	<div id="metadata" class="col-xs-12 col-md-4" hm-tap="overlay()">
 		<ul class="meta-ul">
 			<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
 			<li class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</li>

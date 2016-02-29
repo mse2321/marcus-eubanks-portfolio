@@ -56,7 +56,11 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		};
 
 		$scope.overlay = function() {
-			$("#metadata").toggle("slide");
+
+			if ( $(window).width() < 799) {
+				$("#metadata").hide();
+				$("#metadata").toggle("slide");
+			}
 		}
 	
 	});
@@ -70,22 +74,19 @@ $( document ).ready(function() {
 		anchors:['slide1', 'slide2', 'slide3', 'slide4']
 	});
 
+	$(".stats-overlay").hide();
 	$(".stats-ul li").hide();
 	$(".stats-ul").hide();
 
 	// mobile functionality
 	if ( $(window).width() < 799) {
 		$("div.stats-heading").click(toggleStats);
-		$("#metadata").hide();
+		$(".stats-overlay").click(toggleStatsOverlay);
+		//toggleOverlay();
 	} else if ($(window).width() > 798 && $(window).width() < 992) {
 		$("div.stats-heading").click(toggleStatsUl);
 		$(".stats-ul li").show();
 	};
-
-	/*function toggleOverlay() {
-		$("#metadata").toggle("slide");
-	}
-	*/
 
 	// full-screen functionality
 	if ($(window).width() > 991) {
@@ -99,6 +100,10 @@ $( document ).ready(function() {
 
 	function toggleStatsUl() {
 		$(this).next().slideToggle();
+	}
+
+	function toggleStatsOverlay() {
+		$(this).slideToggle();
 	}
 
 	//contact icons hightlight

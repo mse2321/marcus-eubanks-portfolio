@@ -106,6 +106,10 @@ nav {
   height: 20px;
   width: 20px; }
 
+.carousel-indicators {
+  top: 80%;
+  margin-left: -21%; }
+
 photo {
   display: inline-block;
   width: 90%;
@@ -135,7 +139,8 @@ photo img {
   width: 100%;
   position: absolute;
   margin: -5% 0 0 0;
-  z-index: 8000; }
+  z-index: 8000;
+  border: 5px solid #ccc; }
 
 #metadata {
   position: absolute;
@@ -182,7 +187,7 @@ button:hover {
 
 .stats ul li {
   list-style-type: none;
-  font-size: 1.4em; }
+  font-size: 1em; }
 
 .stats ul {
   border: 3px solid #fff;
@@ -295,7 +300,8 @@ small {
     margin-top: 180px;
     margin-left: 36%; }
   .carousel-indicators {
-    top: 50%; }
+    top: 50%;
+    margin-left: -28%; }
   photo h2 {
     font-size: 30px;
     margin: 0.8em auto; }
@@ -304,11 +310,11 @@ small {
     padding: 0;
     width: 100%; }
   photo img {
-    width: 100%;
+    width: 95%;
     position: absolute;
-    margin: 3% auto 0 auto;
+    margin: 3% auto 0 2.5%;
     z-index: 8000;
-    border: 2px solid #ccc; }
+    border: 5px solid #ccc; }
   #metadata {
     position: absolute;
     right: 0;
@@ -357,7 +363,8 @@ small {
     border: 3px solid #fff;
     border-radius: 10px;
     padding: 25px 15px 15px 15px;
-    margin-top: -1px; }
+    margin-top: -1px;
+    display: none; }
   .stats-heading {
     background: linear-gradient(#ff80ab, #ff4081);
     border-radius: 10px;
