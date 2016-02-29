@@ -1,7 +1,7 @@
 <div id="main_wrap">
 	<div id="gallery_wrap" class="col-xs-12 col-md-8">
 		<gallery>
-			<photo>
+			<photo ng-click="overlay()">
 				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()">
 			</photo>
 			<div class="slide_selection">

@@ -54,6 +54,10 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		$scope.lastItem = function() {
 			$scope.defaultIndex = ($scope.defaultIndex > 0) ? --$scope.defaultIndex : $scope.items.length -1;
 		};
+
+		$scope.overlay = function() {
+			$("#metadata").toggle("slide");
+		}
 	
 	});
 
@@ -66,23 +70,22 @@ $( document ).ready(function() {
 		anchors:['slide1', 'slide2', 'slide3', 'slide4']
 	});
 
-	$(".stats-overlay").hide();
-
 	$(".stats-ul li").hide();
 	$(".stats-ul").hide();
 
 	// mobile functionality
 	if ( $(window).width() < 799) {
 		$("div.stats-heading").click(toggleStats);
-		$(".stats-overlay").click(toggleStatsOverlay);
+		$("#metadata").hide();
 	} else if ($(window).width() > 798 && $(window).width() < 992) {
 		$("div.stats-heading").click(toggleStatsUl);
 		$(".stats-ul li").show();
 	};
 
-	function toggleOverlay() {
-		$(".metadata").toggle("slide");
+	/*function toggleOverlay() {
+		$("#metadata").toggle("slide");
 	}
+	*/
 
 	// full-screen functionality
 	if ($(window).width() > 991) {
@@ -97,11 +100,6 @@ $( document ).ready(function() {
 	function toggleStatsUl() {
 		$(this).next().slideToggle();
 	}
-
-	function toggleStatsOverlay() {
-		$(this).slideToggle();
-	}
-
 
 	//contact icons hightlight
 	function iconSwap() {
