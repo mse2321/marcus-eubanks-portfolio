@@ -94,11 +94,11 @@ nav {
 }
 
 .collapse_nav {
-  background-color: #666;
+  background: linear-gradient(#aaa, #666);
   border-radius: 0px 0px 10px 10px;
   color: white;
   margin-left: 40px;
-  padding: 10px;
+  padding: 20px;
   z-index: 9999;
 }
 
@@ -338,37 +338,18 @@ small {
 
   /* Navigation Buttons */
 
-  #arrowDown {
-    display: none;
-  }
-  #arrowUp {
-    display: none;
+  .collapse_nav {
+    margin-left: 10px;
+    width: 100%;
   }
 
-  .symbol {
-    font-size: 100px;
-    line-height: 10px;
-  }
-
-  .gallery-symbol {
-    position: absolute;
-    opacity: 0.3;
-    text-shadow: 4px 4px 8px #4B515D;
-    z-index: 1000;
-    line-height: 10px;
-    font-size: 200px;
-  }
-
-  #arrowRight {
-    right: 5px;
-    top: 60px;
-    display: none;
-  }
-
-  #arrowLeft {
-    left: 5px;
-    top: 60px;
-    display: none;
+  .nav-toggle {
+    margin-left: 10px;
+    margin-top: -40px;
+    padding: 7px 0;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   /* Gallery */
@@ -394,12 +375,17 @@ small {
   }
 
   .slide-animation {
-    display: none;
-  }
-
-  .slide-animation2 {
     display: block;
   }
+
+  .slide_selection {
+    margin-top: 180px;
+    margin-left: 36%;
+  }
+
+  .carousel-indicators {
+    top: 50%;
+  }    
 
   photo h2 {
     font-size: 30px;
@@ -418,9 +404,10 @@ small {
     position: absolute;
     margin: 3% auto 0 auto;
     z-index: 8000;
+    border: 2px solid #ccc;
   }
 
-  .metadata {
+  #metadata {
     position: absolute;
     right: 0;
     background-color: rgba(62, 69, 81, 0.95);
@@ -430,6 +417,7 @@ small {
     height: 400px;
     z-index: 9999;
     color: #ddd;
+    display: block;
   }
 
   .meta-ul {

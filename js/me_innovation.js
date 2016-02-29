@@ -57,23 +57,10 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 	
 	});
 
-// Automatically matches height of gallery overlay to photo size. Only works during intitial load.
-$(window).load(function matchHeight() {
-	var photo_height = $("photo img").height();
-	var windowWidth = parseInt($(window).width());
-
-	if (windowWidth > 991) {
-		$(".metadata").css("height", photo_height);
-	} else {
-		return false;
-	};
-
-});
-
 $( document ).ready(function() {
 	"use strict";
 
-	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});
+	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000}); // was used for arrows
 
 	$('#fullpage').fullpage({
 		anchors:['slide1', 'slide2', 'slide3', 'slide4']
@@ -84,6 +71,7 @@ $( document ).ready(function() {
 	$(".stats-ul li").hide();
 	$(".stats-ul").hide();
 
+	// mobile functionality
 	if ( $(window).width() < 799) {
 		$("div.stats-heading").click(toggleStats);
 		$(".stats-overlay").click(toggleStatsOverlay);
@@ -92,14 +80,15 @@ $( document ).ready(function() {
 		$(".stats-ul li").show();
 	};
 
+	function toggleOverlay() {
+		$(".metadata").toggle("slide");
+	}
+
+	// full-screen functionality
 	if ($(window).width() > 991) {
 		$(".stats-ul li").show();
 		$(".stats-ul").show();
 	};
-
-	function toggleOverlay() {
-		$(".metadata").toggle("slide");
-	}
 
 	function toggleStats() {
 		$(this).prev().slideToggle();
@@ -113,6 +102,8 @@ $( document ).ready(function() {
 		$(this).slideToggle();
 	}
 
+
+	//contact icons hightlight
 	function iconSwap() {
 	
 		$("#linkedIn").hover(function() {
