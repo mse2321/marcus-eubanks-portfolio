@@ -58,7 +58,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		$scope.overlay = function() {
 
 			if ( $(window).width() < 799) {
-				$("#metadata").hide();
 				$("#metadata").toggle("slide");
 			}
 		}
