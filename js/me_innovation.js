@@ -25,6 +25,21 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 	demo.controller("ctrl", function($scope){
 		// general controller for views
+
+		$scope.statsToggle = function() {
+
+			if ( $(window).width() < 799) {
+				//$(this).$(".stats-ul").toggle("slide");
+				$(".stats-ul").toggle("slide");
+			}
+		}
+		
+		$scope.stats = [
+		{Tools: blah, blah},
+		{Technology: blah, blah},
+		{In progress: blah, blah}
+		];
+			
 	});
 	demo.controller("gallery", function($scope){
 		//$http.get("server-connection.php?action=get_data");
@@ -61,49 +76,13 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 				$("#metadata").toggle("slide");
 			}
 		}
-	
+
 	});
 
 $( document ).ready(function() {
 	"use strict";
 
 	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000}); // was used for arrows
-
-	$('#fullpage').fullpage({
-		anchors:['slide1', 'slide2', 'slide3', 'slide4']
-	});
-
-	$(".stats-overlay").hide();
-	$(".stats-ul li").hide();
-	$(".stats-ul").hide();
-
-	// mobile functionality
-	if ( $(window).width() < 799) {
-		$("div.stats-heading").click(toggleStats);
-		$(".stats-overlay").click(toggleStatsOverlay);
-		//toggleOverlay();
-	} else if ($(window).width() > 798 && $(window).width() < 992) {
-		$("div.stats-heading").click(toggleStatsUl);
-		$(".stats-ul li").show();
-	};
-
-	// full-screen functionality
-	if ($(window).width() > 991) {
-		$(".stats-ul li").show();
-		$(".stats-ul").show();
-	};
-
-	function toggleStats() {
-		$(this).prev().slideToggle();
-	}
-
-	function toggleStatsUl() {
-		$(this).next().slideToggle();
-	}
-
-	function toggleStatsOverlay() {
-		$(this).slideToggle();
-	}
 
 	//contact icons hightlight
 	function iconSwap() {

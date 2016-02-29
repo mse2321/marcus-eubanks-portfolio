@@ -346,7 +346,7 @@ small {
 
   .collapse_nav {
     margin-left: 10px;
-    width: 100%;
+    width: 93%;
   }
 
   .nav-toggle {
@@ -424,7 +424,7 @@ small {
     height: 400px;
     z-index: 9999;
     color: #ddd;
-    display: block;
+    display: none;
   }
 
   .meta-ul {
@@ -502,13 +502,6 @@ small {
     z-index: 9999;
     width: 100%;
     display: block;
-  }
-
-  .stats-overlay ul {
-    border: none;
-    border-radius: 0;
-    padding: 15px;
-    margin-top: -1px;
   }
 
   .stats-heading h2 {
@@ -791,13 +784,6 @@ small {
     z-index: 9999;
     width: 100%;
     display: block;
-  }
-
-  .stats-overlay ul {
-    border: none;
-    border-radius: 0;
-    padding: 15px;
-    margin-top: -1px;
   }
 
   .stats-heading {

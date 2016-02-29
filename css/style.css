@@ -271,7 +271,7 @@ small {
   /* Navigation Buttons */
   .collapse_nav {
     margin-left: 10px;
-    width: 100%; }
+    width: 93%; }
   .nav-toggle {
     margin-left: 10px;
     margin-top: -40px;
@@ -325,7 +325,7 @@ small {
     height: 400px;
     z-index: 9999;
     color: #ddd;
-    display: block; }
+    display: none; }
   .meta-ul {
     margin: 0;
     padding: 0.8em;
@@ -382,11 +382,6 @@ small {
     z-index: 9999;
     width: 100%;
     display: block; }
-  .stats-overlay ul {
-    border: none;
-    border-radius: 0;
-    padding: 15px;
-    margin-top: -1px; }
   .stats-heading h2 {
     margin: 0;
     z-index: -900; }
@@ -578,11 +573,6 @@ small {
     z-index: 9999;
     width: 100%;
     display: block; }
-  .stats-overlay ul {
-    border: none;
-    border-radius: 0;
-    padding: 15px;
-    margin-top: -1px; }
   .stats-heading {
     background: linear-gradient(#ff80ab, #ff4081);
     border-radius: 10px;

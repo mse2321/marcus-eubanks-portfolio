@@ -1,10 +1,10 @@
-<div id="about_wrap" class="section">
+<div id="about_wrap">
 	<h1>About ME</h1>
 	<p id="about_info">My goal is to find a front-end developer role working with web and mobile applications.</p>
 			                    
 
 	<div class="col-xs-12 col-md-4 stats">
-		<div class="stats-heading"><h2>Tools</h2></div>
+		<div class="stats-heading"><h2 hm-tap="stats()">Tools</h2></div>
 		<ul class="stats-ul">
 			<li>Word, Excel, PowerPoint, Visio</li>
 			<li>Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks</li>
@@ -19,7 +19,7 @@
 		</ul>
 	</div>
 	<div class="col-xs-12 col-md-4 stats">
-		<div class="stats-heading"><h2>Technologies</h2></div>
+		<div class="stats-heading" hm-tap="stats()"><h2 hm-tap="stats()">Technologies</h2></div>
 		<ul class="stats-ul">
 			<li>HTML5/CSS3</li>
 			<li>JavaScript</li>
@@ -31,14 +31,20 @@
 			<li>Jasmine</li>
 		</ul>
 	</div>
-	<div class="col-xs-12 col-md-4 stats">
-		<div class="stats-heading"><h2>In Progress</h2></div>
+	<div class="col-xs-12 col-md-4 stats" >
+		<div class="stats-heading" hm-tap="stats()"><h2 hm-tap="stats()">In Progress</h2></div>
 		<ul class="stats-ul">
 			<li>Android</li>
 			<li>Swift</li>
 			<li>Google App Engine</li>
 		</ul>
 	</div>
+	<!-- about me stats overlay
+	<div id="about_data">
+		<ul class="about_data-ul">
+			<li class="art_title" ng-repeat="stat in stats" ng-hide="!newIndex($index)"><h2>{{ stat }}</h2></li>
+		</ul>
+	</div> end of about me stats overlay -- >
 
 </div>
 
