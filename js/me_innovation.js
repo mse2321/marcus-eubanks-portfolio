@@ -34,11 +34,12 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 			}
 		}
 		
-		$scope.stats = [
+		/* $scope.stats = [
 		{Tools: blah, blah},
 		{Technology: blah, blah},
 		{In progress: blah, blah}
 		];
+		*/
 			
 	});
 	demo.controller("gallery", function($scope){

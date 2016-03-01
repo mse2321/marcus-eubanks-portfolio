@@ -100,15 +100,16 @@ nav {
   position: absolute;
   right: 0;
   bottom: 50px;
-  top: 50px; }
+  top: 100px; }
 
 .carousel-indicators li, .carousel-indicators .active {
   height: 20px;
-  width: 20px; }
+  width: 20px;
+  margin-left: 15px; }
 
 .carousel-indicators {
   top: 80%;
-  margin-left: -21%; }
+  margin-left: -25%; }
 
 photo {
   display: inline-block;
@@ -136,7 +137,7 @@ photo ul li {
   width: 100%; }
 
 photo img {
-  width: 100%;
+  width: 90%;
   position: absolute;
   margin: -5% 0 0 0;
   z-index: 8000;
@@ -145,12 +146,14 @@ photo img {
 #metadata {
   position: absolute;
   left: 0;
-  margin-top: 0;
+  margin-left: 60px;
+  margin-top: 140px;
   width: 40%;
   padding: 0 0.5% 0 0.5%;
   height: 100%;
   z-index: 9999;
-  color: #ddd; }
+  color: #ddd;
+  text-align: right; }
 
 #metadata ul {
   list-style-type: none; }
