@@ -25,22 +25,13 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 	demo.controller("ctrl", function($scope){
 		// general controller for views
-
-		$scope.statsToggle = function() {
-
-			if ( $(window).width() < 799) {
-				//$(this).$(".stats-ul").toggle("slide");
-				$(".stats-ul").toggle("slide");
-			}
-		}
 		
-		/* $scope.stats = [
-		{Tools: blah, blah},
-		{Technology: blah, blah},
-		{In progress: blah, blah}
+		$scope.stats = [
+			{tools: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
+			{technology: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine'},
+			{inProgress: 'Android, Swift, Google App Engine'}
 		];
-		*/
-			
+		
 	});
 	demo.controller("gallery", function($scope){
 		//$http.get("server-connection.php?action=get_data");

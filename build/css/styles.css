@@ -204,16 +204,13 @@ button:hover {
 
 .stats {
   margin: 0 10px;
-  width: 30%; }
+  width: 90%; }
 
-.stats ul li {
-  list-style-type: none;
-  font-size: 1em; }
-
-.stats ul {
+.stats div {
   border: 3px solid #fff;
   border-radius: 10px;
-  padding: 15px; }
+  padding: 15px;
+  font-size: 1em; }
 
 /* Contact */
 .containerContact {
@@ -378,21 +375,12 @@ small {
   .stats {
     margin: 0;
     width: 100%; }
-  .stats-ul li, .stats-overlay ul li {
-    font-size: 18px; }
-  .stats-ul {
+  .stats-div {
     border: 3px solid #fff;
     border-radius: 10px;
     padding: 25px 15px 15px 15px;
     margin-top: -1px;
-    display: none; }
-  .stats-heading {
-    background: linear-gradient(#ff80ab, #ff4081);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 4px 4px 8px #3E4551;
-    cursor: pointer;
-    margin: 0.7em 0; }
+    font-size: 18px; }
   .stats-overlay {
     border: 3px solid #fff;
     border-radius: 10px;
