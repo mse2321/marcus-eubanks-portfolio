@@ -49,6 +49,21 @@ header {
   left: 40px;
   font-size: 18px; }
 
+#bg_vid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 70%;
+  width: auto;
+  height: 75%;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover; }
+
 h1, h2, h3, h4, h5 {
   font-family: 'Orbitron', sans-serif;
   line-height: 150%; }
@@ -231,7 +246,7 @@ button:hover {
 footer {
   position: fixed;
   color: #000;
-  bottom: 1%;
+  bottom: 2.5%;
   left: 45.3%; }
 
 small {
@@ -284,15 +299,15 @@ small {
     left: 0;
     right: 0;
     bottom: 50px;
-    top: 11%;
+    top: 12%;
     z-index: 750; }
   /* Navigation Buttons */
   .collapse_nav {
-    margin-left: 10px;
+    margin-left: 20px;
     width: 93%; }
   .nav-toggle {
-    margin-left: 10px;
-    margin-top: -40px;
+    margin-left: 20px;
+    margin-top: -42px;
     padding: 7px 0;
     font-size: 20px;
     width: 40px;
@@ -318,7 +333,7 @@ small {
     margin-top: 180px;
     margin-left: 36%; }
   .carousel-indicators {
-    top: 50%;
+    top: 55%;
     margin-left: -28%; }
   photo h2 {
     font-size: 30px;
@@ -337,13 +352,14 @@ small {
     position: absolute;
     right: 0;
     background-color: rgba(62, 69, 81, 0.95);
-    margin-top: 0;
+    margin-top: -20px;
     width: 100%;
     padding: 0 0.2% 0 0.5%;
     height: 400px;
     z-index: 9999;
     color: #ddd;
-    display: none; }
+    display: none;
+    margin-left: 0; }
   .meta-ul {
     margin: 0;
     padding: 0.8em;
