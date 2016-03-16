@@ -74,7 +74,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 $( document ).ready(function() {
 	"use strict";
 
-	$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000}); // was used for arrows
+	//$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});  was used for arrows
 
 	//contact icons hightlight
 	function iconSwap() {
