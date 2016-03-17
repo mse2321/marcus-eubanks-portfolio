@@ -1,5 +1,5 @@
 // JavaScript Document
-var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
+var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity']);
 
 	demo.config(['$routeProvider', function($routeProvider){
         $routeProvider.when('/', {
@@ -78,8 +78,6 @@ $( document ).ready(function() {
 	if ($(window).width() > 700) {
 		iconSwap();
 	};
-
-	//$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});  was used for arrows
 
 	//contact icons hightlight
 	function iconSwap() {
