@@ -27,9 +27,9 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		// general controller for views
 		
 		$scope.stats = [
-			{tools: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
-			{technology: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine'},
-			{inProgress: 'Android, Swift, Google App Engine'}
+			{heading: 'Tools', attributes: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
+			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine'},
+			{heading: 'In Progress', attributes: 'Android, Swift, Google App Engine'}
 		];
 		
 	});
@@ -66,6 +66,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 			if ( $(window).width() < 799) {
 				$("#metadata").toggle("slide");
+				$("#about_data").toggle("slide");
 			}
 		}
 
@@ -73,6 +74,10 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 $( document ).ready(function() {
 	"use strict";
+
+	if ($(window).width() > 700) {
+		iconSwap();
+	};
 
 	//$(".ui-button").velocity({color: '#ff4081'}, {loop: 25, delay: 1000});  was used for arrows
 
@@ -99,7 +104,4 @@ $( document ).ready(function() {
 		});
 	}
 
-	if ($(window).width() > 700) {
-		iconSwap();
-	};
 });

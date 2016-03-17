@@ -5,12 +5,10 @@
 				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 			</photo>
 			<div class="slide_selection">
-				<ol class="carousel-indicators" ng-repeat="item in items">
-					<li data-target="#gallery_image" data-slide-to="{{ item.image[0] }}" class="active"></li>
-					<li data-target="#gallery_image" data-slide-to="{{ item.image[1] }}"></li>
-					<li data-target="#gallery_image" data-slide-to="{{ item.image[2] }}"></li>
-					<li data-target="#gallery_image" data-slide-to="{{ item.image[3] }}"></li>
-				</ol>
+				<!--- <ol class="carousel-indicators" ng-repeat="item in items">
+					<li class="active"></li>
+				</ol> -->
+				<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" hm-tap="setIndex($index)"> 
 			</div>
 		</gallery>
 	</div>
