@@ -10,7 +10,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
         })
         .when('/gallery', {
           templateUrl: 'gallery.html',
-          controller: 'gallery_ctrl'
+          controller: 'ctrl'
         })
         .when('/about', {
           templateUrl: 'about.html',
