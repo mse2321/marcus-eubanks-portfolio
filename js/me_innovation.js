@@ -1,7 +1,7 @@
 // JavaScript Document
 "use strict";
 
-var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity']);
+var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 	demo.config(['$routeProvider', function($routeProvider){
         $routeProvider.when('/', {
