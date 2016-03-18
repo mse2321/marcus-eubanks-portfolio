@@ -26,14 +26,13 @@
 </head>
 <body ng-app="demo">
 	<header>
-		<a href="#/">
-            <img id="melogo" src="build/img/meInnovationNew.png" alt="ME Innovation Icon" />
-        </a>
-		<nav>
+		<div class="button_wrap">
 			<button type="button" class="nav-toggle" data-toggle="collapse" data-target=".collapse_nav">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="glyphicon glyphicon-menu-hamburger"></span>
-            </button>
+	            <span class="sr-only">Toggle Navigation</span>
+	            <span class="glyphicon glyphicon-menu-hamburger"></span>
+	        </button>
+        </div> <!-- end of button wrap -->
+        <nav>
             <div class="collapse_nav collapse">
 				<ul id="nav_links">
 					<li><a href="#/">Home</a></li>
@@ -41,8 +40,13 @@
 					<li><a href="#/about">About</a></li>
 					<li><a href="#/contact">Contact</a></li>
 				</ul>
-			</div>
+			</div> <!-- end of collapsable nav -->
 		</nav>
+        <div class="logo_wrap">
+			<a href="#/">
+	            <img src="build/img/meInnovationNew.png" alt="ME Innovation Icon" />
+	        </a>
+    	</div>
 	</header>
 		<section ng-controller="ctrl" class="row">
 				<div class="contentBack" ng-view></div>

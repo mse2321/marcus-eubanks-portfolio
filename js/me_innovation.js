@@ -1,4 +1,6 @@
 // JavaScript Document
+"use strict";
+
 var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity']);
 
 	demo.config(['$routeProvider', function($routeProvider){
@@ -8,7 +10,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity
         })
         .when('/gallery', {
           templateUrl: 'gallery.html',
-          controller: 'gallery'
+          controller: 'gallery_ctrl'
         })
         .when('/about', {
           templateUrl: 'about.html',
@@ -24,17 +26,34 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity
       }])
 
 	demo.controller("ctrl", function($scope){
-		// general controller for views
-		
+		//$http.get("server-connection.php?action=get_data");
+
 		$scope.stats = [
 			{heading: 'Tools', attributes: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
 			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine'},
 			{heading: 'In Progress', attributes: 'Android, Swift, Google App Engine'}
 		];
-		
-	});
-	demo.controller("gallery", function($scope){
-		//$http.get("server-connection.php?action=get_data");
+
+		$scope.stats_index_first_item = function() {
+			$scope.stats_index = 0;
+		};
+
+		$scope.stats_index_second_item = function() {
+			$scope.stats_index = 1;
+		};
+
+		$scope.stats_index_third_item = function() {
+			$scope.stats_index = 2;
+		};
+
+		$scope.about_overlay = function() {
+
+			if ( $(window).width() < 799) {
+				$("#about_data").toggle("slide");
+				console.log($scope.stats_index);
+			}
+		}
+
 
 		$scope.items = [
 			{title: "ME Innovation Remixed", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, SASS", desc: "Boston University Web Development Course Term Project", link: "http://www.meinnovation.net/termproject/index.html", image: "build/img/sample-image1.jpg", image2: "build/img/sample-image1_mobile_vert.jpg"},
@@ -66,40 +85,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute', 'angular-velocity
 
 			if ( $(window).width() < 799) {
 				$("#metadata").toggle("slide");
-				$("#about_data").toggle("slide");
 			}
 		}
 
 	});
-
-$( document ).ready(function() {
-	"use strict";
-
-	if ($(window).width() > 700) {
-		iconSwap();
-	};
-
-	//contact icons hightlight
-	function iconSwap() {
-	
-		$("#linkedIn").hover(function() {
-			$("#linkedIn").attr("src", "build/img/linkedIn-512_selected.png");
-		});
-		$("#linkedIn").mouseleave(function() {
-			$("#linkedIn").attr("src", "build/img/linkedIn-512.png");
-		});
-		$("#gitHub").hover(function() {
-			$("#gitHub").attr("src", "build/img/gitHub-512_selected.png");
-		});
-		$("#gitHub").mouseleave(function() {
-			$("#gitHub").attr("src", "build/img/gitHub-512.png");
-		});
-		$("#emailIcon").hover(function() {
-			$("#emailIcon").attr("src", "build/img/email-512_selected.png");
-		});
-		$("#emailIcon").mouseleave(function() {
-			$("#emailIcon").attr("src", "build/img/email-512.png");
-		});
-	}
-
-});
