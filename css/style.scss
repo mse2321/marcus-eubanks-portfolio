@@ -394,11 +394,14 @@ small {
     left: 0;
     width: 100%;
     z-index: -100;
-    background-size: cover; 
+    background-size: cover;
+    display: none;
   }
 
   .welcome_wrap {
     left: 0;
+    padding: 20px;
+    top: 40%;
   }
 
   .welcome {
@@ -429,7 +432,7 @@ small {
 
   .contentBack {
     background-color: rgba(0, 0, 0, 0.4); 
-    padding: 20px;
+    padding: 50px 20px 20px;
     color: #ddd;
     position: absolute;
     left: 0;
@@ -468,6 +471,7 @@ small {
     font-size: 20px;
     width: 40px;
     height: 40px;
+    border: none;
   }
 
   /* Gallery */
@@ -501,6 +505,8 @@ small {
     margin-left: 0;
     padding: 10px 0px 10px 10px;
     border-radius: 0px;
+    position: absolute;
+    bottom: 0;
   }
 
   .slide-animation-selection {
@@ -525,7 +531,7 @@ small {
   photo img {
     width: 95%;
     position: absolute;
-    margin: 35% auto 0 2.5%;
+    margin: 20% auto 0 2.5%;
     z-index: 8000;
     border: 5px solid #ccc;
   }
@@ -603,6 +609,7 @@ small {
     border: 3px solid #fff;
     border-radius: 10px;
     cursor: pointer;
+    top: 15%;
   }
 
   .stats_wrap {
