@@ -21,6 +21,9 @@ body {
   z-index: 500;
   background: url('../img/future-bg.jpg') no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 header {
@@ -30,7 +33,6 @@ header {
   background: linear-gradient(#9e9e9e, #fafafa, #9e9e9e);
   width: 100%;
   height: 120px;
-  border-bottom: 5px solid #BDBDBD;
 }
 
 .logo_wrap {
@@ -90,7 +92,7 @@ h2 {
 
 /* Body */
 .contentBack {
-  background-color: rgba(0, 0, 0, 0.4); 
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 100px;
   color: #ddd;
   position: absolute;
@@ -122,7 +124,6 @@ nav {
   border-radius: 5px;
   margin: 10px 0;
   display: block;
-  cursor: pointer;
 }
 
 
@@ -130,9 +131,10 @@ nav {
   background-color: $meinnovation-magenta;
 }
 
-#nav_links a {
+#nav_links a, #nav_links a:hover {
   color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button_wrap {
@@ -343,7 +345,6 @@ footer {
   z-index: 9999;
   text-align: center;
   padding-top: 50px;
-  border-top: 5px solid #BDBDBD;
 }
 
 small {
@@ -431,7 +432,6 @@ small {
   }
 
   .contentBack {
-    background-color: rgba(0, 0, 0, 0.4); 
     padding: 50px 20px 20px;
     color: #ddd;
     position: absolute;
@@ -440,6 +440,7 @@ small {
     bottom: 50px;
     top: 9.7%;
     z-index: 750;
+    background-color: #212121;
   }
 
   /* Navigation Buttons */
@@ -471,7 +472,6 @@ small {
     font-size: 20px;
     width: 40px;
     height: 40px;
-    border: none;
   }
 
   /* Gallery */
@@ -573,10 +573,6 @@ small {
     box-shadow: 4px 4px 8px #3E4551;
   }
 
-  button a {
-    border: none;
-  }
-
   #arrowLeft:hover, #arrowRight:hover, ui-button-active{
     color: $meinnovation-magenta;
     cursor: pointer;
@@ -613,7 +609,7 @@ small {
     border: 3px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    top: 15%;
+    top: 12%;
   }
 
   .stats_wrap {

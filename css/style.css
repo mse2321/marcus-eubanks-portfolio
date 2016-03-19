@@ -12,7 +12,10 @@ body {
   font-size: 20px;
   z-index: 500;
   background: url("../img/future-bg.jpg") no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; }
 
 header {
   position: fixed;
@@ -20,8 +23,7 @@ header {
   z-index: 9999;
   background: linear-gradient(#9e9e9e, #fafafa, #9e9e9e);
   width: 100%;
-  height: 120px;
-  border-bottom: 5px solid #BDBDBD; }
+  height: 120px; }
 
 .logo_wrap {
   position: fixed;
@@ -97,15 +99,15 @@ nav {
   padding: 10px;
   border-radius: 5px;
   margin: 10px 0;
-  display: block;
-  cursor: pointer; }
+  display: block; }
 
 #nav_links li:hover {
   background-color: #ff4081; }
 
-#nav_links a {
+#nav_links a, #nav_links a:hover {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 .button_wrap {
   margin-left: 20px;
@@ -279,8 +281,7 @@ footer {
   height: 120px;
   z-index: 9999;
   text-align: center;
-  padding-top: 50px;
-  border-top: 5px solid #BDBDBD; }
+  padding-top: 50px; }
 
 small {
   font-size: 1em; }
@@ -340,7 +341,6 @@ small {
     font-size: 1em;
     text-align: center; }
   .contentBack {
-    background-color: rgba(0, 0, 0, 0.4);
     padding: 50px 20px 20px;
     color: #ddd;
     position: absolute;
@@ -348,7 +348,8 @@ small {
     right: 0;
     bottom: 50px;
     top: 9.7%;
-    z-index: 750; }
+    z-index: 750;
+    background-color: #212121; }
   /* Navigation Buttons */
   nav {
     width: 365px;
@@ -370,8 +371,7 @@ small {
     padding: 7px 0;
     font-size: 20px;
     width: 40px;
-    height: 40px;
-    border: none; }
+    height: 40px; }
   /* Gallery */
   #gallery_wrap {
     padding: 0px;
@@ -443,8 +443,6 @@ small {
     width: 90%;
     border: none;
     box-shadow: 4px 4px 8px #3E4551; }
-  button a {
-    border: none; }
   #arrowLeft:hover, #arrowRight:hover, ui-button-active {
     color: #ff4081;
     cursor: pointer;
@@ -472,7 +470,7 @@ small {
     border: 3px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    top: 15%; }
+    top: 12%; }
   .stats_wrap {
     margin: 0;
     width: 100%; }
