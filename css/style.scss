@@ -128,14 +128,16 @@ nav {
 }
 
 
-#nav_links li:hover {
-  background-color: $meinnovation-magenta;
+#nav_links a:hover {
+  color: $meinnovation-magenta;
+  font-weight: bold;
 }
 
-#nav_links a, #nav_links a:hover {
+#nav_links a {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  font-size: 30px;
 }
 
 .button_wrap {
@@ -458,8 +460,8 @@ small {
   }
 
   .collapse_nav {
-    margin-left: 10px;
-    width: 93%;
+    margin-left: 20px;
+    width: 86%;
   }
 
   .button_wrap {
@@ -468,7 +470,7 @@ small {
     width: 50px;
     height: 50px;
     padding: 1px 0;
-    right: 87%;
+    right: 85%;
   }
 
   .nav-toggle, .nav-toggle:hover {

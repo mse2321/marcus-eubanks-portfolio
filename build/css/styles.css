@@ -121,13 +121,15 @@ nav {
   margin: 10px 0;
   display: block; }
 
-#nav_links li:hover {
-  background-color: #ff4081; }
+#nav_links a:hover {
+  color: #ff4081;
+  font-weight: bold; }
 
-#nav_links a, #nav_links a:hover {
+#nav_links a {
   color: white;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 30px; }
 
 .button_wrap {
   margin-left: 20px;
@@ -378,15 +380,15 @@ small {
     margin-top: 37px;
     margin-left: 6px; }
   .collapse_nav {
-    margin-left: 10px;
-    width: 93%; }
+    margin-left: 20px;
+    width: 86%; }
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
     width: 50px;
     height: 50px;
     padding: 1px 0;
-    right: 87%; }
+    right: 85%; }
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
