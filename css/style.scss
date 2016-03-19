@@ -61,6 +61,7 @@ header {
 .welcome {
   font-size: 30px;
   font-weight: bold;
+  color: #ddd;
 }
 
 #bg_vid {
@@ -355,6 +356,12 @@ small {
 
 
 @media screen and (max-width: 579px) {
+
+  html {
+    height: 100%;
+    width: 100%;
+  }
+
   body {
     height:100%;
     min-height:100%;
@@ -440,7 +447,6 @@ small {
     bottom: 50px;
     top: 9.7%;
     z-index: 750;
-    background-color: #212121;
   }
 
   /* Navigation Buttons */
