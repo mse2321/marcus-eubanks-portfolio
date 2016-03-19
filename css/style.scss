@@ -573,6 +573,10 @@ small {
     box-shadow: 4px 4px 8px #3E4551;
   }
 
+  button a {
+    border: none;
+  }
+
   #arrowLeft:hover, #arrowRight:hover, ui-button-active{
     color: $meinnovation-magenta;
     cursor: pointer;

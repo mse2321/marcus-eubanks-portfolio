@@ -333,7 +333,9 @@ small {
     background-size: cover;
     display: none; }
   .welcome_wrap {
-    left: 0; }
+    left: 0;
+    padding: 20px;
+    top: 40%; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
@@ -352,7 +354,7 @@ small {
     text-align: center; }
   .contentBack {
     background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
+    padding: 50px 20px 20px;
     color: #ddd;
     position: absolute;
     left: 0;
@@ -381,7 +383,8 @@ small {
     padding: 7px 0;
     font-size: 20px;
     width: 40px;
-    height: 40px; }
+    height: 40px;
+    border: none; }
   /* Gallery */
   #gallery_wrap {
     padding: 0px;
@@ -453,6 +456,8 @@ small {
     width: 90%;
     border: none;
     box-shadow: 4px 4px 8px #3E4551; }
+  button a {
+    border: none; }
   #arrowLeft:hover, #arrowRight:hover, ui-button-active {
     color: #ff4081;
     cursor: pointer;
@@ -479,7 +484,8 @@ small {
     margin-left: 10px;
     border: 3px solid #fff;
     border-radius: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    top: 15%; }
   .stats_wrap {
     margin: 0;
     width: 100%; }
