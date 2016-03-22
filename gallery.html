@@ -1,4 +1,7 @@
 <div id="main_wrap">
+	<div class="instructions">
+		<p>Swipe or select from below to view projects. Tap the preview for more details.</p>
+	</div>
 	<div id="gallery_wrap" class="col-xs-12 col-md-8">
 		<gallery>
 			<photo>
@@ -20,5 +23,8 @@
 			<li class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</li>
 			<li class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)"><a href="{{ item.link }}" target="_blank"><button>Click to View</button></a></li>
 		</ul>
+		<div class="meta_instructions">
+			<p>Tap to close</p>
+		</div>
 	</div>
 </div>

@@ -1,8 +1,7 @@
 <div id="about_wrap">
 	<h1>About ME</h1>
-	<p id="about_info">My goal is to find a front-end developer role working with web and mobile applications.</p>
+	<p id="about_info">My goal is to obtain a front-end developer role, working with web and mobile applications.</p>
 			                    
-
 	<div class="col-xs-12">
 		<div class="stats_wrap" ng-repeat="stat in stats | limitTo: 1">
 			<div class="stats_heading" hm-tap="stats_index_first_item(); about_overlay()"><h2>{{ stats[0].heading }}</h2></div>
@@ -16,6 +15,9 @@
 	
 	<div id="about_data" hm-tap="about_overlay(stats_index)">
 			<div ng-repeat="stat in stats | limitTo: 1">{{ stats[stats_index].attributes}}</div>
+				<div class="about_instructions">
+					<p>Tap to close</p>
+				</div>
 	</div> <!-- end of about me stats overlay -- >
 
 </div>
