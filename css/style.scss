@@ -29,9 +29,11 @@ header { position: fixed; top: 0; z-index: 9999; background: linear-gradient(#9e
 
 .logo_wrap { position: fixed; right: 0; top: 0; width: 88%; padding-top: 15px; padding-left: 25%; }
 
-.logo_wrap img { width: 37%; }
+.logo_wrap img { width: 35%; }
 
-.contentBack { background-color: rgba(0, 0, 0, 0.4); padding: 20px 100px; color: #ddd; position: absolute; left: 0; right: 0; bottom: 100px; top: 100px; z-index: 750; overflow-y: hidden; }
+.logo_wrap_intro { display: none; }
+
+.contentBack { background-color: rgba(0, 0, 0, 0.4); padding: 20px 100px; color: #ddd; position: absolute; left: 0; right: 0; bottom: 100px; top: 100px; z-index: 750; }
 
 /* Intro */
 .intro_wrap { font-size: 18px; }
@@ -40,20 +42,20 @@ header { position: fixed; top: 0; z-index: 9999; background: linear-gradient(#9e
 
 .welcome { font-size: 30px; font-weight: bold; color: #ddd; }
 
-#bg_vid { position: fixed; top: 0; left: 0; width: 100%; z-index: -100; background-size: cover; }
+#bg_vid { position: absolute; width: 100%; z-index: -100; left: 0; right: 0; bottom: 0; top: 0; height: 100%; max-width: 100%; max-height: 100%; margin: auto; }
 
 /* Navigation */
 nav { z-index: 1000; width: 400px; height: 200px; margin-top: 70px; margin-left: 30px; }
 
 #nav_links { list-style-type: none; padding: 0; }
 
-#nav_links li{ width: 100%; padding: 10px; border-radius: 5px; margin: 10px 0; display: block; }
+#nav_links li { width: 100%; padding: 10px; border-radius: 5px; margin: 10px 0; display: block; }
 
 #nav_links a:hover { color: $meinnovation-magenta; font-weight: bold; }
 
 #nav_links a { color: white; text-decoration: none; cursor: pointer; font-size: 30px; }
 
-.button_wrap { margin-left: 20px; margin-top: 20px; width: 10%; cursor: pointer; padding-top: 10px; display: inline-block; z-index: 1000; position: fixed; }
+.button_wrap { margin-left: 20px; margin-top: 20px; width: 10%; cursor: pointer; padding-top: 10px; display: inline-block; z-index: 1000; position: fixed; left: 0; }
 
 .collapse_nav { background: linear-gradient(#9E9E9E, #616161); border-radius: 0px 10px 10px 10px; color: white; padding: 10px; z-index: 900; width: 93%; }
 
@@ -74,13 +76,13 @@ photo { display: inline-block; width: 90%; position: relative; margin-left: 15%;
 
 photo h2 { font-size: 30px; margin-bottom: 20px; }
 
-photo ul li{ list-style: none; padding: 0; width: 100%;}
+photo ul li { list-style: none; padding: 0; width: 100%;}
 
 photo img { width: 90%; position: absolute; margin: -5% 0 0 0; z-index: 8000; border: 5px solid #ccc; border-radius: 10px; box-shadow: 4px 4px 20px #37474F; cursor: pointer; }
 
 #metadata { position: absolute; left: 0; margin-top: 140px; width: 45%; padding: 0 0.5% 0 0.5%; height: 100%; z-index: 9999; color: #ddd; text-align: right; }
 
-#metadata ul{ list-style-type: none; }
+#metadata ul { list-style-type: none; }
 
 .subdata-link { margin-top: 40px; font-family: 'Orbitron', sans-serif; }
 
@@ -88,14 +90,14 @@ button { background: linear-gradient(#ff80ab, $meinnovation-magenta); border-rad
 
 .ui-button { color: #e0e0e0; }
 
-button:hover{ background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
+button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
 
 .meta_instructions, .instructions { display: none; }
 
 /* About ME */
-.stats_wrap { margin: 20px 10px; width: 70%; }
+.stats_wrap { margin: 20px 10px; width: 100%; }
 
-.stats { border: 3px solid #fff; border-radius: 10px; padding: 20px; font-size: 1em; letter-spacing: 3px; line-height: 35px; }
+.stats { border: 3px solid #fff; border-radius: 10px; padding: 20px; font-size: 1em; letter-spacing: 3px; line-height: 35px; min-height: 360px; }
 
 #about_data, .about_instructions { display: none; }
 
@@ -120,6 +122,8 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
 /* Mobile Styling */
 
+
+/* For Mobile Portrait Displays */
 @media screen and (max-width: 599px) {
   html { height: 100%; width: 100%; }
 
@@ -127,15 +131,15 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   header { position: intial; text-align: center; top: 0; height: 90px; padding-top: 20px; }
 
-  .logo_wrap img { width: 100%; }
+  .logo_wrap img { width: 80%; }
 
-  .logo_wrap { margin: 0px auto; right: 15%; top: 0.3%; width: 80%; z-index: 400; display: inline-block; }
+  .logo_wrap { padding-left: 1%; top: 1%; width: 80%; z-index: 400; }
 
-  .intro_wrap { position: fixed; top: 45%; right: 0; }
+  .intro_wrap { margin-top: 100px; }
 
-  #bg_vid { position: fixed; top: 35%; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
+  #bg_vid { position: fixed; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
 
-  .welcome_wrap { left: 0; padding: 20px; top: 40%; }
+  .welcome_wrap { position: initial; padding: 20px; }
 
   .welcome { font-size: 20px; font-weight: bold; }
 
@@ -154,7 +158,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .collapse_nav { margin-left: 20px; width: 86%; }
 
-  .button_wrap { margin-left: 0; margin-top: 0; width: 50px; height: 50px; padding: 1px 0; right: 85%; }
+  .button_wrap { margin-left: 0; margin-top: 0; width: 50px; height: 50px; padding: 1px 0; }
 
   .nav-toggle, .nav-toggle:hover { margin-left: 10px; margin-top: 0; padding: 7px 0; font-size: 20px; width: 40px; height: 40px; }
 
@@ -167,13 +171,13 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .slide-animation { display: block; }
 
-  .slide_selection { margin-top: 630px; margin-left: 0; padding: 10px 0px 10px 10px; border-radius: 0px; position: absolute; bottom: 0; }
+  .slide_selection { margin-top: 630px; margin-left: 0; padding: 10px 0px; border-radius: 0px; position: absolute; bottom: 0; text-align: center; }
 
   .slide-animation-selection { width: 22%; display: inline-block; margin: 0 5px; }
 
   photo h2 { font-size: 30px; margin: 0.8em auto; }
 
-  photo ul li{ list-style: none; padding: 0; width: 100%; }
+  photo ul li { list-style: none; padding: 0; width: 100%; }
 
   photo img { width: 95%; position: absolute; margin: 20% auto 0 2.5%; z-index: 8000; border: 5px solid #ccc; }
 
@@ -185,11 +189,11 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   button { background: linear-gradient(#ff80ab, $meinnovation-magenta); border-radius: 10px; padding: 10px 0; cursor: pointer; color: white; font-size: 18px; text-align: center; width: 90%; border: none; box-shadow: 4px 4px 8px #3E4551; }
 
-  #arrowLeft:hover, #arrowRight:hover, ui-button-active{ color: $meinnovation-magenta; cursor: pointer; text-decoration: none; }
+  #arrowLeft:hover, #arrowRight:hover, ui-button-active { color: $meinnovation-magenta; cursor: pointer; text-decoration: none; }
 
   .ui-button { color: #e0e0e0; }
 
-  button:hover{ background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
+  button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
 
   .meta_instructions, .instructions { display: inline-block; }
 
@@ -198,9 +202,9 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   /* About ME */
   #about_wrap p { margin-bottom: 0px; }
 
-  #about_data { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: 10px; width: 100%; padding: 10%; height: 300px; z-index: 9999; color: #ddd; display: none; margin-left: 10px; border: 3px solid #fff; border-radius: 10px; cursor: pointer; top: 12%; }
+  #about_data { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: 10px; width: 100%; padding: 10%; height: 300px; z-index: 9999; color: #ddd; display: none; margin-left: 10px; border: 3px solid #fff; border-radius: 10px; cursor: pointer; top: 12%; text-align: center; }
 
-  .about_instructions { display: inline-block; margin-top: 20%; font-size: 20px; color: #757575; margin-left: 32%;}
+  .about_instructions { display: inline-block; margin-top: 20%; font-size: 20px; color: #757575; }
 
   .stats_wrap { margin: 0; width: 100%; }
 
@@ -215,7 +219,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .containerContactColumn,  { text-align: center; width: 33%; }
 
-  .containerContact img, #emailIcon { width: 100%; margin: 0 auto; }
+  .containerContact img, #emailIcon { width: 75%; margin: 0 auto; }
 
   #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
 
@@ -233,6 +237,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   small { font-size: 1em; }
 }
 
+/* For Tablet Potrait Displays */
 @media screen and (min-width: 600px) and (max-width: 899px) {
   html { height: 100%; width: 100%; }
 
@@ -242,13 +247,13 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .logo_wrap img { width: 70%; }
 
-  .logo_wrap { margin: 0px auto; right: 15%; top: 0.3%; width: 80%; z-index: 400; display: inline-block; }
+  .logo_wrap { margin: 0px auto; right: 22%; top: 0; width: 80%; z-index: 400; display: inline-block; padding-top: 15px; }
 
-  .intro_wrap { position: fixed; top: 45%; right: 0; }
+  .intro_wrap { margin-top: 170px; }
 
   #bg_vid { position: fixed; top: 35%; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
 
-  .welcome_wrap { left: 0; padding: 20px; top: 40%; }
+  .welcome_wrap { position: initial; padding: 20px; top: 40%; left: 0;}
 
   .welcome { font-size: 20px; font-weight: bold; }
 
@@ -260,19 +265,19 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   h3 { font-size: 1em; text-align: center; }
 
-  .contentBack { padding: 50px 20px 20px; color: #ddd; position: absolute; left: 0; right: 0; bottom: 50px; top: 9.7%; z-index: 750; }
+  .contentBack { padding: 50px 20px 20px; color: #ddd; position: absolute; left: 0; right: 0; bottom: 50px; top: 9.7%; z-index: 750; text-align: center; }
 
   /* Navigation Buttons */
   nav { width: 365px; margin-top: 37px; margin-left: 6px; }
 
   .collapse_nav { margin-left: 20px; width: 86%; }
 
-  .button_wrap { margin-left: 0; margin-top: 0; width: 50px; height: 50px; padding: 1px 0; right: 93%; }
+  .button_wrap { margin-left: 0; margin-top: 0; width: 50px; height: 50px; padding: 1px 0; }
 
   .nav-toggle, .nav-toggle:hover { margin-left: 10px; margin-top: 0; padding: 7px 0; font-size: 20px; width: 40px; height: 40px; }
 
   /* Gallery */
-  #gallery_wrap { padding: 0px; position: absolute; left: 0; right: 0; bottom: 50px; top: 40px; }
+  #gallery_wrap { padding: 0px; position: absolute; left: 0; right: 0; bottom: 50px; top: 40px; text-align: left; }
 
   photo { display: inline-block; width: 100%; position:absolute; margin: 0; }
 
@@ -280,15 +285,15 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .slide-animation { display: block; }
 
-  .slide_selection { margin-top: 630px; margin-left: 0; padding: 10px 0px 10px 10px; border-radius: 0px; position: absolute; bottom: 0; }
+  .slide_selection { margin-top: 630px; margin-left: 0; padding: 10px 0px 10px 45px; border-radius: 0px; position: absolute; bottom: 0; }
 
   .slide-animation-selection { width: 22%; display: inline-block; margin: 0 5px; }
 
   photo h2 { font-size: 30px; margin: 0.8em auto; }
 
-  photo ul li{ list-style: none; padding: 0; width: 100%; }
+  photo ul li { list-style: none; padding: 0; width: 100%; }
 
-  photo img { width: 95%; position: absolute; margin: 20% auto 0 2.5%; z-index: 8000; border: 5px solid #ccc; }
+  photo img { width: 80%; position: absolute; margin: 9% auto 0 9.5%; z-index: 8000; border: 5px solid #ccc; }
 
   #metadata { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: -90px; width: 100%; padding: 0 0.2% 0 0.5%; height: 400px; z-index: 9999; color: #ddd; display: none; margin-left: 0; }
 
@@ -298,11 +303,11 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   button { background: linear-gradient(#ff80ab, $meinnovation-magenta); border-radius: 10px; padding: 10px 0; cursor: pointer; color: white; font-size: 18px; text-align: center; width: 90%; border: none; box-shadow: 4px 4px 8px #3E4551; }
 
-  #arrowLeft:hover, #arrowRight:hover, ui-button-active{ color: $meinnovation-magenta; cursor: pointer; text-decoration: none; }
+  #arrowLeft:hover, #arrowRight:hover, ui-button-active { color: $meinnovation-magenta; cursor: pointer; text-decoration: none; }
 
   .ui-button { color: #e0e0e0; }
 
-  button:hover{ background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
+  button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
 
   .meta_instructions, .instructions { display: inline-block; }
 
@@ -311,7 +316,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   /* About ME */
   #about_wrap p { margin-bottom: 0px; }
 
-  #about_data { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: 10px; width: 100%; padding: 10%; height: 300px; z-index: 9999; color: #ddd; display: none; margin-left: 10px; border: 3px solid #fff; border-radius: 10px; cursor: pointer; top: 12%; }
+  #about_data { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: 10px; width: 100%; padding: 5%; height: 300px; z-index: 9999; color: #ddd; display: none; margin-left: 10px; border: 3px solid #fff; border-radius: 10px; cursor: pointer; top: 12%; text-align: center; line-height: 30px; }
 
   .stats_wrap { margin: 0; width: 100%; }
 
@@ -321,14 +326,14 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .stats_heading:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
 
-  .about_instructions { display: inline-block; margin-top: 20%; font-size: 20px; color: #757575; margin-left: 32%;}
+  .about_instructions { display: inline-block; margin-top: 18%; font-size: 20px; color: #757575; text-align:center; }
 
   /* Contact */
   .containerContact { margin: 2.5em auto 0 auto; }
 
   .containerContactColumn,  { text-align: center; width: 33%; }
 
-  .containerContact img, #emailIcon { width: 100%; margin: 0 auto; }
+  .containerContact img, #emailIcon { width: 45%; margin: 0 auto; }
 
   #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
 
@@ -346,26 +351,26 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   small { font-size: 1em; }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1199px) {
+/* Small Laptop and Desktop Displays */
+
+@media screen and (min-width: 900px) and (max-width: 1299px) {
   html { height: 100%; width: 100%; }
 
-  body { height:100%; min-height:100%; overflow-y: scroll; font-size: 16px; }
+  body { height:100%; min-height:100%; font-size: 16px; }
 
   header { position: intial; text-align: center; top: 0; height: 90px; padding-top: 20px; }
 
-  .logo_wrap img { width: 50%; }
+  .logo_wrap img { width: 40%; }
 
   .logo_wrap { margin: 0px auto; right: 19%; top: 0.3%; width: 80%; z-index: 400; display: inline-block; }
 
-  .intro_wrap { position: fixed; top: 45%; right: 0; }
+  .intro_wrap { margin-top: 200px; text-align: center; }
 
-  #bg_vid { position: fixed; top: 35%; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
-
-  .welcome_wrap { padding: 20px; top: 40%; }
+  .welcome_wrap { position: initial; padding: 20px; }
 
   .welcome { font-size: 20px; font-weight: bold; }
 
-  .contentBack { padding: 50px 20px 20px; color: #ddd; position: absolute; left: 0; right: 0; bottom: 50px; top: 9.7%; z-index: 750; }
+  .contentBack { color: #ddd; position: absolute; left: 0; right: 0; bottom: 0px; z-index: 750; top: 0; padding: 100px 100px 0 100px; }
 
   /* Navigation Buttons */
   nav { width: 365px; margin-top: 37px; margin-left: 6px; }
@@ -377,7 +382,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   .nav-toggle, .nav-toggle:hover { margin-left: 10px; margin-top: 0; padding: 7px 0; font-size: 20px; width: 40px; height: 40px; }
 
   /* Gallery */
-  #gallery_wrap { padding: 20px 100px; position: absolute; right: 0; bottom: 50px; top: 100px; }
+  #gallery_wrap { padding: 20px 100px; position: absolute; right: 0; bottom: 50px; top: 80px; }
 
   photo { display: inline-block; width: 90%; position: relative; margin-left: 15%; }
 
@@ -387,17 +392,17 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .slide-animation-selection { width: 20%; display: inline-block; margin: 0 10px; }
 
-  .slide_selection { width: 100%; margin-top: 350px; margin-left: 10%; background-color: rgba(0, 0, 0, 0.2); border-radius: 20px; padding: 20px 0px 20px 20px; cursor: pointer; }
+  .slide_selection { width: 100%; margin-top: 370px; margin-left: 10%; background-color: rgba(0, 0, 0, 0.2); border-radius: 20px; padding: 20px 0px 20px 20px; cursor: pointer; text-align: center; }
 
   photo h2 { font-size: 30px; margin-bottom: 20px; }
 
-  photo ul li{ list-style: none; padding: 0; width: 100%;}
+  photo ul li { list-style: none; padding: 0; width: 100%;}
 
-  photo img { width: 90%; position: absolute; margin: 10% 0 0 0; z-index: 8000; border: 5px solid #ccc; border-radius: 10px; box-shadow: 4px 4px 20px #37474F; cursor: pointer; }
+  photo img { width: 100%; position: absolute; margin-top: 10%; z-index: 8000; border: 5px solid #ccc; border-radius: 10px; box-shadow: 4px 4px 20px #37474F; cursor: pointer; }
 
-  #metadata { position: absolute; left: 0; margin-top: 140px; width: 45%; padding: 0 0.5% 0 0.5%; height: 100%; z-index: 9999; color: #ddd; text-align: right; }
+  #metadata { position: absolute; left: 0; margin-top: 60px; width: 45%; padding: 0 0.5% 0 0.5%; height: 100%; z-index: 9999; color: #ddd; text-align: right; }
 
-  #metadata ul{ list-style-type: none; }
+  #metadata ul { list-style-type: none; padding-left: 0; }
 
   .subdata-link { margin-top: 40px; font-family: 'Orbitron', sans-serif; }
 
@@ -405,7 +410,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   .ui-button { color: #e0e0e0; }
 
-  button:hover{ background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
+  button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-magenta; }
 
   .meta_instructions, .instructions { display: none; }
 
@@ -414,7 +419,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
 
   #about_data { position: absolute; right: 0; background-color: rgba(62, 69, 81, 0.95); margin-top: 10px; width: 100%; padding: 10%; height: 300px; z-index: 9999; color: #ddd; display: none; margin-left: 10px; border: 3px solid #fff; border-radius: 10px; cursor: pointer; top: 12%; }
 
-  .stats_wrap { margin: 0; width: 100%; }
+  .stats_wrap { margin: 0; width: 100%; height: 200px;}
 
   .stats { border: 3px solid #fff; border-radius: 10px; padding: 20px; font-size: 1em; letter-spacing: 3px; line-height: 24px; }
 
@@ -439,4 +444,44 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #757575; bott
   footer { color: #000; bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 30px; }
 
   small { font-size: 1em; }
+}
+
+@media screen and (max-height: 499px) {
+
+  body { overflow-y: scroll; }
+
+  header { height: 50px; display: none; }
+
+  nav { width: 360px; margin-top: 15px; }
+
+  footer { display: none; }
+
+  .logo_wrap_intro { display: block; }
+
+  .logo_wrap_intro img { width: 70%; }
+
+  .intro_wrap { margin-top: 50px; }
+
+  .contentBack { color: #ddd; position: absolute; left: 0; right: 0; bottom: 50px; z-index: 750; top: 0; height: 100%; padding: 0px 20px 20px; }
+
+  #about_data { height: 200px; margin-top: 20px;}
+
+  #metadata { text-align: center; margin-top: 0; }
+
+  .instructions { display: none; }
+
+  .meta_instructions { margin-top: 0px; margin-right: 0; }
+
+  .about_instructions { margin-top: 4%; }
+
+  .meta-ul { margin-top: 0px; }
+
+  .slide_selection { display: none; }
+
+  #gallery_wrap { top: 0; bottom: 0;}
+
+  photo img { margin: 1% auto 0 10%; width: 80%; }
+
+  .containerContact { margin: 1em auto 0 auto; }
+
 }

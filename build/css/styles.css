@@ -67,7 +67,10 @@ header {
   padding-left: 25%; }
 
 .logo_wrap img {
-  width: 37%; }
+  width: 35%; }
+
+.logo_wrap_intro {
+  display: none; }
 
 .contentBack {
   background-color: rgba(0, 0, 0, 0.4);
@@ -78,8 +81,7 @@ header {
   right: 0;
   bottom: 100px;
   top: 100px;
-  z-index: 750;
-  overflow-y: hidden; }
+  z-index: 750; }
 
 /* Intro */
 .intro_wrap {
@@ -96,12 +98,17 @@ header {
   color: #ddd; }
 
 #bg_vid {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
   z-index: -100;
-  background-size: cover; }
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto; }
 
 /* Navigation */
 nav {
@@ -140,7 +147,8 @@ nav {
   padding-top: 10px;
   display: inline-block;
   z-index: 1000;
-  position: fixed; }
+  position: fixed;
+  left: 0; }
 
 .collapse_nav {
   background: linear-gradient(#9E9E9E, #616161);
@@ -255,7 +263,7 @@ button:hover {
 /* About ME */
 .stats_wrap {
   margin: 20px 10px;
-  width: 70%; }
+  width: 100%; }
 
 .stats {
   border: 3px solid #fff;
@@ -263,7 +271,8 @@ button:hover {
   padding: 20px;
   font-size: 1em;
   letter-spacing: 3px;
-  line-height: 35px; }
+  line-height: 35px;
+  min-height: 360px; }
 
 #about_data, .about_instructions {
   display: none; }
@@ -307,6 +316,7 @@ footer {
   padding-top: 50px; }
 
 /* Mobile Styling */
+/* For Mobile Portrait Displays */
 @media screen and (max-width: 599px) {
   html {
     height: 100%;
@@ -323,30 +333,24 @@ footer {
     height: 90px;
     padding-top: 20px; }
   .logo_wrap img {
-    width: 100%; }
+    width: 80%; }
   .logo_wrap {
-    margin: 0px auto;
-    right: 15%;
-    top: 0.3%;
+    padding-left: 1%;
+    top: 1%;
     width: 80%;
-    z-index: 400;
-    display: inline-block; }
+    z-index: 400; }
   .intro_wrap {
-    position: fixed;
-    top: 45%;
-    right: 0; }
+    margin-top: 100px; }
   #bg_vid {
     position: fixed;
-    top: 35%;
     left: 0;
     width: 100%;
     z-index: -100;
     background-size: cover;
     display: none; }
   .welcome_wrap {
-    left: 0;
-    padding: 20px;
-    top: 40%; }
+    position: initial;
+    padding: 20px; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
@@ -385,8 +389,7 @@ footer {
     margin-top: 0;
     width: 50px;
     height: 50px;
-    padding: 1px 0;
-    right: 85%; }
+    padding: 1px 0; }
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -414,10 +417,11 @@ footer {
   .slide_selection {
     margin-top: 630px;
     margin-left: 0;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px;
     border-radius: 0px;
     position: absolute;
-    bottom: 0; }
+    bottom: 0;
+    text-align: center; }
   .slide-animation-selection {
     width: 22%;
     display: inline-block;
@@ -500,13 +504,13 @@ footer {
     border: 3px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    top: 12%; }
+    top: 12%;
+    text-align: center; }
   .about_instructions {
     display: inline-block;
     margin-top: 20%;
     font-size: 20px;
-    color: #757575;
-    margin-left: 32%; }
+    color: #757575; }
   .stats_wrap {
     margin: 0;
     width: 100%; }
@@ -534,7 +538,7 @@ footer {
     text-align: center;
     width: 33%; }
   .containerContact img, #emailIcon {
-    width: 100%;
+    width: 75%;
     margin: 0 auto; }
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
@@ -558,6 +562,7 @@ footer {
   small {
     font-size: 1em; } }
 
+/* For Tablet Potrait Displays */
 @media screen and (min-width: 600px) and (max-width: 899px) {
   html {
     height: 100%;
@@ -577,15 +582,14 @@ footer {
     width: 70%; }
   .logo_wrap {
     margin: 0px auto;
-    right: 15%;
-    top: 0.3%;
+    right: 22%;
+    top: 0;
     width: 80%;
     z-index: 400;
-    display: inline-block; }
+    display: inline-block;
+    padding-top: 15px; }
   .intro_wrap {
-    position: fixed;
-    top: 45%;
-    right: 0; }
+    margin-top: 170px; }
   #bg_vid {
     position: fixed;
     top: 35%;
@@ -595,9 +599,10 @@ footer {
     background-size: cover;
     display: none; }
   .welcome_wrap {
-    left: 0;
+    position: initial;
     padding: 20px;
-    top: 40%; }
+    top: 40%;
+    left: 0; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
@@ -622,7 +627,8 @@ footer {
     right: 0;
     bottom: 50px;
     top: 9.7%;
-    z-index: 750; }
+    z-index: 750;
+    text-align: center; }
   /* Navigation Buttons */
   nav {
     width: 365px;
@@ -636,8 +642,7 @@ footer {
     margin-top: 0;
     width: 50px;
     height: 50px;
-    padding: 1px 0;
-    right: 93%; }
+    padding: 1px 0; }
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -652,7 +657,8 @@ footer {
     left: 0;
     right: 0;
     bottom: 50px;
-    top: 40px; }
+    top: 40px;
+    text-align: left; }
   photo {
     display: inline-block;
     width: 100%;
@@ -665,7 +671,7 @@ footer {
   .slide_selection {
     margin-top: 630px;
     margin-left: 0;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 45px;
     border-radius: 0px;
     position: absolute;
     bottom: 0; }
@@ -681,9 +687,9 @@ footer {
     padding: 0;
     width: 100%; }
   photo img {
-    width: 95%;
+    width: 80%;
     position: absolute;
-    margin: 20% auto 0 2.5%;
+    margin: 9% auto 0 9.5%;
     z-index: 8000;
     border: 5px solid #ccc; }
   #metadata {
@@ -742,7 +748,7 @@ footer {
     background-color: rgba(62, 69, 81, 0.95);
     margin-top: 10px;
     width: 100%;
-    padding: 10%;
+    padding: 5%;
     height: 300px;
     z-index: 9999;
     color: #ddd;
@@ -751,7 +757,9 @@ footer {
     border: 3px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    top: 12%; }
+    top: 12%;
+    text-align: center;
+    line-height: 30px; }
   .stats_wrap {
     margin: 0;
     width: 100%; }
@@ -774,10 +782,10 @@ footer {
     color: #ff4081; }
   .about_instructions {
     display: inline-block;
-    margin-top: 20%;
+    margin-top: 18%;
     font-size: 20px;
     color: #757575;
-    margin-left: 32%; }
+    text-align: center; }
   /* Contact */
   .containerContact {
     margin: 2.5em auto 0 auto; }
@@ -785,7 +793,7 @@ footer {
     text-align: center;
     width: 33%; }
   .containerContact img, #emailIcon {
-    width: 100%;
+    width: 45%;
     margin: 0 auto; }
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
@@ -809,14 +817,14 @@ footer {
   small {
     font-size: 1em; } }
 
-@media screen and (min-width: 900px) and (max-width: 1199px) {
+/* Small Laptop and Desktop Displays */
+@media screen and (min-width: 900px) and (max-width: 1299px) {
   html {
     height: 100%;
     width: 100%; }
   body {
     height: 100%;
     min-height: 100%;
-    overflow-y: scroll;
     font-size: 16px; }
   header {
     position: intial;
@@ -825,7 +833,7 @@ footer {
     height: 90px;
     padding-top: 20px; }
   .logo_wrap img {
-    width: 50%; }
+    width: 40%; }
   .logo_wrap {
     margin: 0px auto;
     right: 19%;
@@ -834,32 +842,23 @@ footer {
     z-index: 400;
     display: inline-block; }
   .intro_wrap {
-    position: fixed;
-    top: 45%;
-    right: 0; }
-  #bg_vid {
-    position: fixed;
-    top: 35%;
-    left: 0;
-    width: 100%;
-    z-index: -100;
-    background-size: cover;
-    display: none; }
+    margin-top: 200px;
+    text-align: center; }
   .welcome_wrap {
-    padding: 20px;
-    top: 40%; }
+    position: initial;
+    padding: 20px; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
   .contentBack {
-    padding: 50px 20px 20px;
     color: #ddd;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50px;
-    top: 9.7%;
-    z-index: 750; }
+    bottom: 0px;
+    z-index: 750;
+    top: 0;
+    padding: 100px 100px 0 100px; }
   /* Navigation Buttons */
   nav {
     width: 365px;
@@ -888,7 +887,7 @@ footer {
     position: absolute;
     right: 0;
     bottom: 50px;
-    top: 100px; }
+    top: 80px; }
   photo {
     display: inline-block;
     width: 90%;
@@ -904,12 +903,13 @@ footer {
     margin: 0 10px; }
   .slide_selection {
     width: 100%;
-    margin-top: 350px;
+    margin-top: 370px;
     margin-left: 10%;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     padding: 20px 0px 20px 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    text-align: center; }
   photo h2 {
     font-size: 30px;
     margin-bottom: 20px; }
@@ -918,9 +918,9 @@ footer {
     padding: 0;
     width: 100%; }
   photo img {
-    width: 90%;
+    width: 100%;
     position: absolute;
-    margin: 10% 0 0 0;
+    margin-top: 10%;
     z-index: 8000;
     border: 5px solid #ccc;
     border-radius: 10px;
@@ -929,7 +929,7 @@ footer {
   #metadata {
     position: absolute;
     left: 0;
-    margin-top: 140px;
+    margin-top: 60px;
     width: 45%;
     padding: 0 0.5% 0 0.5%;
     height: 100%;
@@ -937,7 +937,8 @@ footer {
     color: #ddd;
     text-align: right; }
   #metadata ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-left: 0; }
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
@@ -979,7 +980,8 @@ footer {
     top: 12%; }
   .stats_wrap {
     margin: 0;
-    width: 100%; }
+    width: 100%;
+    height: 200px; }
   .stats {
     border: 3px solid #fff;
     border-radius: 10px;
@@ -1017,3 +1019,56 @@ footer {
     padding-top: 30px; }
   small {
     font-size: 1em; } }
+
+@media screen and (max-height: 499px) {
+  body {
+    overflow-y: scroll; }
+  header {
+    height: 50px;
+    display: none; }
+  nav {
+    width: 360px;
+    margin-top: 15px; }
+  footer {
+    display: none; }
+  .logo_wrap_intro {
+    display: block; }
+  .logo_wrap_intro img {
+    width: 70%; }
+  .intro_wrap {
+    margin-top: 50px; }
+  .contentBack {
+    color: #ddd;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    z-index: 750;
+    top: 0;
+    height: 100%;
+    padding: 0px 20px 20px; }
+  #about_data {
+    height: 200px;
+    margin-top: 20px; }
+  #metadata {
+    text-align: center;
+    margin-top: 0; }
+  .instructions {
+    display: none; }
+  .meta_instructions {
+    margin-top: 0px;
+    margin-right: 0; }
+  .about_instructions {
+    margin-top: 4%; }
+  .meta-ul {
+    margin-top: 0px; }
+  .slide_selection {
+    display: none; }
+  #gallery_wrap {
+    top: 0;
+    bottom: 0; }
+  photo img {
+    margin: 1% auto 0 10%;
+    width: 80%; }
+  .containerContact {
+    margin: 1em auto 0 auto; } }

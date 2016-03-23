@@ -48,7 +48,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 		$scope.about_overlay = function() {
 
-			if ( $(window).width() < 799) {
+			if ( $(window).width() < 899) {
 				$("#about_data").toggle("slide");
 				console.log($scope.stats_index);
 			}
@@ -83,7 +83,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 		$scope.overlay = function() {
 
-			if ( $(window).width() < 799) {
+			if ( $(window).width() < 899) {
 				$("#metadata").toggle("slide");
 			}
 		}
