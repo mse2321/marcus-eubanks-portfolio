@@ -3,16 +3,6 @@
 $meinnovation-magenta: #ff4081;
 $meinnovation-teal: #4dd0e1;
 
-@font-face {
-    font-family: 'EntypoRegular';
-    src: url('../../fonts/entypo.eot');
-    src: url('../../fonts/entypo.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/entypo.woff') format('woff'),
-         url('../../fonts/entypo.ttf') format('truetype'),
-         url('../../fonts/entypo.svg#EntypoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* General */
 body { font-family: 'Raleway', Helvetica, Arial, sans-serif; font-size: 20px; z-index: 500; background: url('../img/future-bg.jpg') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
