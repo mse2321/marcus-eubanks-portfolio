@@ -1,20 +1,17 @@
 <div id="main_wrap">
 	<div class="instructions">
 		<p>Swipe or select from below to view projects. Tap the preview for more details.</p>
-	</div>
+	</div> <!-- end of instructions -->
 	<div id="gallery_wrap" class="col-xs-12 col-md-8">
 		<gallery>
 			<photo>
 				<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 			</photo>
 			<div class="slide_selection">
-				<!--- <ol class="carousel-indicators" ng-repeat="item in items">
-					<li class="active"></li>
-				</ol> -->
 				<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" hm-tap="setIndex($index)"> 
-			</div>
+			</div> <!-- end of slide_selection -->
 		</gallery>
-	</div>
+	</div> <!-- end of gallery_wrap -->
 
 	<div id="metadata" class="col-xs-12 col-md-4" hm-tap="overlay()">
 		<ul class="meta-ul">
@@ -25,6 +22,6 @@
 		</ul>
 		<div class="meta_instructions">
 			<p>Tap to close</p>
-		</div>
-	</div>
-</div>
+		</div> <!-- end of meta_instructions -->
+	</div> <!-- end of metadata -->
+</div> <!-- end of main_wrap -->

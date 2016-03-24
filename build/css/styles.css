@@ -27,7 +27,8 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  overflow-y: hidden; }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Orbitron', sans-serif;
@@ -73,7 +74,8 @@ header {
   right: 0;
   bottom: 100px;
   top: 100px;
-  z-index: 750; }
+  z-index: 750;
+  left: 0; }
 
 /* Intro */
 .intro_wrap {
@@ -81,9 +83,9 @@ header {
 
 .welcome_wrap {
   position: fixed;
-  top: 45%;
-  left: 32%;
-  background-color: rgba(120, 120, 120, 0.7);
+  top: 40%;
+  left: 30%;
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 50px;
   border-radius: 20px; }
 
@@ -93,12 +95,11 @@ header {
   color: #ddd; }
 
 #bg_vid {
-  position: fixed;
+  position: absolute;
   width: 100%;
   z-index: -100;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
   max-width: 100%;
   margin: auto; }
@@ -172,7 +173,7 @@ nav {
   position: absolute;
   right: 0;
   bottom: 50px;
-  top: 100px; }
+  top: 70px; }
 
 photo {
   display: inline-block;
@@ -485,7 +486,7 @@ footer {
   .meta_instructions {
     margin-top: 40px;
     text-align: center;
-    margin-right: 35%;
+    margin-right: 39%;
     font-size: 20px;
     color: #757575; }
   /* About ME */
@@ -741,7 +742,7 @@ footer {
   .meta_instructions {
     margin-top: 40px;
     text-align: center;
-    margin-right: 35%;
+    margin-right: 44%;
     font-size: 20px;
     color: #757575; }
   /* About ME */
@@ -1248,7 +1249,9 @@ footer {
   footer {
     display: none; }
   .logo_wrap_intro {
-    display: block; }
+    display: block;
+    text-align: center;
+    margin-top: 30px; }
   .logo_wrap_intro img {
     width: 70%; }
   .intro_wrap {

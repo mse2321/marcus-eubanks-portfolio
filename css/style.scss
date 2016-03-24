@@ -4,7 +4,7 @@ $meinnovation-blue: #2962FF;
 $meinnovation-lighterblue: #448AFF;
 
 /* General */
-body { font-family: 'Raleway', Helvetica, Arial, sans-serif; font-size: 20px; z-index: 500; background: url('../img/code_blue_bg.jpg') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; }
+body { font-family: 'Raleway', Helvetica, Arial, sans-serif; font-size: 20px; z-index: 500; background: url('../img/code_blue_bg.jpg') no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; overflow-y: hidden; }
 
 h1, h2, h3, h4, h5 { font-family: 'Orbitron', sans-serif; line-height: 150%; }
 
@@ -22,16 +22,16 @@ header { position: fixed; top: 0; z-index: 9999; background: linear-gradient(#9e
 
 .logo_wrap_intro { display: none; }
 
-.contentBack { background-color: rgba(0, 50, 100, 0.9); padding: 20px 100px; color: #ddd; position: absolute; right: 0; bottom: 100px; top: 100px; z-index: 750; }
+.contentBack { background-color: rgba(0, 50, 100, 0.9); padding: 20px 100px; color: #ddd; position: absolute; right: 0; bottom: 100px; top: 100px; z-index: 750; left: 0; }
 
 /* Intro */
 .intro_wrap { font-size: 18px; }
 
-.welcome_wrap { position: fixed; top: 45%; left: 32%; background-color: rgba(120, 120, 120, 0.7); padding: 50px; border-radius: 20px; }
+.welcome_wrap { position: fixed; top: 40%; left: 30%; background-color: rgba(0, 0, 0, 0.4); padding: 50px; border-radius: 20px; }
 
 .welcome { font-size: 30px; font-weight: bold; color: #ddd; }
 
-#bg_vid { position: fixed; width: 100%; z-index: -100; left: 0; right: 0; bottom: 0; top: 0; max-width: 100%; margin: auto; }
+#bg_vid { position: absolute; width: 100%; z-index: -100; left: 0; right: 0; top: 0; max-width: 100%; margin: auto; }
 
 /* Navigation */
 nav { z-index: 1000; width: 400px; height: 200px; margin-top: 55px; margin-left: 30px; position: absolute; }
@@ -53,7 +53,7 @@ nav { z-index: 1000; width: 400px; height: 200px; margin-top: 55px; margin-left:
 .glyphicon { z-index: 9999; }
 
 /* Gallery */
-#gallery_wrap { padding: 20px 100px; position: absolute; right: 0; bottom: 50px; top: 100px; }
+#gallery_wrap { padding: 20px 100px; position: absolute; right: 0; bottom: 50px; top: 70px; }
 
 photo { display: inline-block; width: 90%; position: relative; margin-left: 15%; }
 
@@ -190,7 +190,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .meta_instructions, .instructions { display: inline-block; }
 
-  .meta_instructions { margin-top: 40px; text-align: center; margin-right: 35%; font-size: 20px; color: #757575; }
+  .meta_instructions { margin-top: 40px; text-align: center; margin-right: 39%; font-size: 20px; color: #757575; }
 
   /* About ME */
   #about_wrap p { margin-bottom: 0px; }
@@ -306,7 +306,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .meta_instructions, .instructions { display: inline-block; }
 
-  .meta_instructions { margin-top: 40px; text-align: center; margin-right: 35%; font-size: 20px; color: #757575; }
+  .meta_instructions { margin-top: 40px; text-align: center; margin-right: 44%; font-size: 20px; color: #757575; }
 
   /* About ME */
   #about_wrap p { margin-bottom: 0px; }
@@ -548,7 +548,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   footer { display: none; }
 
-  .logo_wrap_intro { display: block; }
+  .logo_wrap_intro { display: block; text-align: center; margin-top: 30px; }
 
   .logo_wrap_intro img { width: 70%; }
 

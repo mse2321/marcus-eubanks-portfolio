@@ -86,6 +86,13 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 			if ( $(window).width() < 899) {
 				$("#metadata").toggle("slide");
 			}
-		}
+		};
+
+		$scope.loop = function() {
+			$('video').on('ended', function() {
+				this.load();
+				this.play();
+			});
+		};
 
 	});
