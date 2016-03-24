@@ -56,10 +56,10 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 
 		$scope.items = [
-			{title: "ME Innovation Remixed", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, SASS", desc: "Boston University Web Development Course Term Project", link: "http://www.meinnovation.net/termproject/index.html", image: "build/img/sample-image1.jpg", image2: "build/img/sample-image1_mobile_vert.jpg"},
-			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, Spotify API", desc: "Thinkful Front End Course Capstone Project", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2.jpg", image2: "build/img/sample-image2_mobile_vert.jpg"},
-			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3.jpg", image2: "build/img/sample-image3_mobile_vert.jpg"},
-			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4.jpg", image2: "build/img/sample-image4_mobile_vert.jpg"}
+			{title: "Countries &amp; Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API", desc: "Thinkful Angular API Project", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1.jpg"},
+			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, Spotify API", desc: "Thinkful Front End Course Capstone Project", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2.jpg"},
+			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3.jpg"},
+			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4.jpg"}
 		];
 			
 		$scope.defaultIndex = 0;
