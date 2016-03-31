@@ -20,7 +20,7 @@
 /* SASS declarations */
 /* General */
 body {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: Verdana,Geneva,sans-serif;
   font-size: 20px;
   z-index: 500;
   background: url("../img/code_blue_bg.jpg") no-repeat center center fixed;
@@ -325,25 +325,31 @@ footer {
   html {
     height: 100%;
     width: 100%; }
+
   body {
     height: 100%;
     min-height: 100%;
     font-size: 16px; }
+
   header {
     position: intial;
     text-align: center;
     top: 0;
     height: 90px;
     padding-top: 20px; }
+
   .logo_wrap img {
     width: 80%; }
+
   .logo_wrap {
     padding-left: 1%;
     top: 0.5%;
     width: 80%;
     z-index: 400; }
+
   .intro_wrap {
     margin-top: 100px; }
+
   #bg_vid {
     position: fixed;
     left: 0;
@@ -351,25 +357,32 @@ footer {
     z-index: -100;
     background-size: cover;
     display: none; }
+
   .welcome_wrap {
     position: initial;
     padding: 20px; }
+
   .welcome {
     font-size: 20px;
     font-weight: bold; }
+
   p {
     text-align: center; }
+
   h1 {
     font-size: 2em;
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.3em; }
+
   h2 {
     font-size: 1.5em;
     text-align: center; }
+
   h3 {
     font-size: 1em;
     text-align: center; }
+
   .contentBack {
     padding: 50px 20px 20px;
     color: #ddd;
@@ -379,20 +392,24 @@ footer {
     bottom: 50px;
     top: 9.6%;
     z-index: 750; }
+
   /* Navigation Buttons */
   nav {
     width: 365px;
     margin-top: 30px;
     margin-left: 6px; }
+
   .collapse_nav {
     margin-left: 20px;
     width: 86%; }
+
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
     width: 50px;
     height: 50px;
     padding: 1px 0; }
+
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -400,6 +417,7 @@ footer {
     font-size: 20px;
     width: 40px;
     height: 40px; }
+
   /* Gallery */
   #gallery_wrap {
     padding: 0px;
@@ -408,15 +426,19 @@ footer {
     right: 0;
     bottom: 50px;
     top: 40px; }
+
   photo {
     display: inline-block;
     width: 100%;
     position: absolute;
     margin: 0; }
+
   #desc {
     margin-bottom: 10px; }
+
   .slide-animation {
     display: block; }
+
   .slide_selection {
     margin-top: 630px;
     margin-left: 0;
@@ -425,23 +447,28 @@ footer {
     position: absolute;
     bottom: 0;
     text-align: center; }
+
   .slide-animation-selection {
     width: 22%;
     display: inline-block;
     margin: 0 5px; }
+
   photo h2 {
     font-size: 30px;
     margin: 0.8em auto; }
+
   photo ul li {
     list-style: none;
     padding: 0;
     width: 100%; }
+
   photo img {
     width: 95%;
     position: absolute;
     margin: 20% auto 0 2.5%;
     z-index: 8000;
     border: 5px solid #ccc; }
+
   #metadata {
     position: absolute;
     right: 0;
@@ -454,28 +481,35 @@ footer {
     color: #ddd;
     display: none;
     margin-left: 0; }
+
   .meta-ul {
     margin-top: 20px;
     padding: 0.8em;
     text-align: center; }
+
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
+
   button {
     padding: 10px 0;
     font-size: 18px;
     text-align: center;
     width: 90%; }
+
   .meta_instructions, .instructions {
     display: block; }
+
   .meta_instructions {
     margin-top: 40px;
     text-align: center;
     font-size: 20px;
     color: #757575; }
+
   /* About ME */
   #about_wrap p {
     margin-bottom: 0px; }
+
   #about_data {
     position: absolute;
     right: 0;
@@ -493,19 +527,24 @@ footer {
     cursor: pointer;
     top: 12%;
     text-align: center; }
+
   .about_instructions {
     display: inline-block;
     margin-top: 20%;
     font-size: 20px;
     color: #757575; }
+
   .stats_wrap {
     margin: 0;
     width: 100%; }
+
   .stats {
     display: none; }
+
   .stats_col {
     width: 100%;
     margin: 0px; }
+
   .stats_heading {
     margin: 0;
     background: linear-gradient(#448AFF, #2962FF);
@@ -518,29 +557,39 @@ footer {
     width: 100%;
     border: none;
     box-shadow: 4px 4px 8px #ccc; }
+
   .stats_heading:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: #2962FF; }
+
   /* Contact */
   .containerContact {
     margin: 2.5em auto 0 auto; }
+
   .containerContactColumn {
     text-align: center;
     width: 33%; }
+
   .containerContact img {
     width: 75%;
     margin: 0 auto; }
+
   #emailIcon {
     width: 100%;
     margin: 0 auto; }
+
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
+
   .contact_icon img:last-child {
     display: none; }
+
   .contact_icon:hover img:first-child {
     display: none; }
+
   .contact_icon:hover img:last-child {
     display: inline-block; }
+
   /* Footer */
   footer {
     color: #000;
@@ -550,26 +599,30 @@ footer {
     right: 0;
     height: 90px;
     padding-top: 30px; }
+
   small {
     font-size: 1em; } }
-
 /* For Tablet Potrait Displays */
 @media screen and (min-width: 600px) and (max-width: 989px) {
   html {
     height: 100%;
     width: 100%; }
+
   body {
     height: 100%;
     min-height: 100%;
     font-size: 16px; }
+
   header {
     position: intial;
     text-align: center;
     top: 0;
     height: 90px;
     padding-top: 20px; }
+
   .logo_wrap img {
     width: 70%; }
+
   .logo_wrap {
     margin: 0px auto;
     right: 22%;
@@ -578,8 +631,10 @@ footer {
     z-index: 400;
     display: inline-block;
     padding-top: 15px; }
+
   .intro_wrap {
     margin-top: 170px; }
+
   #bg_vid {
     position: fixed;
     top: 35%;
@@ -588,27 +643,34 @@ footer {
     z-index: -100;
     background-size: cover;
     display: none; }
+
   .welcome_wrap {
     position: initial;
     padding: 20px;
     top: 40%;
     left: 0; }
+
   .welcome {
     font-size: 20px;
     font-weight: bold; }
+
   p {
     text-align: center; }
+
   h1 {
     font-size: 2em;
     text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.3em; }
+
   h2 {
     font-size: 1.5em;
     text-align: center; }
+
   h3 {
     font-size: 1em;
     text-align: center; }
+
   .contentBack {
     padding: 50px 20px 20px;
     color: #ddd;
@@ -619,20 +681,24 @@ footer {
     top: 9.6%;
     z-index: 750;
     text-align: center; }
+
   /* Navigation Buttons */
   nav {
     width: 365px;
     margin-top: 30px;
     margin-left: 6px; }
+
   .collapse_nav {
     margin-left: 20px;
     width: 86%; }
+
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
     width: 50px;
     height: 50px;
     padding: 1px 0; }
+
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -640,6 +706,7 @@ footer {
     font-size: 20px;
     width: 40px;
     height: 40px; }
+
   /* Gallery */
   #gallery_wrap {
     padding: 0px;
@@ -649,15 +716,19 @@ footer {
     bottom: 50px;
     top: 40px;
     text-align: left; }
+
   photo {
     display: inline-block;
     width: 100%;
     position: absolute;
     margin: 0; }
+
   #desc {
     margin-bottom: 10px; }
+
   .slide-animation {
     display: block; }
+
   .slide_selection {
     margin-top: 630px;
     margin-left: 0;
@@ -665,23 +736,28 @@ footer {
     border-radius: 0px;
     position: absolute;
     bottom: 0; }
+
   .slide-animation-selection {
     width: 22%;
     display: inline-block;
     margin: 0 5px; }
+
   photo h2 {
     font-size: 30px;
     margin: 0.8em auto; }
+
   photo ul li {
     list-style: none;
     padding: 0;
     width: 100%; }
+
   photo img {
     width: 80%;
     position: absolute;
     margin: 9% auto 0 9.5%;
     z-index: 8000;
     border: 5px solid #ccc; }
+
   #metadata {
     position: absolute;
     right: 0;
@@ -694,13 +770,16 @@ footer {
     color: #ddd;
     display: none;
     margin-left: 0; }
+
   .meta-ul {
     margin-top: 20px;
     padding: 0.8em;
     text-align: center; }
+
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
+
   button {
     background: linear-gradient(#448AFF, #2962FF);
     border-radius: 10px;
@@ -712,26 +791,33 @@ footer {
     width: 90%;
     border: none;
     box-shadow: 4px 4px 8px #ccc; }
+
   #arrowLeft:hover, #arrowRight:hover, ui-button-active {
     color: #2962FF;
     cursor: pointer;
     text-decoration: none; }
+
   .ui-button {
     color: #e0e0e0; }
+
   button:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: #2962FF; }
+
   .meta_instructions, .instructions {
     display: inline-block; }
+
   .meta_instructions {
     margin-top: 40px;
     text-align: center;
     margin-right: 44%;
     font-size: 20px;
     color: #757575; }
+
   /* About ME */
   #about_wrap p {
     margin-bottom: 0px; }
+
   #about_data {
     position: absolute;
     right: 0;
@@ -750,14 +836,18 @@ footer {
     top: 12%;
     text-align: center;
     line-height: 30px; }
+
   .stats_wrap {
     margin: 0;
     width: 100%; }
+
   .stats {
     display: none; }
+
   .stats_col {
     width: 100%;
     margin: 0px; }
+
   .stats_heading {
     margin: 0;
     background: linear-gradient(#448AFF, #2962FF);
@@ -770,35 +860,46 @@ footer {
     width: 100%;
     border: none;
     box-shadow: 4px 4px 8px #ccc; }
+
   .stats_heading:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: #2962FF; }
+
   .about_instructions {
     display: inline-block;
     margin-top: 18%;
     font-size: 20px;
     color: #757575;
     text-align: center; }
+
   /* Contact */
   .containerContact {
     margin: 2.5em auto 0 auto; }
+
   .containerContactColumn {
     text-align: center;
     width: 33%; }
+
   .containerContact img {
     width: 45%;
     margin: 0 auto; }
+
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
+
   #emailIcon {
     width: 60%;
     margin: 5% 0 auto; }
+
   .contact_icon img:last-child {
     display: none; }
+
   .contact_icon:hover img:first-child {
     display: none; }
+
   .contact_icon:hover img:last-child {
     display: inline-block; }
+
   /* Footer */
   footer {
     color: #000;
@@ -808,26 +909,30 @@ footer {
     right: 0;
     height: 90px;
     padding-top: 30px; }
+
   small {
     font-size: 1em; } }
-
 /* Mid laptop or desktop Display */
 @media screen and (min-width: 990px) and (max-width: 1249px) {
   html {
     height: 100%;
     width: 100%; }
+
   body {
     height: 100%;
     min-height: 100%;
     font-size: 16px; }
+
   header {
     position: intial;
     text-align: center;
     top: 0;
     height: 90px;
     padding-top: 20px; }
+
   .logo_wrap img {
     width: 40%; }
+
   .logo_wrap {
     margin: 0px auto;
     right: 23%;
@@ -835,15 +940,19 @@ footer {
     width: 80%;
     z-index: 400;
     display: inline-block; }
+
   .intro_wrap {
     margin-top: 200px;
     text-align: center; }
+
   .welcome_wrap {
     position: initial;
     padding: 20px; }
+
   .welcome {
     font-size: 20px;
     font-weight: bold; }
+
   .contentBack {
     color: #ddd;
     position: absolute;
@@ -853,14 +962,17 @@ footer {
     z-index: 750;
     top: 0;
     padding: 100px 100px 0 100px; }
+
   /* Navigation Buttons */
   nav {
     width: 365px;
     margin-top: 30px;
     margin-left: 6px; }
+
   .collapse_nav {
     margin-left: 20px;
     width: 86%; }
+
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
@@ -868,6 +980,7 @@ footer {
     height: 50px;
     padding: 1px 0;
     right: 95%; }
+
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -875,6 +988,7 @@ footer {
     font-size: 20px;
     width: 40px;
     height: 40px; }
+
   /* Gallery */
   #gallery_wrap {
     padding: 20px 100px;
@@ -882,19 +996,24 @@ footer {
     right: 0;
     bottom: 50px;
     top: 80px; }
+
   photo {
     display: inline-block;
     width: 90%;
     position: relative;
     margin-left: 15%; }
+
   #desc {
     margin-bottom: 10px; }
+
   .slide-animation {
     display: block; }
+
   .slide-animation-selection {
     width: 20%;
     display: inline-block;
     margin: 0 10px; }
+
   .slide_selection {
     width: 100%;
     margin-top: 60%;
@@ -904,13 +1023,16 @@ footer {
     padding: 20px 0px 20px 20px;
     cursor: pointer;
     text-align: center; }
+
   photo h2 {
     font-size: 30px;
     margin-bottom: 20px; }
+
   photo ul li {
     list-style: none;
     padding: 0;
     width: 100%; }
+
   photo img {
     width: 100%;
     position: absolute;
@@ -920,6 +1042,7 @@ footer {
     border-radius: 10px;
     box-shadow: 4px 4px 20px #37474F;
     cursor: pointer; }
+
   #metadata {
     position: absolute;
     left: 0;
@@ -930,12 +1053,15 @@ footer {
     z-index: 9999;
     color: #ddd;
     text-align: right; }
+
   #metadata ul {
     list-style-type: none;
     padding-left: 0; }
+
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
+
   button {
     background: linear-gradient(#448AFF, #2962FF);
     border-radius: 10px;
@@ -946,16 +1072,21 @@ footer {
     width: 50%;
     border: none;
     box-shadow: 4px 4px 8px #ccc; }
+
   .ui-button {
     color: #e0e0e0; }
+
   button:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: #2962FF; }
+
   .meta_instructions, .instructions {
     display: none; }
+
   /* About ME */
   #about_wrap p {
     margin-bottom: 0px; }
+
   #about_data {
     position: absolute;
     right: 0;
@@ -972,9 +1103,11 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     top: 12%; }
+
   .stats_wrap {
     margin: 0;
     width: 100%; }
+
   .stats {
     border: 3px solid #fff;
     border-radius: 10px;
@@ -983,26 +1116,35 @@ footer {
     letter-spacing: 3px;
     line-height: 24px;
     min-height: 360px; }
+
   /* Contact */
   .containerContact {
     margin: 2.5em auto 0 auto; }
+
   .containerContactColumn {
     text-align: center;
     width: 33%; }
+
   .containerContact img {
     width: 50%;
     margin: 0 auto; }
+
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
+
   #emailIcon {
     width: 70%;
     margin: 5% 0 auto; }
+
   .contact_icon img:last-child {
     display: none; }
+
   .contact_icon:hover img:first-child {
     display: none; }
+
   .contact_icon:hover img:last-child {
     display: inline-block; }
+
   /* Footer */
   footer {
     color: #000;
@@ -1012,26 +1154,30 @@ footer {
     right: 0;
     height: 90px;
     padding-top: 30px; }
+
   small {
     font-size: 1em; } }
-
 /* In-between mid and full size */
 @media screen and (min-width: 1250px) and (max-width: 1499px) {
   html {
     height: 100%;
     width: 100%; }
+
   body {
     height: 100%;
     min-height: 100%;
     font-size: 16px; }
+
   header {
     position: intial;
     text-align: center;
     top: 0;
     height: 90px;
     padding-top: 20px; }
+
   .logo_wrap img {
     width: 50%; }
+
   .logo_wrap {
     margin: 0px auto;
     right: 23%;
@@ -1039,15 +1185,19 @@ footer {
     width: 80%;
     z-index: 400;
     display: inline-block; }
+
   .intro_wrap {
     margin-top: 200px;
     text-align: center; }
+
   .welcome_wrap {
     position: initial;
     padding: 20px; }
+
   .welcome {
     font-size: 20px;
     font-weight: bold; }
+
   .contentBack {
     color: #ddd;
     position: absolute;
@@ -1057,14 +1207,17 @@ footer {
     z-index: 750;
     top: 0;
     padding: 100px 100px 0 100px; }
+
   /* Navigation Buttons */
   nav {
     width: 365px;
     margin-top: 30px;
     margin-left: 6px; }
+
   .collapse_nav {
     margin-left: 20px;
     width: 86%; }
+
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
@@ -1072,6 +1225,7 @@ footer {
     height: 50px;
     padding: 1px 0;
     right: 95%; }
+
   .nav-toggle, .nav-toggle:hover {
     margin-left: 10px;
     margin-top: 0;
@@ -1079,6 +1233,7 @@ footer {
     font-size: 20px;
     width: 40px;
     height: 40px; }
+
   /* Gallery */
   #gallery_wrap {
     padding: 20px 100px;
@@ -1086,19 +1241,24 @@ footer {
     right: 0;
     bottom: 50px;
     top: 80px; }
+
   photo {
     display: inline-block;
     width: 90%;
     position: relative;
     margin-left: 15%; }
+
   #desc {
     margin-bottom: 10px; }
+
   .slide-animation {
     display: block; }
+
   .slide-animation-selection {
     width: 20%;
     display: inline-block;
     margin: 0 10px; }
+
   .slide_selection {
     width: 100%;
     margin-top: 60%;
@@ -1108,13 +1268,16 @@ footer {
     padding: 20px 0px 20px 20px;
     cursor: pointer;
     text-align: center; }
+
   photo h2 {
     font-size: 30px;
     margin-bottom: 20px; }
+
   photo ul li {
     list-style: none;
     padding: 0;
     width: 100%; }
+
   photo img {
     width: 100%;
     position: absolute;
@@ -1124,6 +1287,7 @@ footer {
     border-radius: 10px;
     box-shadow: 4px 4px 20px #37474F;
     cursor: pointer; }
+
   #metadata {
     position: absolute;
     left: 0;
@@ -1134,12 +1298,15 @@ footer {
     z-index: 9999;
     color: #ddd;
     text-align: right; }
+
   #metadata ul {
     list-style-type: none;
     padding-left: 0; }
+
   .subdata-link {
     margin-top: 40px;
     font-family: 'Orbitron', sans-serif; }
+
   button {
     background: linear-gradient(#448AFF, #2962FF);
     border-radius: 10px;
@@ -1150,16 +1317,21 @@ footer {
     width: 50%;
     border: none;
     box-shadow: 4px 4px 8px #ccc; }
+
   .ui-button {
     color: #e0e0e0; }
+
   button:hover {
     background: linear-gradient(#fafafa, #9e9e9e);
     color: #2962FF; }
+
   .meta_instructions, .instructions {
     display: none; }
+
   /* About ME */
   #about_wrap p {
     margin-bottom: 0px; }
+
   #about_data {
     position: absolute;
     right: 0;
@@ -1176,9 +1348,11 @@ footer {
     border-radius: 10px;
     cursor: pointer;
     top: 12%; }
+
   .stats_wrap {
     margin: 0;
     width: 100%; }
+
   .stats {
     border: 3px solid #fff;
     border-radius: 10px;
@@ -1187,26 +1361,35 @@ footer {
     letter-spacing: 3px;
     line-height: 24px;
     min-height: 360px; }
+
   /* Contact */
   .containerContact {
     margin: 2.5em auto 0 auto; }
+
   .containerContactColumn {
     text-align: center;
     width: 33%; }
+
   .containerContact img {
     width: 50%;
     margin: 0 auto; }
+
   #linkedIn, #gitHub, #emailIcon {
     margin: 5% auto 0 auto; }
+
   #emailIcon {
     width: 70%;
     margin: 5% 0 auto; }
+
   .contact_icon img:last-child {
     display: none; }
+
   .contact_icon:hover img:first-child {
     display: none; }
+
   .contact_icon:hover img:last-child {
     display: inline-block; }
+
   /* Footer */
   footer {
     color: #000;
@@ -1216,30 +1399,38 @@ footer {
     right: 0;
     height: 90px;
     padding-top: 30px; }
+
   small {
     font-size: 1em; } }
-
 @media screen and (max-height: 499px) {
   body {
     overflow-y: scroll; }
+
   header {
     height: 50px;
     display: none; }
+
   nav {
     width: 360px;
     margin-top: 15px; }
+
   #bg_vid {
     display: none; }
+
   footer {
     display: none; }
+
   .logo_wrap_intro {
     display: block;
     text-align: center;
     margin-top: 30px; }
+
   .logo_wrap_intro img {
     width: 70%; }
+
   .intro_wrap {
     margin-top: 50px; }
+
   .contentBack {
     color: #ddd;
     position: absolute;
@@ -1250,36 +1441,46 @@ footer {
     top: 0;
     height: 100%;
     padding: 0px 20px 20px; }
+
   #about_data {
     height: 200px;
     margin-top: 20px; }
+
   #metadata {
     text-align: center;
     margin-top: 0; }
+
   .instructions {
     display: none; }
+
   .meta_instructions {
     margin-top: 0px;
     margin-right: 0; }
+
   .about_instructions {
     margin-top: 4%; }
+
   .meta-ul {
     margin-top: 0px; }
+
   .slide_selection {
     display: none; }
+
   #gallery_wrap {
     top: 0;
     bottom: 0; }
+
   photo img {
     margin: 1% auto 0 10%;
     width: 80%; }
+
   .containerContact {
     margin: 1em auto 0 auto; } }
-
 @media screen and (max-height: 740px) and (min-width: 990px) {
   footer {
     display: none; } }
-
 @media screen and (max-height: 620px) {
   body {
     overflow-y: scroll; } }
+
+/*# sourceMappingURL=style.css.map */

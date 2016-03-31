@@ -1,7 +1,7 @@
 /* SASS declarations */
 /* General */
 body {
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-family: Verdana,Geneva,sans-serif;
   font-size: 20px;
   z-index: 500;
   background: url("../img/code_blue_bg.jpg") no-repeat center center fixed;
