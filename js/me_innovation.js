@@ -25,7 +25,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
         });
       }])
 
-	demo.controller("ctrl", function($scope){
+	demo.controller("ctrl",  ['$scope', function($scope){
 		//$http.get("server-connection.php?action=get_data");
 
 		$scope.stats = [
@@ -50,7 +50,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 
 			if ( $(window).width() < 899) {
 				$("#about_data").toggle("slide");
-				console.log($scope.stats_index);
 			}
 		}
 
@@ -95,4 +94,4 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 			});
 		};
 
-	});
+	}]);
