@@ -31,7 +31,7 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		$scope.stats = [
 			{heading: 'Tools', attributes: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
 			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity'},
-			{heading: 'In Progress', attributes: 'Android, Swift, Google App Engine'}
+			{heading: 'In Progress', attributes: 'Android, Swift, ECMAScript 6/ES6, React, Google App Engine'}
 		];
 
 		$scope.stats_index_first_item = function() {
