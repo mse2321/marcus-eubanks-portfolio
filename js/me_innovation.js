@@ -16,10 +16,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
           templateUrl: 'about.html',
           controller: 'ctrl'
         })
-        .when('/contact', {
-          templateUrl: 'contact.html',
-          controller: 'ctrl'
-        })
         .otherwise('/error',  {
           template: '<p>Error - Page Not Found</p>'
         });

@@ -18,6 +18,8 @@ h2, h3, h4, h5 { color: white; }
 
 h2 { font-size: 30px; }
 
+a, a:focus, a:hover { text-decoration: none; }
+
 .logo_wrap { position: fixed; right: 0; top: 0; width: 88%; padding-top: 15px; padding-left: 26%; }
 
 .logo_wrap img { width: 40%; }
@@ -96,14 +98,15 @@ button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovati
 
 #about_data, .about_instructions { display: none; }
 
-/* Contact */
-.containerContact { margin: 5em auto 0 auto; }
+/* Footer */
 
-.containerContactColumn { text-align: center; }
+#contact_wrap { position: fixed; bottom: 30px; right: 20px; width: 30%; text-align: right; }
 
-.containerContact img { width: 35%; margin: 0 auto; }
+.containerContact { margin: 0; }
 
-#emailIcon { width: 47%; }
+.containerContact img { width: 8%; margin: 0 20px; display: inline-block}
+
+#emailIcon { width: 10%; }
 
 .contact_icon img:last-child { display: none; }
 
@@ -111,8 +114,7 @@ button:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovati
 
 .contact_icon:hover img:last-child { display: inline-block; }
 
-/* Footer */
-footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bottom: 0; left: 0; background: linear-gradient(#9e9e9e, #fafafa, #9e9e9e); width: 100%; height: 100px; z-index: 9999; text-align: center; padding-top: 40px; font-size: 0.8em; }
+footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bottom: 0; left: 0; background: linear-gradient(#9e9e9e, #fafafa, #9e9e9e); width: 100%; height: 100px; z-index: 9999; padding: 40px 20px; font-size: 0.8em; }
 
 
 /* Mobile Styling */
@@ -205,27 +207,15 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .stats_heading:hover { background: linear-gradient(#fafafa, #9e9e9e); color: $meinnovation-blue; }
 
-  /* Contact */
-  .containerContact { margin: 2.5em auto 0 auto; }
-
-  .containerContactColumn,  { text-align: center; width: 33%; }
-
-  .containerContact img { width: 75%; margin: 0 auto; }
-
-  #emailIcon { width: 100%; margin: 0 auto; }
-
-  #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
-
-  .contact_icon img:last-child { display: none; }
-
-  .contact_icon:hover img:first-child { display: none; }
-
-  .contact_icon:hover img:last-child { display: inline-block; }
-
   /* Footer */
-  footer { color: #000; bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 30px; }
+  footer { bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 15px; font-size: 0.75em; }
 
-  small { font-size: 1em; }
+  #contact_wrap { position: fixed; bottom: 10px; right: 0; width: 100%; text-align: center; }
+
+  .containerContact img { width: 8%; margin: 0 20px; display: inline-block}
+
+  #emailIcon { width: 10%; }
+
 }
 
 /* For Tablet Potrait Displays */
@@ -321,27 +311,14 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .about_instructions { display: inline-block; margin-top: 18%; font-size: 20px; color: #757575; text-align:center; }
 
-  /* Contact */
-  .containerContact { margin: 2.5em auto 0 auto; }
-
-  .containerContactColumn,  { text-align: center; width: 33%; }
-
-  .containerContact img { width: 45%; margin: 0 auto; }
-
-  #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
-
-  #emailIcon { width: 60%; margin: 5% 0 auto; }
-
-  .contact_icon img:last-child { display: none; }
-
-  .contact_icon:hover img:first-child { display: none; }
-
-  .contact_icon:hover img:last-child { display: inline-block; }
-
   /* Footer */
-  footer { color: #000; bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 30px; }
+  footer { bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 15px; font-size: 0.75em; }
 
-  small { font-size: 1em; }
+  #contact_wrap { position: fixed; bottom: 5px; right: 0; width: 100%; text-align: center; }
+
+  .containerContact img { width: 5%; margin: 0 20px; display: inline-block}
+
+  #emailIcon { width: 7%; }
 }
 
 /* Mid laptop or desktop Display */
@@ -415,27 +392,11 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .stats { border: 3px solid #fff; border-radius: 10px; padding: 20px; font-size: 1em; letter-spacing: 3px; line-height: 24px; min-height: 360px;}
 
-  /* Contact */
-  .containerContact { margin: 2.5em auto 0 auto; }
-
-  .containerContactColumn,  { text-align: center; width: 33%; }
-
-  .containerContact img { width: 50%; margin: 0 auto; }
-
-  #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
-
-  #emailIcon { width: 70%; margin: 5% 0 auto; }
-
-  .contact_icon img:last-child { display: none; }
-
-  .contact_icon:hover img:first-child { display: none; }
-
-  .contact_icon:hover img:last-child { display: inline-block; }
-
   /* Footer */
-  footer { color: #000; bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 30px; }
+  footer { bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 40px; }
 
-  small { font-size: 1em; }
+  #contact_wrap { position: fixed; bottom: 30px; right: 0; text-align: right; }
+
 }
 
 /* In-between mid and full size */
@@ -509,27 +470,10 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   .stats { border: 3px solid #fff; border-radius: 10px; padding: 20px; font-size: 1em; letter-spacing: 3px; line-height: 24px; min-height: 360px;}
 
-  /* Contact */
-  .containerContact { margin: 2.5em auto 0 auto; }
-
-  .containerContactColumn,  { text-align: center; width: 33%; }
-
-  .containerContact img { width: 50%; margin: 0 auto; }
-
-  #linkedIn, #gitHub, #emailIcon { margin: 5% auto 0 auto; }
-
-  #emailIcon { width: 70%; margin: 5% 0 auto; }
-
-  .contact_icon img:last-child { display: none; }
-
-  .contact_icon:hover img:first-child { display: none; }
-
-  .contact_icon:hover img:last-child { display: inline-block; }
-
   /* Footer */
-  footer { color: #000; bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 30px; }
+  footer { bottom: 0; left: 0; margin: 0 auto; right: 0; height: 90px; padding-top: 40px; }
 
-  small { font-size: 1em; }
+  #contact_wrap { bottom: 30px; }
 }
 
 @media screen and (max-height: 499px) {
@@ -569,8 +513,6 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
   #gallery_wrap { top: 0; bottom: 0;}
 
   photo img { margin: 1% auto 0 10%; width: 80%; }
-
-  .containerContact { margin: 1em auto 0 auto; }
 
 }
 
