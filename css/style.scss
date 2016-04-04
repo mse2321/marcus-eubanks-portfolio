@@ -31,7 +31,7 @@ a, a:focus, a:hover { text-decoration: none; }
 /* Intro */
 .intro_wrap { font-size: 18px; }
 
-.welcome_wrap { position: fixed; top: 40%; left: 25%; background-color: rgba(0, 0, 0, 0.4); padding: 50px; border-radius: 20px; }
+.welcome_wrap { position: fixed; top: 40%; left: 36%; background-color: rgba(0, 0, 0, 0.4); padding: 50px; border-radius: 20px; }
 
 .welcome { font-size: 30px; font-weight: bold; color: #ddd; }
 
@@ -136,7 +136,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   #bg_vid { position: fixed; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
 
-  .welcome_wrap { position: initial; padding: 20px; }
+  .welcome_wrap { position: initial; padding: 20px; display: block; }
 
   .welcome { font-size: 20px; font-weight: bold; }
 
@@ -234,7 +234,7 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
 
   #bg_vid { position: fixed; top: 35%; left: 0; width: 100%; z-index: -100; background-size: cover; display: none; }
 
-  .welcome_wrap { position: initial; padding: 20px; top: 40%; left: 0;}
+  .welcome_wrap { position: initial; padding: 20px; top: 40%; left: 0; display: block; }
 
   .welcome { font-size: 20px; font-weight: bold; }
 
@@ -483,6 +483,8 @@ footer { font-family: 'Arial', sans-serif; position: fixed; color: #9e9e9e; bott
   header { height: 50px; display: none; }
 
   nav { width: 360px; margin-top: 15px; }
+
+  .welcome_wrap { display: block; }
 
   #bg_vid { display: none; }
 

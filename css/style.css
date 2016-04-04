@@ -68,7 +68,7 @@ a, a:focus, a:hover {
 .welcome_wrap {
   position: fixed;
   top: 40%;
-  left: 25%;
+  left: 36%;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 50px;
   border-radius: 20px; }
@@ -340,7 +340,8 @@ footer {
     display: none; }
   .welcome_wrap {
     position: initial;
-    padding: 20px; }
+    padding: 20px;
+    display: block; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
@@ -569,7 +570,8 @@ footer {
     position: initial;
     padding: 20px;
     top: 40%;
-    left: 0; }
+    left: 0;
+    display: block; }
   .welcome {
     font-size: 20px;
     font-weight: bold; }
@@ -1156,6 +1158,8 @@ footer {
   nav {
     width: 360px;
     margin-top: 15px; }
+  .welcome_wrap {
+    display: block; }
   #bg_vid {
     display: none; }
   footer {

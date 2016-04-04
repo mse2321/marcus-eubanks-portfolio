@@ -22,7 +22,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
       }])
 
 	demo.controller("ctrl",  ['$scope', function($scope){
-		//$http.get("server-connection.php?action=get_data");
 
 		$scope.stats = [
 			{heading: 'Tools', attributes: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
@@ -48,7 +47,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 				$("#about_data").toggle("slide");
 			}
 		}
-
 
 		$scope.items = [
 			{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API", desc: "Thinkful Angular API Project", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1.jpg"},
