@@ -49,10 +49,12 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 		}
 
 		$scope.items = [
-			{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API", desc: "Thinkful Angular API Project", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1.jpg"},
-			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap, Angular, Spotify API", desc: "Thinkful Front End Course Capstone Project w/ custom player", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2.jpg"},
-			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, BootStrap", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3.jpg"},
-			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4.jpg"}
+			{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", desc: "Thinkful Angular API Project", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1-min.jpg"},
+			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Thinkful Front End Course Capstone Project w/ custom player", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2-min.jpg"},
+			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", desc: "Thinkful Front End Course Project", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3-min.jpg"},
+			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Personal Project - RPG Experience Calculator", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4-min.jpg"},
+			{title: "ME Innovation", tech: "HTML5, CSS3, Angular, Hammer.js, Angular-Hammer.js, Video background, Responsive, Bower, Gulp, SASS, JavaScript, jQuery", desc: "Portfolio Site", link: "http://www.meinnovation.net/", image: "build/img/sample-image5-min.jpg"}
+
 		];
 			
 		$scope.defaultIndex = 0;
