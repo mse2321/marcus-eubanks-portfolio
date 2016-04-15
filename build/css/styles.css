@@ -348,7 +348,7 @@ footer {
     width: 80%; }
   .logo_wrap {
     padding-left: 1%;
-    top: 0;
+    top: 1.3%;
     width: 80%;
     z-index: 400; }
   .intro_wrap {
@@ -400,6 +400,7 @@ footer {
   .button_wrap {
     margin-left: 0;
     margin-top: 0;
+    top: 4%;
     width: 50px;
     height: 50px;
     padding: 1px 0; }
@@ -433,7 +434,7 @@ footer {
     padding: 10px 0px;
     border-radius: 0px;
     position: absolute;
-    bottom: 90px;
+    bottom: 0;
     text-align: center; }
   .slide-animation-selection {
     display: inline-block;
@@ -572,13 +573,13 @@ footer {
   .logo_wrap {
     margin: 0px auto;
     right: 22%;
-    top: 0.5%;
+    top: 3.5%;
     width: 80%;
     z-index: 400;
     display: inline-block;
     padding-top: 5px; }
   .intro_wrap {
-    margin-top: 170px; }
+    margin-top: 50px; }
   #bg_vid {
     position: fixed;
     top: 35%;
@@ -685,8 +686,10 @@ footer {
   #metadata {
     position: absolute;
     right: 0;
+    left: 0;
+    top: 0;
     background-color: rgba(62, 69, 81, 0.95);
-    margin-top: -90px;
+    margin-top: 0;
     width: 100%;
     padding: 0 0.2% 0 0.5%;
     height: 400px;
@@ -821,7 +824,7 @@ footer {
   .logo_wrap {
     margin: 0px auto;
     right: 23%;
-    top: 0.3%;
+    top: 1.5%;
     width: 80%;
     z-index: 400;
     display: inline-block; }
@@ -1176,6 +1179,8 @@ footer {
   h1 {
     margin-bottom: .1em;
     font-size: 1.7em; }
+  h2 {
+    margin-top: 0; }
   h3 {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -1192,8 +1197,12 @@ footer {
     margin-top: 30px; }
   .logo_wrap_intro img {
     width: 70%; }
+  .logo_wrap {
+    top: 1.2%; }
   .intro_wrap {
     margin-top: 50px; }
+  .button_wrap {
+    top: 7px; }
   .contentBack {
     color: #ddd;
     position: absolute;
@@ -1210,7 +1219,13 @@ footer {
   #metadata {
     text-align: center;
     margin-top: 0;
-    top: 10%; }
+    top: 0;
+    padding: 60px 0.2% 0 0.5%;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .slide_selection {
+    bottom: 90px; }
   .instructions {
     margin-top: 10px; }
   .meta_instructions {
@@ -1238,11 +1253,17 @@ footer {
 @media screen and (max-height: 399px) {
   header, footer, .instructions {
     display: none; }
+  h2 {
+    margin-top: 0; }
+  .welcome_wrap {
+    margin-top: 50px; }
   .slide_selection {
     display: none; }
   photo img {
     margin: 0.5% auto 0 10%;
     width: 80%; }
+  #gallery_wrap {
+    top: 15px; }
   .contentBack {
     position: absolute;
     left: 0;
@@ -1257,4 +1278,17 @@ footer {
     margin-top: 5px;
     top: 1%; }
   .about_instructions {
-    margin-top: 5%; } }
+    margin-top: 5%; }
+  #metadata {
+    text-align: center;
+    margin-top: 0;
+    top: 0;
+    padding: 0 0.2% 0 0.5%;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .meta-ul {
+    margin-top: 0px; }
+  .meta_instructions {
+    margin-right: 0;
+    margin-top: 0; } }
