@@ -1,25 +1,7 @@
 // JavaScript Document
 "use strict";
 
-var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
-
-	demo.config(['$routeProvider', function($routeProvider){
-        $routeProvider.when('/', {
-          templateUrl: 'intro.html',
-          controller: 'ctrl'
-        })
-        .when('/gallery', {
-          templateUrl: 'gallery.html',
-          controller: 'ctrl'
-        })
-        .when('/about', {
-          templateUrl: 'about.html',
-          controller: 'ctrl'
-        })
-        .otherwise('/error',  {
-          template: '<p>Error - Page Not Found</p>'
-        });
-      }])
+var demo = angular.module("demo", ['hmTouchEvents']);
 
 	demo.controller("ctrl",  ['$scope', function($scope){
 
@@ -81,13 +63,6 @@ var demo = angular.module("demo", ['hmTouchEvents', 'ngRoute']);
 			if ( $(window).width() < 899) {
 				$("#metadata").toggle("slide");
 			}
-		};
-
-		$scope.loop = function() {
-			$('video').on('ended', function() {
-				this.load();
-				this.play();
-			});
 		};
 
 	}]);
