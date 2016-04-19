@@ -6,3 +6,28 @@ $meinnovation-lighterblue: #448AFF;
 
 /* General */
 
+body { font-family: 'Arial', sans-serif; background-color: #ccc; }
+
+#container { padding: 20px; }
+
+header { position: fixed; top: 0; right: 0; left: 0; padding: 20px; }
+
+section { margin: 200px 0; }
+
+#button_wrap { position: fixed; left: 20px; top: 20px; }
+
+#contact_wrap { position: fixed; right: 20px; top: 20px; }
+
+#gallery_wrap { text-align: center; }
+
+#intro_wrap { padding: 40px; margin: 0 auto; }
+
+#intro_logo { width: 30%; }
+
+#intro_logo_wrap { text-align: center; }
+
+photo img { width: 60%; }
+
+.slide-animation-selection { width: 20%; }
+
+footer { text-align: center; }

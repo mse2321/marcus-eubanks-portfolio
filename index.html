@@ -7,40 +7,42 @@
 	    <meta name="description" content="ME Innovation - the online portfolio for Marcus Eubanks.">
 		<title>ME Innovation | Marcus Eubanks Portfolio Site</title>
 		<!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />-->
-		<!-- <link rel="stylesheet" href="build/css/styles.css"> -->
+		<link rel="stylesheet" href="build/css/styles.css">
 	</head>
 	<body ng-app="demo" ng-controller="ctrl">
 		<div id="container">
 			<header>
-				<div class="button_wrap">
+				<div id="button_wrap">
 					<button type="button" class="nav-toggle" data-toggle="collapse" data-target=".collapse_nav">
 			            <span class="sr-only">Toggle Navigation</span>
 			            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 			        </button>
 		        </div> <!-- end of button wrap -->
-		        <nav>
-		            <div class="collapse_nav collapse">
-						<ul id="nav_links">
-							<li><a href="#/" data-toggle="collapse" data-target=".collapse_nav.in">Home</a></li>
-							<li><a href="#/gallery" data-toggle="collapse" data-target=".collapse_nav.in">Gallery</a></li>
-							<li><a href="#/about" data-toggle="collapse" data-target=".collapse_nav.in">About</a></li>
-						</ul>
-					</div> <!-- end of collapsable nav -->
-				</nav>
-		        <div class="logo_wrap">
-					<a href="#/">
-			            <img src="build/img/meInnovationNew2b-min.png" alt="ME Innovation Icon" />
-			        </a>
-		    	</div> <!-- end of logo_wrap -->
+		    	<div id="contact_wrap">
+					<div class="containerContact">
+							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
+								<img id="emailIcon" src="#" alt="Send ME an email" />
+							</a>
+							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
+								<img id="gitHub" src="#" alt="Check out my GitHub Repositories" />
+							</a>
+							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
+								<img id="linkedIn" src="#" alt="Look at my LinkedIn Profile" />
+							</a>
+					</div> <!-- end of containerContact -->
+				</div> <!-- end of contact_wrap -->
 			</header>
-			<section class="row contentBack">
-				<div class="intro_wrap">
-					<div class="welcome_wrap">
+			<section>
+				<div id="intro_wrap">
+					<div id="intro_logo_wrap">
+						<img id="intro_logo" src="build/img/meInnovationNew2b-min.png" alt="ME Innovation Icon" />
+		    		</div> <!-- end of logo_wrap -->
+		    		<div class="welcome_wrap">
 						<p class="welcome">Welcome to ME Innovation!</p>
 					</div> <!-- end of welcome_wrap -->
 				</div> <!-- end of intro_wrap -->
 			</section>
-			<section class="row contentBack">
+			<section>
 				<div id="about_wrap">
 					<h1>About ME</h1>
 						<p>I truly love what I do and combine design, marketing, and programming skills to help web development projects succeed.</p>
@@ -59,22 +61,14 @@
 								<div class="stats">{{ stats[2].attributes }}</div>
 							</div> <!-- end of stats_col 3 -->
 						</div> <!-- end of stats_wrap -->
-					
-					<div id="about_data" hm-tap="about_overlay(stats_index)">
-							<div ng-repeat="stat in stats | limitTo: 1">{{ stats[stats_index].attributes}}</div>
-								<div class="about_instructions">
-									<p>Tap to close</p>
-								</div> <!-- about_instructions -- >
-					</div> <!-- end of about me stats overlay -- >
-
 				</div> <!-- end of about_wrap -- >
 			</section>
-			<section class="row contentBack">
+			<section>
 				<div id="main_wrap">
 					<div class="instructions">
 						<p>Swipe or select from below to view projects. Tap the preview for more details.</p>
 					</div> <!-- end of instructions -->
-					<div id="gallery_wrap" class="col-xs-12 col-md-8">
+					<div id="gallery_wrap">
 						<gallery>
 							<photo>
 								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
@@ -85,7 +79,7 @@
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
 
-					<div id="metadata" class="col-xs-12 col-md-4" hm-tap="overlay()">
+					<div id="metadata" hm-tap="overlay()" style="display: none;">
 						<ul class="meta-ul">
 							<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
 							<li class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</li>
@@ -98,29 +92,25 @@
 					</div> <!-- end of metadata -->
 				</div> <!-- end of main_wrap -->
 			</section>
+			<aside style="display: none;">
+				<nav>
+		            <div class="collapse_nav collapse">
+						<ul id="nav_links">
+							<li><a href="#" data-toggle="collapse" data-target=".collapse_nav.in">Home</a></li>
+							<li><a href="#gallery" data-toggle="collapse" data-target=".collapse_nav.in">Gallery</a></li>
+							<li><a href="#about" data-toggle="collapse" data-target=".collapse_nav.in">About</a></li>
+						</ul>
+					</div> <!-- end of collapsable nav -->
+				</nav>
+			</aside>
 			<footer>
-				<p>&copy;2016 ME Innovation | Portfolio site of Marcus Eubanks</p>
-				<div id="contact_wrap">
-					<div class="containerContact">
-							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
-								<img id="emailIcon" src="#" alt="Send ME an email" />
-							</a>
-							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
-								<img id="gitHub" src="#" alt="Check out my GitHub Repositories" />
-							</a>
-							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
-								<img id="linkedIn" src="#" alt="Look at my LinkedIn Profile" />
-							</a>
-					</div> <!-- end of containerContact -->
-				</div> <!-- end of contact_wrap -->
+				<p>&copy;2016 ME Innovation</p>
 			</footer>
 		</div>
 		<script defer src="js/jquery1113.js"></script>
-	    <script defer src="js/bootstrap.min.js"></script>
 	    <script defer src="bower_components/angular/angular.min.js"></script>
 	    <script defer src="bower_components/hammerjs/hammer.min.js"></script>
 	    <script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
-		<script defer src="js/ui-bootstrap-tpls-0.13.0.min.js"></script>
 	    <script defer src="js/me_innovation.js"></script>
 	</body>
 </html>
