@@ -1,18 +1,20 @@
 /* SASS declarations */
 /* General */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff;
-  color: #B0BEC5; }
+  color: #B0BEC5;
+  margin: 0; }
 
 a {
   text-decoration: none; }
 
-h1, h2 {
-  color: #37474F; }
+li {
+  list-style-type: none; }
 
-#container {
-  padding: 10px; }
+h1, h2 {
+  color: #37474F;
+  font-family: 'Orbitron', sans-serif; }
 
 header {
   position: absolute;
@@ -21,9 +23,61 @@ header {
   left: 0;
   padding: 20px; }
 
+aside {
+  background-color: #ECEFF1;
+  color: #37474F;
+  padding: 20px;
+  font-size: 40px;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  z-index: 500; }
+
+nav a {
+  color: #37474F;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif; }
+
+nav a:hover {
+  color: #fff; }
+
+#nav_links {
+  margin-top: 100px; }
+
+#nav_links li {
+  margin: 20px auto; }
+
+#metadata {
+  background-color: #78909C;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 100px 20px 0 20px;
+  z-index: 2000; }
+
+#metadata button {
+  background-color: white;
+  font-weight: bold;
+  width: 90%;
+  padding: 10px 0;
+  margin: 40px auto;
+  font-family: 'Orbitron', sans-serif;
+  border: none;
+  font-size: 24px; }
+
+.meta_instructions {
+  text-align: center; }
+
 .contact_icon img {
-  width: 10%;
-  margin: 0 10px; }
+  width: 20%;
+  margin: 0 10px;
+  cursor: pointer; }
 
 section {
   margin: 200px 0; }
@@ -34,7 +88,11 @@ section {
   top: 0;
   padding-top: 20px;
   padding-left: 20px;
-  font-size: 40px; }
+  font-size: 40px;
+  z-index: 1000; }
+
+.fa-bars {
+  cursor: pointer; }
 
 #contact_wrap {
   position: absolute;
@@ -42,7 +100,8 @@ section {
   top: 0;
   padding-top: 20px;
   text-align: right;
-  padding-right: 10px; }
+  padding-right: 10px;
+  width: 50%; }
 
 #welcome_wrap, #gallery_wrap {
   text-align: center; }
@@ -52,7 +111,7 @@ section {
   margin: 0 auto; }
 
 #about_wrap {
-  padding: 10px; }
+  padding: 30px; }
 
 #intro_logo {
   width: 100%; }
@@ -61,7 +120,8 @@ section {
   text-align: center; }
 
 photo img {
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
 
 .slide-animation-selection {
   width: 20%; }
@@ -80,10 +140,15 @@ footer {
   margin-bottom: 5px;
   display: inline-block;
   margin-left: 20px;
-  color: #78909C; }
+  color: #78909C;
+  font-family: 'Orbitron', sans-serif; }
 
 .stats {
   line-height: 25px; }
 
+.stats_wrap {
+  padding: 20px; }
+
 .fa-code, .fa-wrench, .fa-battery-quarter {
-  display: inline-block; }
+  display: inline-block;
+  color: #78909C; }

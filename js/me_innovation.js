@@ -65,4 +65,9 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 			}
 		};
 
+		$scope.nav = function() {
+			$("aside").toggle("slide");
+			//$(".fa-bars").css("color", "white");
+		};
+
 	}]);
