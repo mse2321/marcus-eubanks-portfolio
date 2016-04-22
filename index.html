@@ -10,29 +10,30 @@
 		<link href='https://fonts.googleapis.com/css?family=Roboto|Orbitron:900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="build/css/styles.css">
 	</head>
-	<body ng-app="demo" ng-controller="ctrl">
+	<body ng-app="demo" ng-controller="ctrl" class="loading" ng-init="pageAnimate()">
 		<div id="container">
+			<a name="intro"></a>
 			<header>
 		    	<div id="contact_wrap" class="contact">
 							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
-								<img id="emailIcon" src="images/email_circle.png" alt="Send ME an email" />
+								<img id="emailIcon" src="build/img/email_circle.png" alt="Send ME an email" />
 							</a>
 							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
-								<img id="gitHub" src="images/gitHub_circle.png" alt="Check out my GitHub Repositories" />
+								<img id="gitHub" src="build/img/gitHub_circle.png" alt="Check out my GitHub Repositories" />
 							</a>
 							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
-								<img id="linkedIn" src="images/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
+								<img id="linkedIn" src="build/img/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
 							</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="contact_wrap_nav" class="contact">
 							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
-								<img id="emailIcon" src="images/email_circle.png" alt="Send ME an email" />
+								<img id="emailIcon" src="build/img/email_circle.png" alt="Send ME an email" />
 							</a>
 							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
-								<img id="gitHub" src="images/gitHub_circle.png" alt="Check out my GitHub Repositories" />
+								<img id="gitHub" src="build/img/gitHub_circle.png" alt="Check out my GitHub Repositories" />
 							</a>
 							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
-								<img id="linkedIn" src="images/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
+								<img id="linkedIn" src="build/img/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
 							</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="button_wrap">
@@ -46,32 +47,31 @@
 						<img id="intro_logo" src="build/img/meInnovationNew_flat.png" alt="ME Innovation Icon" />
 		    		</div> <!-- end of logo_wrap -->
 		    		<div id="welcome_wrap">
-						<p class="welcome">The portfolio site for Marcus Eubanks<br />Front-End Developer with design and marketing chops</p>
+						<p class="welcome">The portfolio site for Marcus Eubanks. <br />Front-End Developer with design and marketing chops</p>
 					</div> <!-- end of welcome_wrap -->
 				</div> <!-- end of intro_wrap -->
 			</section>
+			<a name="projects"></a>
 			<section>
 				<div id="main_wrap">
 					<h1>Projects</h1>
 					<div class="instructions">
-						<p>Swipe or select from below to view projects.<br />Tap the preview for more details.</p>
+						<p>Swipe or select from below to view projects. <br />Tap the preview for more details.</p>
 					</div> <!-- end of instructions -->
 					<div id="gallery_wrap">
 						<gallery>
 							<photo>
-								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
+								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 							</photo>
 							<div class="slide_selection">
-								<!-- <img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" hm-tap="setIndex($index)"> -->
-								<i class="fa fa-caret-left" aria-hidden="true"></i><div class="slide_selectors active"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><i class="fa fa-caret-right" aria-hidden="true"></i>
-
+								<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" alt="{{ item.title }} selector" hm-tap="setIndex($index); selectedImage()">
 							</div>
 
 							<!-- end of slide_selection -->
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
 
-					<div id="metadata" hm-tap="overlay()" style="display: none;">
+					<div id="metadata" hm-tap="overlay()">
 						<div class="meta_wrap">
 							<div class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
 							<div class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</div>
@@ -81,13 +81,14 @@
 							<div class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)">
 								<a href="{{ item.link }}" target="_blank"><button>Click to View</button></a>
 							</div>
-							<div class="meta_instructions">
-								<p>Tap to close</p>
-							</div> <!-- end of meta_instructions -->
+							<div class="meta_close">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
 						</div>
 					</div> <!-- end of metadata -->
 				</div> <!-- end of main_wrap -->
 			</section>
+			<a name="about"></a>
 			<section>
 				<div id="about_wrap">
 					<h1>About ME</h1>
@@ -112,11 +113,14 @@
 			<aside>
 				<nav>
 					<ul id="nav_links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#gallery">Projects</a></li>
+						<li><a href="#intro">Home</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="#about">About</a></li>
 					</ul>
 				</nav>
+				<div id="small_logo_wrap">
+					<img id="small_logo" src="build/img/meInnovationNew_flat_me.png" alt="ME Innovation ME Icon" />
+				</div>
 			</aside>
 			<footer>
 				<p>&copy;2016 ME Innovation</p>

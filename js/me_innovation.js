@@ -23,13 +23,6 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 			$scope.stats_index = 2;
 		};
 
-		$scope.about_overlay = function() {
-
-			if ( $(window).width() < 899) {
-				$("#about_data").toggle("slide");
-			}
-		}
-
 		$scope.items = [
 			{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", desc: "Thinkful Angular API Project", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1-min.jpg"},
 			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Thinkful Front End Course Capstone Project w/ custom player", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2-min.jpg"},
@@ -68,7 +61,18 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 		$scope.nav = function() {
 			$("aside").toggle("slide");
 			$("#button_wrap > .fa").toggle();
-			$(".contact").toggle();
+			if ( $(window).width() < 899) {
+				$(".contact").toggle();
+			}
 		};
+
+		$scope.pageAnimate = function(){
+			$(window).load(function() {
+			    // start up after 2sec no matter what
+			    window.setTimeout(function(){
+			        $('body').removeClass("loading").addClass('loaded');
+			    }, 200);
+			});
+		}
 
 	}]);
