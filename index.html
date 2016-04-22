@@ -13,10 +13,7 @@
 	<body ng-app="demo" ng-controller="ctrl">
 		<div id="container">
 			<header>
-				<div id="button_wrap">
-					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
-		        </div> <!-- end of button wrap -->
-		    	<div id="contact_wrap">
+		    	<div id="contact_wrap" class="contact">
 							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
 								<img id="emailIcon" src="images/email_circle.png" alt="Send ME an email" />
 							</a>
@@ -27,9 +24,24 @@
 								<img id="linkedIn" src="images/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
 							</a>
 				</div> <!-- end of contact_wrap -->
+				<div id="contact_wrap_nav" class="contact">
+							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
+								<img id="emailIcon" src="images/email_circle.png" alt="Send ME an email" />
+							</a>
+							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
+								<img id="gitHub" src="images/gitHub_circle.png" alt="Check out my GitHub Repositories" />
+							</a>
+							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
+								<img id="linkedIn" src="images/linkedIn_circle.png" alt="Look at my LinkedIn Profile" />
+							</a>
+				</div> <!-- end of contact_wrap -->
+				<div id="button_wrap">
+					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
+					<i class="fa fa-times" aria-hidden="true" hm-tap="nav()"></i>
+		        </div> <!-- end of button wrap -->
 			</header>
-			<section>
-				<div id="intro_wrap">
+			<section id="intro_wrap">
+				<div id="intro_data">
 					<div id="intro_logo_wrap">
 						<img id="intro_logo" src="build/img/meInnovationNew_flat.png" alt="ME Innovation Icon" />
 		    		</div> <!-- end of logo_wrap -->
@@ -40,6 +52,7 @@
 			</section>
 			<section>
 				<div id="main_wrap">
+					<h1>Projects</h1>
 					<div class="instructions">
 						<p>Swipe or select from below to view projects.<br />Tap the preview for more details.</p>
 					</div> <!-- end of instructions -->
@@ -48,24 +61,30 @@
 							<photo>
 								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}" hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 							</photo>
-							<!-- <div class="slide_selection">
-								<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" hm-tap="setIndex($index)"> 
-							</div> -->
+							<div class="slide_selection">
+								<!-- <img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" hm-tap="setIndex($index)"> -->
+								<i class="fa fa-caret-left" aria-hidden="true"></i><div class="slide_selectors active"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><div class="slide_selectors"></div><i class="fa fa-caret-right" aria-hidden="true"></i>
+
+							</div>
 
 							<!-- end of slide_selection -->
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
 
 					<div id="metadata" hm-tap="overlay()" style="display: none;">
-						<ul class="meta-ul">
-							<li class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></li>
-							<li class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</li>
-							<li class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</li>
-							<li class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)"><a href="{{ item.link }}" target="_blank"><button>Click to View</button></a></li>
-						</ul>
-						<div class="meta_instructions">
-							<p>Tap to close</p>
-						</div> <!-- end of meta_instructions -->
+						<div class="meta_wrap">
+							<div class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
+							<div class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</div>
+							<div class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</div>
+						</div>
+						<div class="metadata_button_wrap">
+							<div class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)">
+								<a href="{{ item.link }}" target="_blank"><button>Click to View</button></a>
+							</div>
+							<div class="meta_instructions">
+								<p>Tap to close</p>
+							</div> <!-- end of meta_instructions -->
+						</div>
 					</div> <!-- end of metadata -->
 				</div> <!-- end of main_wrap -->
 			</section>
@@ -92,13 +111,11 @@
 			</section>
 			<aside>
 				<nav>
-		            <div class="collapse_nav collapse">
-						<ul id="nav_links">
-							<li><a href="#">Home</a></li>
-							<li><a href="#gallery">Gallery</a></li>
-							<li><a href="#about">About</a></li>
-						</ul>
-					</div> <!-- end of collapsable nav -->
+					<ul id="nav_links">
+						<li><a href="#">Home</a></li>
+						<li><a href="#gallery">Projects</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
 				</nav>
 			</aside>
 			<footer>

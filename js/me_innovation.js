@@ -6,8 +6,8 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 	demo.controller("ctrl",  ['$scope', function($scope){
 
 		$scope.stats = [
-			{heading: 'Tools', attributes: 'Word, Excel, PowerPoint, Visio, Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
-			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity'},
+			{heading: 'Tools', attributes: 'Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
+			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP'},
 			{heading: 'In Progress', attributes: 'Android, Swift, ECMAScript 6/ES6, React, Google App Engine'}
 		];
 
@@ -67,7 +67,8 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 
 		$scope.nav = function() {
 			$("aside").toggle("slide");
-			//$(".fa-bars").css("color", "white");
+			$("#button_wrap > .fa").toggle();
+			$(".contact").toggle();
 		};
 
 	}]);
