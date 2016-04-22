@@ -221,8 +221,11 @@ photo img {
   padding: 0 4px;
   cursor: pointer; }
 
-.slide_selection, .instructions {
+.instructions {
   text-align: center; }
+
+.slide_selection {
+  display: none; }
 
 #desc {
   margin-bottom: 10px; }
@@ -284,9 +287,10 @@ footer {
   .slide-animation-selection {
     width: 14%;
     padding: 0 10px; }
-  .slide_selection, .instructions {
+  .instructions {
     text-align: left;
-    padding-left: 30px; }
+    padding-left: 30px;
+    display: block; }
   br {
     display: none; } }
 
@@ -333,6 +337,7 @@ footer {
     padding: 0 10px 0 0; }
   .slide_selection, .instructions {
     text-align: left;
-    padding-left: 30px; }
+    padding-left: 30px;
+    display: block; }
   br {
     display: none; } }
