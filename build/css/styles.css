@@ -226,11 +226,17 @@ photo img {
   padding: 0 4px;
   cursor: pointer; }
 
+.slide_selectors {
+  background-color: #78909C;
+  height: 20px;
+  width: 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer; }
+
 .instructions {
   text-align: center; }
-
-.slide_selection {
-  display: none; }
 
 #desc {
   margin-bottom: 10px; }
@@ -270,7 +276,7 @@ footer {
     bottom: 10px; }
 
   #metadata {
-    background-color: #ECEFF1;
+    background-color: transparent;
     position: absolute;
     top: 82.5%;
     right: 0;
@@ -292,10 +298,10 @@ footer {
     text-align: right; }
 
   #metadata button {
-    width: 50%; }
+    width: 60%; }
 
   photo img {
-    width: 70%;
+    width: 50%;
     margin-left: 30px; }
 
   #gallery_wrap {
@@ -352,7 +358,7 @@ footer {
     text-align: right; }
 
   #metadata button {
-    width: 40%; }
+    width: 60%; }
 
   photo img {
     width: 60%;

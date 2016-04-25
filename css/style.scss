@@ -97,9 +97,9 @@ photo img { width: 100%; cursor: pointer; }
 
 .slide-animation-selection { width: 17%; padding: 0 4px; cursor: pointer; }
 
-.instructions { text-align: center; }
+.slide_selectors { background-color: $meinnovation-gray; height: 20px; width: 20px; border-radius: 25px; display: inline-block; margin: 0 20px; cursor: pointer; }
 
-.slide_selection { display: none; }
+.instructions { text-align: center; }
 
 #desc { margin-bottom: 10px; }
 
@@ -119,12 +119,12 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	aside { padding: 20px; font-size: 50px; width: 30%; }
 	#small_logo_wrap { bottom: 10px; }
-	#metadata { background-color: #ECEFF1; position: absolute; top: 82.5%; right: 0; left: 57.9%; bottom: 0; padding: 50px 40px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: transparent; position: absolute; top: 82.5%; right: 0; left: 57.9%; bottom: 0; padding: 50px 40px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
-	#metadata button { width: 50%; }
-	photo img { width: 70%; margin-left: 30px; }
+	#metadata button { width: 60%; }
+	photo img { width: 50%; margin-left: 30px; }
 	#gallery_wrap { text-align: left; }
 	.slide-animation-selection { width: 14%; padding: 0 10px; }
 	.instructions { text-align: left; padding-left: 30px; display: block; }
@@ -140,7 +140,7 @@ footer { text-align: center; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
-	#metadata button { width: 40%; }
+	#metadata button { width: 60%; }
 	photo img { width: 60%; margin-left: 30px; }
 	#gallery_wrap { text-align: left; }
 	.slide-animation-selection { width: 14%; padding: 0 10px 0 0; }
