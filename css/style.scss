@@ -99,6 +99,8 @@ photo img { width: 100%; cursor: pointer; }
 
 .slide_selectors { background-color: $meinnovation-gray; height: 20px; width: 20px; border-radius: 25px; display: inline-block; margin: 0 20px; cursor: pointer; }
 
+.active { background-color: $meinnovation-black; }
+
 .instructions { text-align: center; }
 
 #desc { margin-bottom: 10px; }

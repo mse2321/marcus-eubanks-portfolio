@@ -230,6 +230,9 @@ photo img {
   margin: 0 20px;
   cursor: pointer; }
 
+.active {
+  background-color: #37474F; }
+
 .instructions {
   text-align: center; }
 

@@ -64,9 +64,9 @@
 							<photo>
 								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 							</photo>
-							<div class="slide_selection">
+							<div class="slide_selection" ng-class="{active: item.selected}" >
 								<!--<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" alt="{{ item.title }} selector" hm-tap="setIndex($index); selectedImage()">-->
-								<div class="slide_selectors" ng-repeat="item in items" hm-tap="setIndex($index)">
+								<div class="slide_selectors" ng-repeat="item in items" hm-tap="setIndex($index)" ng-model="active">
 							</div>
 
 							<!-- end of slide_selection -->
