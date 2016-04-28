@@ -255,7 +255,7 @@ footer {
     font-size: 45px;
     width: 40%; } }
 
-@media screen and (min-width: 900px) and (max-width: 1299px) {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
   .contact_icon img {
     width: 10%;
     margin: 0 10px;
@@ -271,7 +271,7 @@ footer {
   #metadata {
     background-color: transparent;
     position: absolute;
-    top: 600px;
+    top: 610px;
     right: 0;
     left: 57.9%;
     bottom: 0;
@@ -306,7 +306,7 @@ footer {
   br {
     display: none; } }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1200px) {
   .contact_icon img {
     width: 5%;
     margin: 0 10px;
