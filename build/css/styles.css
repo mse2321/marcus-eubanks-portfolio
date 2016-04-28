@@ -253,30 +253,35 @@ footer {
     width: 10%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 80%; }
+
   aside {
     padding: 20px;
     font-size: 45px;
     width: 40%; } }
-
 @media screen and (min-width: 900px) and (max-width: 1299px) {
   .contact_icon img {
     width: 10%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 70%; }
+
   aside {
     padding: 20px;
     font-size: 50px;
     width: 30%; }
+
   #small_logo_wrap {
     bottom: 10px; }
+
   #metadata {
     background-color: transparent;
     position: absolute;
-    top: 82.5%;
+    top: 600px;
     right: 0;
     left: 57.9%;
     bottom: 0;
@@ -285,48 +290,62 @@ footer {
     display: inline-block;
     width: 40%;
     text-align: right; }
+
   .meta_close {
     display: none; }
+
   .meta_wrap {
     padding-left: 100px; }
+
   .metadata_button_wrap {
     text-align: right; }
+
   #metadata button {
     width: 60%; }
+
   photo img {
     width: 50%;
     margin-left: 30px; }
+
   #gallery_wrap {
     text-align: left; }
+
   .slide-animation-selection {
     width: 14%;
     padding: 0 10px; }
-  .slide_selection {
-    margin-left: 12.5%; }
+
   .instructions {
     text-align: left;
     padding-left: 30px;
     display: block; }
+
+  .slide_selection {
+    padding-left: 10px;
+    display: block; }
+
   br {
     display: none; } }
-
 @media screen and (min-width: 1300px) {
   .contact_icon img {
     width: 5%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 60%; }
+
   aside {
     padding: 20px;
     font-size: 60px;
     width: 20%; }
+
   #small_logo_wrap {
     bottom: 10px; }
+
   #metadata {
     background-color: transparent;
     position: absolute;
-    top: 82.5%;
+    top: 750px;
     right: 0;
     left: 57.9%;
     bottom: 0;
@@ -335,27 +354,40 @@ footer {
     display: inline-block;
     width: 40%;
     text-align: right; }
+
   .meta_wrap {
     padding-left: 100px; }
+
   .meta_close {
     display: none; }
+
   .metadata_button_wrap {
     text-align: right; }
+
   #metadata button {
     width: 60%; }
+
   photo img {
     width: 60%;
     margin-left: 30px; }
-  #gallery_wrap {
+
+  #gallery_wrap, .slide_selection {
     text-align: left; }
+
   .slide-animation-selection {
     width: 14%;
     padding: 0 10px 0 0; }
-  .slide_selection, .instructions {
+
+  .instructions {
     text-align: left;
     padding-left: 30px;
     display: block; }
+
   .slide_selection {
-    margin-left: 21.5%; }
+    padding-left: 10px;
+    display: block; }
+
   br {
     display: none; } }
+
+/*# sourceMappingURL=style.css.map */

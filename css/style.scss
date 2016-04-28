@@ -121,7 +121,7 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	aside { padding: 20px; font-size: 50px; width: 30%; }
 	#small_logo_wrap { bottom: 10px; }
-	#metadata { background-color: transparent; position: absolute; top: 82.5%; right: 0; left: 57.9%; bottom: 0; padding: 50px 40px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: transparent; position: absolute; top: 600px; right: 0; left: 57.9%; bottom: 0; padding: 50px 40px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -129,8 +129,8 @@ footer { text-align: center; }
 	photo img { width: 50%; margin-left: 30px; }
 	#gallery_wrap { text-align: left; }
 	.slide-animation-selection { width: 14%; padding: 0 10px; }
-	.slide_selection { margin-left: 12.5%; }
 	.instructions { text-align: left; padding-left: 30px; display: block; }
+	.slide_selection { padding-left: 10px; display: block; }
 	br { display: none; }
 }
 
@@ -139,15 +139,15 @@ footer { text-align: center; }
 	#intro_logo { width: 60%; }
 	aside { padding: 20px; font-size: 60px; width: 20%; }
 	#small_logo_wrap { bottom: 10px; }
-	#metadata { background-color: transparent; position: absolute; top: 82.5%; right: 0; left: 57.9%; bottom: 0; padding: 50px 20px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: transparent; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 20px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
 	#metadata button { width: 60%; }
 	photo img { width: 60%; margin-left: 30px; }
-	#gallery_wrap { text-align: left; }
+	#gallery_wrap, .slide_selection { text-align: left; }
 	.slide-animation-selection { width: 14%; padding: 0 10px 0 0; }
-	.slide_selection, .instructions { text-align: left; padding-left: 30px; display: block; }
-	.slide_selection { margin-left: 21.5%; }
+	.instructions { text-align: left; padding-left: 30px; display: block; }
+	.slide_selection { padding-left: 10px; display: block; }
 	br { display: none; }
 }
