@@ -6,9 +6,8 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
 	    <meta name="description" content="ME Innovation - the online portfolio for Marcus Eubanks.">
 		<title>ME Innovation | Marcus Eubanks Portfolio Site</title>
-		<!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />-->
 		<link href='https://fonts.googleapis.com/css?family=Roboto|Orbitron:900' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="build/css/styles.css">
+		<link rel="stylesheet" href="build/css/styles_min.css">
 	</head>
 	<body ng-app="demo" ng-controller="ctrl" class="loading" ng-init="pageAnimate()">
 		<div id="container">
@@ -66,7 +65,6 @@
 							</photo>
 							<div class="slide_selection">
 								<i class="fa fa-caret-left" aria-hidden="true"></i>
-								<!--<img class="slide-animation-selection" ng-repeat="item in items" ng-src="{{ item.image }}" alt="{{ item.title }} selector" hm-tap="setIndex($index); selectedImage()" class="slide_selectors">-->
 								<div ng-repeat="item in items" hm-tap="setIndex($index)" class="slide_selectors">
 									<a hm-tap="select(item)" ng-class="{active:item.selected}">&#8226;</a>
 								</div>
@@ -133,6 +131,6 @@
 	    <script defer src="bower_components/angular/angular.min.js"></script>
 	    <script defer src="bower_components/hammerjs/hammer.min.js"></script>
 	    <script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
-	    <script defer src="js/me_innovation.js"></script>
+	    <script defer src="js/me_innovation.min.js"></script>
 	</body>
 </html>
