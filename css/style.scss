@@ -41,13 +41,13 @@ h1, h2 { color: #607D8B; font-family: 'Orbitron', sans-serif; }
 
 
 /* Nav */
-aside { background-color: #ECEFF1; color: #37474F; padding: 20px; font-size: 40px; display: none; position: fixed; top: 0; right: 0; bottom: 0; width: 60%; z-index: 500; }
+aside { background-color: #ECEFF1; color: #37474F; padding: 20px 30px; font-size: 40px; display: none; position: fixed; top: 0; right: 0; bottom: 0; width: 60%; z-index: 500; }
 
 nav a { color: $meinnovation-black; font-weight: bold; font-family: 'Orbitron', sans-serif; }
 
 nav a:hover { color: #fff; }
 
-#nav_links { margin-top: 100px; text-align: right; }
+#nav_links { margin-top: 100px; text-align: right; margin-right: 0; }
 
 #nav_links li { margin: 20px 0; }
 
@@ -55,13 +55,9 @@ nav a:hover { color: #fff; }
 
 #contact_wrap_nav { display: none; position: fixed; bottom: 20px; right: 0; padding-left: 0; width: 70%; z-index: 2000; text-align: center; }
 
-#small_logo_wrap { position: absolute; right: 0; bottom: 100px; width: 80%; }
-
-#small_logo { width: 100%; opacity: 0.2; }
-
 
 /* About */
-#about_wrap { padding: 30px; }
+#about_wrap { padding: 30px; font-size: 16px; }
 
 .stats_wrap { padding: 20px; }
 
@@ -83,9 +79,13 @@ photo img { width: 100%; cursor: pointer; }
 
 .instructions p { margin-bottom: 30px; }
 
-.slide_selection { margin-top: 20px; }
+.slide_selection { font-size: 80px; }
 
-#metadata { background-color: #ECEFF1; position: absolute; top: 0; right: 0; left: 0; bottom: 0; padding: 50px 20px 0 20px; z-index: 2000; display: none; }
+.slide_selection a { display: inline; }
+
+.slide_selection i { font-size: 40px; vertical-align: middle; margin-bottom: 15px; color: #ECEFF1; }
+
+#metadata { background-color: #ECEFF1; position: absolute; top: 0; right: 0; left: 0; bottom: 0; padding: 50px 10px 0 20px; z-index: 2000; display: none; }
 
 #metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
 
@@ -95,11 +95,9 @@ photo img { width: 100%; cursor: pointer; }
 
 .meta_wrap div { line-height: 30px; }
 
-.slide-animation-selection { width: 17%; padding: 0 4px; cursor: pointer; }
+.slide_selectors { display: inline-block; margin: 0 15px; cursor: pointer; }
 
-.slide_selectors { background-color: $meinnovation-gray; height: 20px; width: 20px; border-radius: 25px; display: inline-block; margin: 0 20px; cursor: pointer; }
-
-.active { background-color: $meinnovation-black; }
+.active { color: $meinnovation-black; }
 
 .instructions { text-align: center; }
 
@@ -117,37 +115,39 @@ footer { text-align: center; }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
+	body { font-size: 18px; }
 	.contact_icon img { width: 10%; margin: 0 10px; cursor: pointer; }
 	#intro_logo { width: 70%; }
 	aside { padding: 20px; font-size: 50px; width: 30%; }
-	#small_logo_wrap { bottom: 10px; }
-	#metadata { background-color: transparent; position: absolute; top: 610px; right: 0; left: 57.9%; bottom: 0; padding: 50px 40px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: transparent; position: absolute; top: 610px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
 	#metadata button { width: 60%; }
 	photo img { width: 50%; margin-left: 30px; }
 	#gallery_wrap { text-align: left; }
-	.slide-animation-selection { width: 14%; padding: 0 10px; }
 	.instructions { text-align: left; padding-left: 30px; display: block; }
-	.slide_selection { padding-left: 10px; display: block; }
+	.slide_selection { padding-left: 30px; display: block; }
 	br { display: none; }
+	#nav_links { margin-right: 10px; }
+
 }
 
 @media screen and (min-width: 1200px) {
+	body { font-size: 18px; }
 	.contact_icon img { width: 5%; margin: 0 10px; cursor: pointer; }
 	#intro_logo { width: 60%; }
 	aside { padding: 20px; font-size: 60px; width: 20%; }
-	#small_logo_wrap { bottom: 10px; }
-	#metadata { background-color: transparent; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 20px 0 0; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: transparent; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
 	#metadata button { width: 60%; }
 	photo img { width: 60%; margin-left: 30px; }
 	#gallery_wrap, .slide_selection { text-align: left; }
-	.slide-animation-selection { width: 14%; padding: 0 10px 0 0; }
 	.instructions { text-align: left; padding-left: 30px; display: block; }
-	.slide_selection { padding-left: 10px; display: block; }
+	.slide_selection { padding-left: 30px; display: block; }
 	br { display: none; }
+	#nav_links { margin-right: 10px; }
+
 }
