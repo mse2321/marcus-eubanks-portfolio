@@ -24,10 +24,10 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 		};
 
 		$scope.items = [
+			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator.", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4-min.jpg"},
 			{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", desc: "Angular API project to look up country data.", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1-min.jpg"},
 			{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Song preview search engine w/ custom player.", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2-min.jpg"},
 			{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", desc: "Simple quiz app.", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3-min.jpg"},
-			{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator.", link: "http://www.meinnovation.net/revyntools/xp-calculator.html", image: "build/img/sample-image4-min.jpg"},
 		];
 			
 		$scope.defaultIndex = 0;
