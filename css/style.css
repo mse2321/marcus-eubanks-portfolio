@@ -51,8 +51,8 @@ h1, h2 {
   z-index: 1000; }
 
 .contact_icon img {
-  width: 15%;
-  margin: 0 10px;
+  width: 16%;
+  margin: 0 20px;
   cursor: pointer; }
 
 #contact_wrap {
@@ -62,7 +62,7 @@ h1, h2 {
   padding-top: 20px;
   text-align: left;
   padding-left: 20px;
-  width: 50%; }
+  width: 70%; }
 
 /* Intro */
 #intro_logo {
@@ -184,7 +184,7 @@ photo img {
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 50px 10px 0 20px;
+  padding: 30px 10px 0 20px;
   z-index: 2000;
   display: none; }
 
@@ -238,29 +238,34 @@ footer {
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .contact_icon img {
-    width: 10%;
+    width: 7%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 80%; }
+
   aside {
     padding: 20px;
     font-size: 45px;
     width: 40%; } }
-
 @media screen and (min-width: 900px) and (max-width: 1199px) {
   body {
     font-size: 18px; }
+
   .contact_icon img {
-    width: 10%;
+    width: 6%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 70%; }
+
   aside {
     padding: 20px;
     font-size: 50px;
     width: 40%; }
+
   #metadata {
     background-color: transparent;
     position: absolute;
@@ -271,46 +276,59 @@ footer {
     padding: 50px 0 0 10px;
     z-index: 0;
     display: inline-block;
-    width: 40%;
+    width: 39%;
     text-align: right; }
+
   .meta_close {
     display: none; }
+
   .meta_wrap {
     padding-left: 100px; }
+
   .metadata_button_wrap {
     text-align: right; }
+
   #metadata button {
     width: 60%; }
+
   photo img {
     width: 50%;
     margin-left: 30px; }
+
   #gallery_wrap {
     text-align: left; }
+
   .instructions {
     text-align: left;
     padding-left: 30px;
     display: block; }
+
   .slide_selection {
     padding-left: 30px;
     display: block; }
+
   br {
     display: none; }
+
   #nav_links {
     margin-right: 10px; } }
-
 @media screen and (min-width: 1200px) {
   body {
     font-size: 18px; }
+
   .contact_icon img {
     width: 5%;
     margin: 0 10px;
     cursor: pointer; }
+
   #intro_logo {
     width: 60%; }
+
   aside {
     padding: 20px;
     font-size: 60px;
     width: 30%; }
+
   #metadata {
     background-color: transparent;
     position: absolute;
@@ -323,37 +341,48 @@ footer {
     display: inline-block;
     width: 40%;
     text-align: right; }
+
   .meta_wrap {
     padding-left: 100px; }
+
   .meta_close {
     display: none; }
+
   .metadata_button_wrap {
     text-align: right; }
+
   #metadata button {
     width: 60%; }
+
   photo img {
     width: 60%;
     margin-left: 30px; }
+
   #gallery_wrap, .slide_selection {
     text-align: left; }
+
   .instructions {
     text-align: left;
     padding-left: 30px;
     display: block; }
+
   .slide_selection {
     padding-left: 30px;
     display: block; }
+
   br {
     display: none; }
+
   #nav_links {
     margin-right: 10px; } }
-
 @media screen and (max-height: 399px) {
   photo img {
     width: 80%; }
+
   #metadata {
     top: 650px;
     height: 100%; }
+
   aside {
     background-color: #ECEFF1;
     color: #37474F;
@@ -365,11 +394,16 @@ footer {
     right: 0;
     width: 100%;
     z-index: 500; }
+
   #nav_links {
     text-align: center; }
+
   #nav_links li {
     display: inline;
     margin: 20px; }
+
   #contact_wrap_nav {
     left: 14%;
     bottom: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -56,8 +56,8 @@ h1, h2 {
   z-index: 1000; }
 
 .contact_icon img {
-  width: 15%;
-  margin: 0 10px;
+  width: 16%;
+  margin: 0 20px;
   cursor: pointer; }
 
 #contact_wrap {
@@ -67,7 +67,7 @@ h1, h2 {
   padding-top: 20px;
   text-align: left;
   padding-left: 20px;
-  width: 50%; }
+  width: 70%; }
 
 /* Intro */
 #intro_logo {
@@ -189,7 +189,7 @@ photo img {
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 50px 10px 0 20px;
+  padding: 30px 10px 0 20px;
   z-index: 2000;
   display: none; }
 
@@ -243,7 +243,7 @@ footer {
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .contact_icon img {
-    width: 10%;
+    width: 7%;
     margin: 0 10px;
     cursor: pointer; }
 
@@ -259,7 +259,7 @@ footer {
     font-size: 18px; }
 
   .contact_icon img {
-    width: 10%;
+    width: 6%;
     margin: 0 10px;
     cursor: pointer; }
 
@@ -281,7 +281,7 @@ footer {
     padding: 50px 0 0 10px;
     z-index: 0;
     display: inline-block;
-    width: 40%;
+    width: 39%;
     text-align: right; }
 
   .meta_close {
@@ -344,7 +344,7 @@ footer {
     padding: 50px 0 0 10px;
     z-index: 0;
     display: inline-block;
-    width: 40%;
+    width: 39%;
     text-align: right; }
 
   .meta_wrap {
