@@ -71,6 +71,12 @@ h1, h2 {
 #intro_logo_wrap, #intro_wrap {
   text-align: center; }
 
+#intro_logo_wrap p {
+  font-size: 35px;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0;
+  color: #607D8B; }
+
 #intro_wrap {
   margin-top: 150px; }
 
@@ -220,7 +226,7 @@ photo img {
 
 .slide_selectors {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 7px;
   cursor: pointer; }
 
 .active {
@@ -231,6 +237,13 @@ photo img {
 
 #desc {
   margin-bottom: 10px; }
+
+span {
+  font-size: 16px;
+  color: #ECEFF1;
+  vertical-align: middle;
+  margin: 0 10px 16px 10px;
+  display: inline-block; }
 
 /* Footer */
 footer {
@@ -243,10 +256,14 @@ footer {
     cursor: pointer; }
   #intro_logo {
     width: 80%; }
+  #intro_logo_wrap p {
+    font-size: 45px; }
   aside {
     padding: 20px;
     font-size: 45px;
-    width: 40%; } }
+    width: 40%; }
+  .slide_selectors {
+    margin: 0 15px; } }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
   body {
@@ -257,6 +274,8 @@ footer {
     cursor: pointer; }
   #intro_logo {
     width: 70%; }
+  #intro_logo_wrap p {
+    font-size: 60px; }
   aside {
     padding: 20px;
     font-size: 50px;
@@ -296,7 +315,9 @@ footer {
   br {
     display: none; }
   #nav_links {
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .slide_selectors {
+    margin: 0 15px; } }
 
 @media screen and (min-width: 1200px) {
   body {
@@ -307,6 +328,8 @@ footer {
     cursor: pointer; }
   #intro_logo {
     width: 60%; }
+  #intro_logo_wrap p {
+    font-size: 80px; }
   aside {
     padding: 20px;
     font-size: 60px;
@@ -346,14 +369,11 @@ footer {
   br {
     display: none; }
   #nav_links {
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .slide_selectors {
+    margin: 0 15px; } }
 
 @media screen and (max-height: 399px) {
-  photo img {
-    width: 80%; }
-  #metadata {
-    top: 650px;
-    height: 100%; }
   aside {
     background-color: #ECEFF1;
     color: #37474F;
@@ -372,4 +392,31 @@ footer {
     margin: 20px; }
   #contact_wrap_nav {
     left: 14%;
-    bottom: 20px; } }
+    bottom: 20px; }
+  #metadata {
+    height: 100%;
+    top: 600px; } }
+
+@media screen and (max-height: 399px) and (max-width: 1029px) {
+  aside {
+    background-color: #ECEFF1;
+    color: #37474F;
+    padding: 20px 30px;
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 500; }
+  #nav_links {
+    text-align: center; }
+  #nav_links li {
+    display: inline;
+    margin: 20px; }
+  #contact_wrap_nav {
+    left: 14%;
+    bottom: 20px; }
+  #metadata {
+    height: 100%;
+    top: 750px; } }

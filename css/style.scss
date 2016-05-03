@@ -2,6 +2,7 @@
 /* SASS declarations */
 $meinnovation-black: #37474F;
 $meinnovation-gray: #78909C;
+$meinnovation-ltgray: #ECEFF1;
 
 
 /* General */
@@ -35,13 +36,15 @@ h1, h2 { color: #607D8B; font-family: 'Orbitron', sans-serif; }
 
 #intro_logo_wrap, #intro_wrap { text-align: center; }
 
+#intro_logo_wrap p { font-size: 35px; font-family: 'Orbitron', sans-serif; margin-bottom: 0; color: #607D8B; }
+
 #intro_wrap { margin-top: 150px; }
 
 #intro_data { padding: 40px; margin: 0 auto; }
 
 
 /* Nav */
-aside { background-color: #ECEFF1; color: #37474F; padding: 20px 30px; font-size: 40px; display: none; position: fixed; top: 0; right: 0; bottom: 0; width: 70%; z-index: 500; }
+aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 40px; display: none; position: fixed; top: 0; right: 0; bottom: 0; width: 70%; z-index: 500; }
 
 nav a { color: $meinnovation-black; font-weight: bold; font-family: 'Orbitron', sans-serif; }
 
@@ -83,9 +86,9 @@ photo img { width: 90%; cursor: pointer; }
 
 .slide_selection a { display: inline; }
 
-.slide_selection i { font-size: 40px; vertical-align: middle; margin-bottom: 15px; color: #ECEFF1; }
+.slide_selection i { font-size: 40px; vertical-align: middle; margin-bottom: 15px; color: $meinnovation-ltgray; }
 
-#metadata { background-color: #ECEFF1; position: absolute; top: 550px; height: 60%; right: 0; left: 0; bottom: 0; padding: 30px 10px 0 20px; z-index: 2000; display: none; }
+#metadata { background-color: $meinnovation-ltgray; position: absolute; top: 550px; height: 60%; right: 0; left: 0; bottom: 0; padding: 30px 10px 0 20px; z-index: 2000; display: none; }
 
 #metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
 
@@ -95,13 +98,15 @@ photo img { width: 90%; cursor: pointer; }
 
 .meta_wrap div { line-height: 30px; }
 
-.slide_selectors { display: inline-block; margin: 0 15px; cursor: pointer; }
+.slide_selectors { display: inline-block; margin: 0 7px; cursor: pointer; }
 
 .active { color: $meinnovation-black; }
 
 .instructions { text-align: center; }
 
 #desc { margin-bottom: 10px; }
+
+span { font-size: 16px; color: $meinnovation-ltgray; vertical-align: middle; margin: 0 10px 16px 10px; display: inline-block; }
 
 
 /* Footer */
@@ -111,13 +116,16 @@ footer { text-align: center; }
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	.contact_icon img { width: 7%; margin: 0 10px; cursor: pointer; }
 	#intro_logo { width: 80%; }
+	#intro_logo_wrap p { font-size: 45px; }
 	aside { padding: 20px; font-size: 45px; width: 40%; }
+	.slide_selectors { margin: 0 15px; }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
 	body { font-size: 18px; }
 	.contact_icon img { width: 6%; margin: 0 10px; cursor: pointer; }
 	#intro_logo { width: 70%; }
+	#intro_logo_wrap p { font-size: 60px; }
 	aside { padding: 20px; font-size: 50px; width: 40%; }
 	#metadata { background-color: transparent; position: absolute; top: 610px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 39%; text-align: right; }
 	.meta_close { display: none; }
@@ -130,6 +138,7 @@ footer { text-align: center; }
 	.slide_selection { padding-left: 30px; display: block; }
 	br { display: none; }
 	#nav_links { margin-right: 10px; }
+	.slide_selectors { margin: 0 15px; }
 
 }
 
@@ -137,6 +146,7 @@ footer { text-align: center; }
 	body { font-size: 18px; }
 	.contact_icon img { width: 5%; margin: 0 10px; cursor: pointer; }
 	#intro_logo { width: 60%; }
+	#intro_logo_wrap p { font-size: 80px; }
 	aside { padding: 20px; font-size: 60px; width: 30%; }
 	#metadata { background-color: transparent; position: absolute; top: 700px; right: 10px; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_wrap { padding-left: 100px; }
@@ -149,14 +159,23 @@ footer { text-align: center; }
 	.slide_selection { padding-left: 30px; display: block; }
 	br { display: none; }
 	#nav_links { margin-right: 10px; }
+	.slide_selectors { margin: 0 15px; }
 
 }
 
 @media screen and (max-height: 399px) {
-	photo img { width: 80%; }
-	#metadata { top: 650px; height: 100%; }
-	aside { background-color: #ECEFF1; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
+	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
 	#nav_links { text-align: center; }
 	#nav_links li { display: inline; margin: 20px; }
 	#contact_wrap_nav { left: 14%; bottom: 20px; }
+	#metadata { height: 100%; top: 600px; }
 }
+
+@media screen and (max-height: 399px) and (max-width: 1029px) {
+	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
+	#nav_links { text-align: center; }
+	#nav_links li { display: inline; margin: 20px; }
+	#contact_wrap_nav { left: 14%; bottom: 20px; }
+	#metadata { height: 100%; top: 750px; }
+}
+
