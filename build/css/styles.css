@@ -190,8 +190,8 @@ photo img {
 #metadata {
   background-color: #ECEFF1;
   position: absolute;
-  top: 550px;
-  height: 60%;
+  top: 750px;
+  height: 70%;
   right: 0;
   left: 0;
   bottom: 0;
@@ -259,6 +259,9 @@ footer {
     width: 7%;
     margin: 0 10px;
     cursor: pointer; }
+  #metadata {
+    top: 650px;
+    height: 70%; }
   #intro_logo {
     width: 80%; }
   #intro_logo_wrap p {
@@ -270,7 +273,7 @@ footer {
   .slide_selectors {
     margin: 0 15px; } }
 
-@media screen and (min-width: 900px) and (max-width: 1199px) {
+@media screen and (min-width: 900px) and (max-width: 1034px) {
   body {
     font-size: 18px; }
   .contact_icon img {
@@ -288,7 +291,61 @@ footer {
   #metadata {
     background-color: transparent;
     position: absolute;
-    top: 610px;
+    top: 750px;
+    right: 0;
+    left: 57.9%;
+    bottom: 0;
+    padding: 50px 0 0 10px;
+    z-index: 0;
+    display: inline-block !important;
+    width: 39%;
+    text-align: right; }
+  .meta_close {
+    display: none; }
+  .meta_wrap {
+    padding-left: 100px; }
+  .metadata_button_wrap {
+    text-align: right; }
+  #metadata button {
+    width: 60%; }
+  photo img {
+    width: 50%;
+    margin-left: 30px; }
+  #gallery_wrap {
+    text-align: left; }
+  .instructions {
+    text-align: left;
+    padding-left: 30px;
+    display: block; }
+  .slide_selection {
+    padding-left: 30px;
+    display: block; }
+  br {
+    display: none; }
+  #nav_links {
+    margin-right: 10px; }
+  .slide_selectors {
+    margin: 0 15px; } }
+
+@media screen and (min-width: 1035px) and (max-width: 1199px) {
+  body {
+    font-size: 18px; }
+  .contact_icon img {
+    width: 6%;
+    margin: 0 10px;
+    cursor: pointer; }
+  #intro_logo {
+    width: 70%; }
+  #intro_logo_wrap p {
+    font-size: 60px; }
+  aside {
+    padding: 20px;
+    font-size: 50px;
+    width: 40%; }
+  #metadata {
+    background-color: transparent;
+    position: absolute;
+    top: 710px;
     right: 0;
     left: 57.9%;
     bottom: 0;
@@ -342,7 +399,7 @@ footer {
   #metadata {
     background-color: transparent;
     position: absolute;
-    top: 700px;
+    top: 850px;
     right: 10px;
     left: 57.9%;
     bottom: 0;
@@ -400,7 +457,7 @@ footer {
     bottom: 20px; }
   #metadata {
     height: 100%;
-    top: 600px; } }
+    top: 850px; } }
 
 @media screen and (max-height: 399px) and (max-width: 1029px) {
   aside {
