@@ -19,8 +19,8 @@
 		    s.parentNode.insertBefore(wf, s);
 		  })(); 
 		</script>
-		<!-- <link rel="stylesheet" href="build/css/styles_min.css"> -->
 		<link rel="stylesheet" href="build/css/styles_min.css">
+		<!--<link rel="stylesheet" href="build/css/styles.css">-->
 	</head>
 	<body ng-app="demo" ng-controller="ctrl" class="loading" ng-init="pageAnimate()">
 		<div id="container">
@@ -70,7 +70,7 @@
 					<h1>Projects</h1>
 					<div class="instructions">
 						<!-- set angular binding to change the instructions based on screen width -->
-						<p>Swipe through the preview images or select from the dots below to view projects. <br />Tap the preview for more details.</p>
+						<p>Swipe through the images or use the dots below to view projects. <br /><span>Tap the images for more details.</span></p>
 					</div> <!-- end of instructions -->
 					<div id="gallery_wrap">
 						<gallery>
@@ -78,11 +78,11 @@
 								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
 							</photo>
 							<div class="slide_selection">
-								<i class="fa fa-caret-left" aria-hidden="true"></i><span>Prev</span>
+								<!--<i class="fa fa-caret-left" aria-hidden="true"></i><span>Prev</span>-->
 								<div ng-repeat="item in items" hm-tap="setIndex($index)" class="slide_selectors">
 									<a hm-tap="select(item)" ng-class="{active:item.selected}">&#8226;</a>
 								</div>
-								<span>Next</span><i class="fa fa-caret-right" aria-hidden="true"></i>
+								<!--<span>Next</span><i class="fa fa-caret-right" aria-hidden="true"></i>-->
 							</div>
 
 							<!-- end of slide_selection -->
