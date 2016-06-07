@@ -330,7 +330,8 @@ footer {
 
   photo img {
     width: 50%;
-    margin-left: 30px; }
+    margin-left: 30px;
+    cursor: default; }
 
   .stats_wrap {
     width: 60%; }
@@ -405,7 +406,8 @@ footer {
 
   photo img {
     width: 50%;
-    margin-left: 30px; }
+    margin-left: 30px;
+    cursor: default; }
 
   .stats_wrap {
     width: 60%; }
@@ -480,7 +482,8 @@ footer {
 
   photo img {
     width: 60%;
-    margin-left: 30px; }
+    margin-left: 30px;
+    cursor: default; }
 
   #gallery_wrap, .slide_selection {
     text-align: left; }
