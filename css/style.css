@@ -203,11 +203,15 @@ photo img {
   font-weight: bold;
   width: 90%;
   padding: 10px 0;
-  margin: 40px auto;
+  margin: 40px auto 10px auto;
   font-family: 'Orbitron', sans-serif;
   border: none;
   font-size: 24px;
   cursor: pointer; }
+
+.gitLink {
+  background-color: #546E7A !important;
+  margin: 10px auto !important; }
 
 .meta_close {
   position: absolute;

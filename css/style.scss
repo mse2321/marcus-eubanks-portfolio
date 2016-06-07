@@ -92,7 +92,9 @@ photo img { width: 90%; cursor: pointer; }
 
 #metadata { background-color: $meinnovation-ltgray; position: absolute; top: 750px; height: 70%; right: 0; left: 0; bottom: 0; padding: 30px 10px 0 20px; z-index: 2000; display: none; }
 
-#metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
+#metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto 10px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
+
+.gitLink { background-color: $meinnovation-gray !important; margin: 10px auto !important; }
 
 .meta_close { position: absolute; right: 0; top: 0; padding-top: 15px; padding-right: 30px; font-size: 30px; z-index: 1000; cursor: pointer; font-size: 30px; color: white; }
 
