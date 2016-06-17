@@ -6,7 +6,7 @@ $meinnovation-ltgray: #B0BEC5;
 
 
 /* General */
-body { font-family: 'Roboto', sans-serif; background-color: #fff; color: #455A64; margin: 0; opacity: 0; -webkit-transition:opacity .6s; -moz-transition:opacity .6s; -o-transition:opacity .6s; transition: opacity .6s; }
+body { font-family: 'Roboto', sans-serif; background-color: #fff; color: #455A64; margin: 0; opacity: 0; transition: opacity .6s; }
 
 header { position: absolute; top: 0; right: 0; left: 0; padding: 20px; }
 
@@ -55,8 +55,6 @@ nav a:hover { color: #fff; }
 #nav_links li { margin: 20px 0; }
 
 #button_wrap .fa-times { display: none; cursor: pointer; color: white; }
-
-#contact_wrap_nav { display: none; position: fixed; bottom: 20px; right: 0; padding-left: 0; width: 70%; z-index: 2000; text-align: center; }
 
 
 /* About */
@@ -133,7 +131,7 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
 	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: transparent; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block !important; width: 39%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block !important; width: 39%; text-align: right; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -156,7 +154,7 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
 	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: transparent; position: absolute; top: 710px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 39%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 710px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 39%; text-align: right; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -179,7 +177,7 @@ footer { text-align: center; }
 	#intro_logo { width: 60%; }
 	#intro_logo_wrap p { font-size: 80px; }
 	aside { padding: 20px; font-size: 60px; width: 30%; }
-	#metadata { background-color: transparent; position: absolute; top: 850px; right: 10px; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
@@ -200,7 +198,6 @@ footer { text-align: center; }
 	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
 	#nav_links { text-align: center; }
 	#nav_links li { display: inline; margin: 20px; }
-	#contact_wrap_nav { left: 14%; bottom: 20px; }
 	#metadata { height: 100%; top: 850px; }
 }
 
@@ -208,6 +205,5 @@ footer { text-align: center; }
 	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
 	#nav_links { text-align: center; }
 	#nav_links li { display: inline; margin: 20px; }
-	#contact_wrap_nav { left: 14%; bottom: 20px; }
 	#metadata { height: 100%; top: 750px; }
 }

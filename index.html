@@ -24,20 +24,8 @@
 	</head>
 	<body ng-app="demo" ng-controller="ctrl" class="loading" ng-init="pageAnimate()">
 		<div id="container">
-			<a name="intro"></a>
-			<header>
+			<header id="intro">
 		    	<div id="contact_wrap" class="contact">
-							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
-								<img id="emailIcon" src="build/img/email_circle-min.png" alt="Send ME an email" />
-							</a>
-							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
-								<img id="gitHub" src="build/img/gitHub_circle-min.png" alt="Check out my GitHub Repositories" />
-							</a>
-							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
-								<img id="linkedIn" src="build/img/linkedIn_circle-min.png" alt="Look at my LinkedIn Profile" />
-							</a>
-				</div> <!-- end of contact_wrap -->
-				<div id="contact_wrap_nav" class="contact">
 							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
 								<img id="emailIcon" src="build/img/email_circle-min.png" alt="Send ME an email" />
 							</a>
@@ -64,8 +52,7 @@
 					</div> <!-- end of welcome_wrap -->
 				</div> <!-- end of intro_wrap -->
 			</section>
-			<a name="projects"></a>
-			<section>
+			<section id="projects">
 				<div id="main_wrap">
 					<h1>Projects</h1>
 					<div class="instructions">
@@ -91,9 +78,11 @@
 
 					<div id="metadata" hm-tap="overlay()">
 						<div class="meta_wrap">
-							<div class="art_title" ng-repeat="item in items" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
-							<div class="subdata" id="desc" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.desc }}</div>
-							<div class="subdata" id="tech" ng-repeat="item in items" ng-hide="!newIndex($index)">{{ item.tech }}</div>
+							<div ng-repeat="item in items">
+								<div class="art_title" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
+								<div class="subdata" id="desc" ng-hide="!newIndex($index)">{{ item.desc }}</div>
+								<div class="subdata" id="tech" ng-hide="!newIndex($index)">{{ item.tech }}</div>
+							</div>
 						</div>
 						<div class="metadata_button_wrap">
 							<div class="subdata subdata-link" ng-repeat="item in items" ng-hide="!newIndex($index)">
@@ -107,26 +96,24 @@
 					</div> <!-- end of metadata -->
 				</div> <!-- end of main_wrap -->
 			</section>
-			<a name="about"></a>
-			<section>
+			<section id="about">
 				<div id="about_wrap">
 					<h1>About ME</h1>
 						<p>I truly love what I do and combine design, marketing, and programming skills to help web development projects succeed.</p>
-				                    
-						<div class="stats_wrap" ng-repeat="stat in stats | limitTo: 1">
-							<div class="stats_col">
-								<div class="stats_heading" hm-tap="stats_index_first_item(); about_overlay()"><i class="fa fa-wrench" aria-hidden="true"></i><h3>{{ stats[0].heading }}</h3></div>
-								<div class="stats">{{ stats[0].attributes }}</div>
-							</div> <!-- end of stats_col 1 -->
-							<div class="stats_col">
-								<div class="stats_heading" hm-tap="stats_index_second_item(); about_overlay()"><i class="fa fa-code" aria-hidden="true"></i><h3>{{ stats[1].heading }}</h3></div>
-								<div class="stats">{{ stats[1].attributes }}</div>
-							</div> <!-- end of stats_col 2 -->
-							<div class="stats_col">
-								<div class="stats_heading" hm-tap="stats_index_third_item(); about_overlay()"><i class="fa fa-battery-quarter" aria-hidden="true"></i><h3>{{ stats[2].heading }}</h3></div>
-								<div class="stats">{{ stats[2].attributes }}</div>
-							</div> <!-- end of stats_col 3 -->
-						</div> <!-- end of stats_wrap -->
+					<div class="stats_wrap">
+						<div class="stats_col">
+							<div class="stats_heading" hm-tap="stats_index_first_item(); about_overlay()"><i class="fa fa-wrench" aria-hidden="true"></i><h3>{{ stats[0].heading }}</h3></div>
+							<div class="stats">{{ stats[0].attributes }}</div>
+						</div> <!-- end of stats_col 1 -->
+						<div class="stats_col">
+							<div class="stats_heading" hm-tap="stats_index_second_item(); about_overlay()"><i class="fa fa-code" aria-hidden="true"></i><h3>{{ stats[1].heading }}</h3></div>
+							<div class="stats">{{ stats[1].attributes }}</div>
+						</div> <!-- end of stats_col 2 -->
+						<div class="stats_col">
+							<div class="stats_heading" hm-tap="stats_index_third_item(); about_overlay()"><i class="fa fa-battery-quarter" aria-hidden="true"></i><h3>{{ stats[2].heading }}</h3></div>
+							<div class="stats">{{ stats[2].attributes }}</div>
+						</div> <!-- end of stats_col 3 -->
+					</div> <!-- end of stats_wrap -->
 				</div> <!-- end of about_wrap -->
 			</section>
 			<aside>
