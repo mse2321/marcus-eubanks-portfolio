@@ -177,7 +177,7 @@ footer { text-align: center; }
 	#intro_logo { width: 60%; }
 	#intro_logo_wrap p { font-size: 80px; }
 	aside { padding: 20px; font-size: 60px; width: 30%; }
-	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 40%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 62%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; width: 35%; text-align: right; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
@@ -202,8 +202,5 @@ footer { text-align: center; }
 }
 
 @media screen and (max-height: 399px) and (max-width: 1029px) {
-	aside { background-color: $meinnovation-ltgray; color: #37474F; padding: 20px 30px; font-size: 30px; display: none; position: fixed; top: 0; right: 0; width: 100%; z-index: 500; }
-	#nav_links { text-align: center; }
-	#nav_links li { display: inline; margin: 20px; }
 	#metadata { height: 100%; top: 750px; }
 }
