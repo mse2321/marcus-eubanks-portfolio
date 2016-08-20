@@ -53,7 +53,7 @@ var demo = angular.module("demo", ['hmTouchEvents']);
         };
 
 		$scope.overlay = function() {
-			if ( $(window).width() < 899) {
+			if (window.innerWidth < 899) {
 				$("#metadata").toggle("slide");
 			}
 		};
