@@ -5,6 +5,8 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 
 	demo.controller("ctrl",  ['$scope', function($scope){
 
+		$scope.activeNav = false;
+		$scope.activeOverlay = false;
 		$scope.stats = [
 			{heading: 'Tools', attributes: 'Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
 			{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP'},
@@ -62,12 +64,5 @@ var demo = angular.module("demo", ['hmTouchEvents']);
 			$("aside").toggle("slide");
 			$("#button_wrap > .fa").toggle();
 		};
-
-		$scope.pageAnimate = function(){
-			// start up after 2sec no matter what
-			window.setTimeout(function(){
-			    $('body').removeClass("loading").addClass('loaded');
-			}, 200);
-		}
 
 	}]);

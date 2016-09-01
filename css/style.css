@@ -4,9 +4,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   color: #455A64;
-  margin: 0;
-  opacity: 0;
-  transition: opacity .6s; }
+  margin: 0; }
 
 header {
   position: absolute;
@@ -27,12 +25,6 @@ li {
 h1, h2 {
   color: #37474F;
   font-family: 'Orbitron', sans-serif; }
-
-.loaded {
-  opacity: 1; }
-
-.loading {
-  background: url("../img/ajax-loader.gif") no-repeat center center; }
 
 .fa-bars {
   cursor: pointer;
