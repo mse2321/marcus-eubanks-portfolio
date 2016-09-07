@@ -9,9 +9,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   color: #455A64;
-  margin: 0;
-  opacity: 0;
-  transition: opacity .6s; }
+  margin: 0; }
 
 header {
   position: absolute;
@@ -32,12 +30,6 @@ li {
 h1, h2 {
   color: #37474F;
   font-family: 'Orbitron', sans-serif; }
-
-.loaded {
-  opacity: 1; }
-
-.loading {
-  background: url("../img/ajax-loader.gif") no-repeat center center; }
 
 .fa-bars {
   cursor: pointer;
@@ -65,6 +57,14 @@ h1, h2 {
   text-align: left;
   padding-left: 20px;
   width: 70%; }
+
+.slide.ng-show {
+  transition: 0.5s linear all;
+  opacity: 1; }
+
+.slide.ng-hide {
+  transition: 0.5s linear all;
+  opacity: 0; }
 
 /* Intro */
 #intro_logo {
@@ -255,7 +255,8 @@ footer {
     cursor: pointer; }
   #metadata {
     top: 650px;
-    height: 70%; }
+    height: 70%;
+    cursor: pointer; }
   #intro_logo {
     width: 80%; }
   .instructions span {

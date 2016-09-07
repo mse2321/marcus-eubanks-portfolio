@@ -53,6 +53,14 @@ h1, h2 {
   padding-left: 20px;
   width: 70%; }
 
+.slide.ng-show {
+  transition: 0.5s linear all;
+  opacity: 1; }
+
+.slide.ng-hide {
+  transition: 0.5s linear all;
+  opacity: 0; }
+
 /* Intro */
 #intro_logo {
   width: 100%; }
@@ -242,7 +250,8 @@ footer {
     cursor: pointer; }
   #metadata {
     top: 650px;
-    height: 70%; }
+    height: 70%;
+    cursor: pointer; }
   #intro_logo {
     width: 80%; }
   .instructions span {

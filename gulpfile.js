@@ -53,7 +53,7 @@ gulp.task('html', function() {
 
 // JavaScript build task, removes whitespace and concatenates all files
 gulp.task('scripts', function() {
-  return browserify('js/jquery1113.js','js/bootstrap.min.js', 'bower_components/angular/angular.min.js', 'bower_components/angular-route/angular-route.min.js', 'bower_components/hammerjs/hammer.min.js', 'bower_components/AngularHammer/angular.hammer.min.js', 'js/me_innovation.js', 'js/ui-bootstrap-tpls-0.13.0.min.js')
+  return browserify('js/jquery1113.js','js/bootstrap.min.js', 'bower_components/angular/angular.min.js', 'bower_components/angular-route/angular-route.min.js', 'bower_components/hammerjs/hammer.min.js', 'bower_components/angular-animate/angular-animate.min.js','bower_components/AngularHammer/angular.hammer.min.js', 'js/me_innovation.js', 'js/ui-bootstrap-tpls-0.13.0.min.js')
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())

@@ -14,15 +14,15 @@
 		<div id="container">
 			<header id="intro">
 		    	<div id="contact_wrap" class="contact">
-							<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
-								<img id="emailIcon" src="build/img/email_circle-min.png" alt="Send ME an email" />
-							</a>
-							<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
-								<img id="gitHub" src="build/img/gitHub_circle-min.png" alt="Check out my GitHub Repositories" />
-							</a>
-							<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
-								<img id="linkedIn" src="build/img/linkedIn_circle-min.png" alt="Look at my LinkedIn Profile" />
-							</a>
+					<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
+						<img id="emailIcon" src="build/img/email_circle-min.png" alt="Send ME an email" />
+					</a>
+					<a href="http://github.com/mse2321" class="contact_icon" target="_blank">
+						<img id="gitHub" src="build/img/gitHub_circle-min.png" alt="Check out my GitHub Repositories" />
+					</a>
+					<a href="http://www.linkedin.com/in/meinnovation" class="contact_icon" target="_blank">
+						<img id="linkedIn" src="build/img/linkedIn_circle-min.png" alt="Look at my LinkedIn Profile" />
+					</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="button_wrap">
 					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
@@ -56,12 +56,10 @@
 									<a hm-tap="select(item)" ng-class="{active:item.selected}">&#8226;</a>
 								</div>
 							</div>
-
 							<!-- end of slide_selection -->
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
-
-					<div id="metadata" hm-tap="overlay()">
+					<div id="metadata" hm-tap="overlay()" ng-show="!mobileOverlay">
 						<div class="meta_wrap">
 							<div ng-repeat="item in items">
 								<div class="art_title" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>

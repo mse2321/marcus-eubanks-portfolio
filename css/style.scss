@@ -26,6 +26,10 @@ h1, h2 { color: #37474F; font-family: 'Orbitron', sans-serif; }
 
 #contact_wrap { position: absolute; left: 0; top: 0; padding-top: 20px; text-align: left; padding-left: 20px; width: 70%; }
 
+.slide.ng-show { transition:0.5s linear all; opacity: 1; }
+
+.slide.ng-hide { transition:0.5s linear all; opacity: 0; }
+
 
 /* Intro */
 #intro_logo { width: 100%; }
@@ -113,7 +117,7 @@ footer { text-align: center; }
 
 @media screen and (min-width: 600px) and (max-width: 899px) {
 	.contact_icon img { width: 7%; margin: 0 10px; cursor: pointer; }
-	#metadata { top: 650px; height: 70%; }
+	#metadata { top: 650px; height: 70%; cursor: pointer; }
 	#intro_logo { width: 80%; }
 	.instructions span { color: $meinnovation-black; }
 	#intro_logo_wrap p { font-size: 45px; }
