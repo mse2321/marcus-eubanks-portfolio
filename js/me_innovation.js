@@ -1,14 +1,14 @@
 // JavaScript Document
 "use strict";
 
-var demo = angular.module("demo", ['hmTouchEvents']);
+var demo = angular.module('demo', ['hmTouchEvents']);
 
-demo.controller("ctrl",  ['$scope', function($scope){
+demo.controller('ctrl',  ['$scope', function($scope){
 
 	$scope.stats = [
-		{heading: 'Tools', attributes: 'Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma'},
-		{heading: 'Technologies', attributes: 'HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP'},
-		{heading: 'In Progress', attributes: 'Android, Swift, ECMAScript 6/ES6, React, Google App Engine'}
+		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma"},
+		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
+		{heading: "In Progress", attributes: "Android, Swift, ECMAScript 6/ES6, React, Google App Engine"}
 	];
 
 	// This helps to display correct stats under each category for mobile
@@ -55,10 +55,10 @@ demo.controller("ctrl",  ['$scope', function($scope){
 	$scope.overlay = function() {
 		if (window.innerWidth < 899) {
 			var overlayDiv = document.getElementById("metadata");
-	      	if(overlayDiv.style.display == 'none'){
-	          overlayDiv.style.display = 'block';
+	      	if(overlayDiv.style.display == "none"){
+	          overlayDiv.style.display = "block";
 	      	} else {
-	          overlayDiv.style.display = 'none';
+	          overlayDiv.style.display = "none";
 	        }
 		}
 	};
