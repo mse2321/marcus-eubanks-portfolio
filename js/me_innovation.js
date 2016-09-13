@@ -1,9 +1,11 @@
 // JavaScript Document
 "use strict";
 
-var demo = angular.module('demo', ['hmTouchEvents']);
+var demo = angular.module('demo', ['ngAnimate', 'hmTouchEvents']);
 
 demo.controller('ctrl',  ['$scope', function($scope){
+
+	$scope.fade = false;
 
 	$scope.stats = [
 		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma"},
@@ -63,9 +65,11 @@ demo.controller('ctrl',  ['$scope', function($scope){
 		}
 	};
 
-	$scope.nav = function() {
+/*	$scope.nav = function() {
 		$("aside").toggle("slide");
 		$("#button_wrap > .fa").toggle();
 	};
+
+*/
 
 }]);

@@ -25,8 +25,8 @@
 					</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="button_wrap">
-					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
-					<i class="fa fa-times" aria-hidden="true" hm-tap="nav()"></i>
+					<i class="fa fa-bars" aria-hidden="true" ng-click="fade = !fade"></i>
+					<i class="fa fa-times" aria-hidden="true" ng-click="fade = !fade"></i>
 		        </div> <!-- end of button wrap -->
 			</header>
 			<section id="intro_wrap">
@@ -99,7 +99,7 @@
 					</div> <!-- end of stats_wrap -->
 				</div> <!-- end of about_wrap -->
 			</section>
-			<aside>
+			<aside ng-class="{fade:fade}">
 				<nav>
 					<ul id="nav_links">
 						<li><a href="#intro" hm-tap="nav()">Home</a></li>
@@ -114,10 +114,10 @@
 		</div>
 		<script defer src="js/jquery1113.js"></script>
 	    <script defer src="bower_components/angular/angular.min.js"></script>
+		<script defer src="bower_components/angular-animate/angular-animate.min.js"></script>
 	    <script defer src="bower_components/hammerjs/hammer.min.js"></script>
 	    <script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
-	    <!--<script defer src="bower_components/angular-animate/angular-animate.min.js"></script>
-	    <script defer src="js/me_innovation.min.js"></script>-->
+	    <!--<script defer src="js/me_innovation.min.js"></script>-->
 	    <script defer src="js/me_innovation.js"></script>
 	</body>
 </html>
