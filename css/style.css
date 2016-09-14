@@ -181,7 +181,7 @@ photo img {
 #metadata {
   background-color: #B0BEC5;
   position: absolute;
-  top: 750px;
+  top: 680px;
   height: 70%;
   right: 0;
   left: 0;
@@ -238,7 +238,8 @@ photo img {
   color: #B0BEC5; }
 
 .instructions {
-  text-align: center; }
+  text-align: center;
+  padding: 0 20px; }
 
 #desc {
   margin-bottom: 10px; }

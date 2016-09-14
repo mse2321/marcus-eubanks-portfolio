@@ -43,12 +43,12 @@
 					<h1>Projects</h1>
 					<div class="instructions">
 						<!-- set angular binding to change the instructions based on screen width -->
-						<p>Swipe through the images or use the dots below to view projects.<br><span>Tap the images for more details.</span></p>
+						<p>Swipe through the images or use the dots below to view projects.<br><span>Double tap the images for more details.</span></p>
 					</div> <!-- end of instructions -->
 					<div id="gallery_wrap">
-						<gallery>
+						<gallery hm-tap="overlay" ng-click="overlay">
 							<photo>
-								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem" hm-swipeleft="lastItem" hm-tap="overlay"> 
+								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem" hm-swipeleft="lastItem"> 
 							</photo>
 							<div class="slide_selection">
 								<div ng-repeat="item in items" hm-tap="setIndex($index)" class="slide_selectors">

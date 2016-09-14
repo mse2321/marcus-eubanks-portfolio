@@ -58,7 +58,7 @@ demo.controller('ctrl',  ['$scope', function($scope){
 		  if(overlayDiv.style.visibility == "hidden") {
 		   overlayDiv.style.opacity = "1";
 		   overlayDiv.style.visibility = "visible";
-		   overlayDiv.style.width = "90%";
+		   overlayDiv.style.width = "92%";
 		  } else {
 		   overlayDiv.style.opacity = "0";
 		   overlayDiv.style.visibility = "hidden";
