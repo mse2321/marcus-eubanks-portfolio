@@ -24,8 +24,8 @@
 					</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="button_wrap">
-					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
-					<i class="fa fa-times" aria-hidden="true" hm-tap="nav()"></i>
+					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav"></i>
+					<i class="fa fa-times" aria-hidden="true" hm-tap="nav"></i>
 		  </div> <!-- end of button wrap -->
 			</header>
 			<section id="intro_wrap">
@@ -48,7 +48,7 @@
 					<div id="gallery_wrap">
 						<gallery>
 							<photo>
-								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem()" hm-swipeleft="lastItem()" hm-tap="overlay()"> 
+								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem" hm-swipeleft="lastItem" hm-tap="overlay"> 
 							</photo>
 							<div class="slide_selection">
 								<div ng-repeat="item in items" hm-tap="setIndex($index)" class="slide_selectors">
@@ -58,7 +58,7 @@
 							<!-- end of slide_selection -->
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
-					<div id="metadata" hm-tap="overlay()">
+					<div id="metadata" hm-tap="overlay">
 						<div class="meta_wrap">
 							<div ng-repeat="item in items">
 								<div class="art_title" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
@@ -101,9 +101,9 @@
 			<aside class="slide{{ nav_menu }}">
 				<nav>
 					<ul id="nav_links">
-						<li><a href="#intro" hm-tap="nav()">Home</a></li>
-						<li><a href="#projects" hm-tap="nav()">Projects</a></li>
-						<li><a href="#about" hm-tap="nav()">About</a></li>
+						<li><a href="#intro" hm-tap="nav">Home</a></li>
+						<li><a href="#projects" hm-tap="nav">Projects</a></li>
+						<li><a href="#about" hm-tap="nav">About</a></li>
 					</ul>
 				</nav>
 			</aside>
