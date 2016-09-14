@@ -188,7 +188,12 @@ photo img {
   bottom: 0;
   padding: 30px 10px 0 20px;
   z-index: 2000;
-  display: none; }
+  visibility: hidden;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  opacity: 0; }
 
 #metadata button {
   background-color: #263238;
@@ -269,7 +274,9 @@ footer {
     font-size: 45px;
     width: 40%; }
   .slide_selectors {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .slide-show {
+    width: 50%; } }
 
 @media screen and (min-width: 900px) and (max-width: 1034px) {
   body {
@@ -295,7 +302,9 @@ footer {
     bottom: 0;
     padding: 50px 0 0 10px;
     z-index: 0;
-    display: inline-block !important;
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
     width: 39%;
     text-align: right; }
   .meta_close {
@@ -328,7 +337,9 @@ footer {
   #nav_links {
     margin-right: 10px; }
   .slide_selectors {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .slide-show {
+    width: 40%; } }
 
 @media screen and (min-width: 1035px) and (max-width: 1199px) {
   body {
@@ -354,7 +365,8 @@ footer {
     bottom: 0;
     padding: 50px 0 0 10px;
     z-index: 0;
-    display: inline-block;
+    visibility: visible;
+    opacity: 1;
     width: 39%;
     text-align: right; }
   .meta_close {
@@ -387,7 +399,9 @@ footer {
   #nav_links {
     margin-right: 10px; }
   .slide_selectors {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .slide-show {
+    width: 30%; } }
 
 @media screen and (min-width: 1200px) {
   body {
@@ -413,7 +427,8 @@ footer {
     bottom: 0;
     padding: 50px 0 0 10px;
     z-index: 0;
-    display: inline-block;
+    visibility: visible;
+    opacity: 1;
     width: 35%;
     text-align: right; }
   .meta_wrap {
@@ -446,7 +461,9 @@ footer {
   #nav_links {
     margin-right: 10px; }
   .slide_selectors {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+  .slide-show {
+    width: 30%; } }
 
 @media screen and (max-height: 399px) {
   aside {
@@ -454,7 +471,8 @@ footer {
     color: #37474F;
     padding: 20px 30px;
     font-size: 30px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     top: 0;
     right: 0;

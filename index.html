@@ -3,17 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
-	    <meta name="description" content="ME Innovation - the online portfolio for Marcus Eubanks.">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+	 <meta name="description" content="ME Innovation - the online portfolio for Marcus Eubanks.">
 		<title>ME Innovation | Marcus Eubanks Portfolio Site</title>
-		<!--<link rel="stylesheet" href="build/css/styles_min.css">-->
+		<link rel="stylesheet" href="build/css/styles_min.css">
 		<script src="js/google_font.js"></script>
-		<link rel="stylesheet" href="build/css/styles.css">
 	</head>
 	<body ng-app="demo" ng-controller="ctrl">
 		<div id="container">
 			<header id="intro">
-		    	<div id="contact_wrap" class="contact">
+		  <div id="contact_wrap" class="contact">
 					<a href="mailto:mse233@aol.com?Subject=ME%20Innovation%20Inquiry" target="_blank" class="contact_icon">
 						<img id="emailIcon" src="build/img/email_circle-min.png" alt="Send ME an email" />
 					</a>
@@ -27,14 +26,14 @@
 				<div id="button_wrap">
 					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
 					<i class="fa fa-times" aria-hidden="true" hm-tap="nav()"></i>
-		        </div> <!-- end of button wrap -->
+		  </div> <!-- end of button wrap -->
 			</header>
 			<section id="intro_wrap">
 				<div id="intro_data">
 					<div id="intro_logo_wrap">
 						<p>Marcus Eubanks: Innovation</p>
-		    		</div> <!-- end of logo_wrap -->
-		    		<div id="welcome_wrap">
+		   </div> <!-- end of logo_wrap -->
+		   <div id="welcome_wrap">
 						<p class="welcome">Front-End Developer with design and marketing chops</p>
 					</div> <!-- end of welcome_wrap -->
 				</div> <!-- end of intro_wrap -->
@@ -44,7 +43,7 @@
 					<h1>Projects</h1>
 					<div class="instructions">
 						<!-- set angular binding to change the instructions based on screen width -->
-						<p>Swipe through the images or use the dots below to view projects. <br /><span>Tap the images for more details.</span></p>
+						<p>Swipe through the images or use the dots below to view projects. <br><span>Tap the images for more details.</span></p>
 					</div> <!-- end of instructions -->
 					<div id="gallery_wrap">
 						<gallery>
@@ -59,7 +58,7 @@
 							<!-- end of slide_selection -->
 						</gallery>
 					</div> <!-- end of gallery_wrap -->
-					<div id="metadata" hm-tap="overlay()" ng-show="!mobileOverlay">
+					<div id="metadata" hm-tap="overlay()">
 						<div class="meta_wrap">
 							<div ng-repeat="item in items">
 								<div class="art_title" ng-hide="!newIndex($index)"><h2>{{ item.title }}</h2></div>
@@ -112,11 +111,9 @@
 				<p>&copy;2016 ME Innovation</p>
 			</footer>
 		</div>
-		<script defer src="js/jquery1113.js"></script>
-	    <script defer src="bower_components/angular/angular.min.js"></script>
-	    <script defer src="bower_components/hammerjs/hammer.min.js"></script>
-	    <script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
-	    <!--<script defer src="js/me_innovation.min.js"></script>-->
-	    <script defer src="js/me_innovation.js"></script>
+	 <script defer src="bower_components/angular/angular.min.js"></script>
+	 <script defer src="bower_components/hammerjs/hammer.min.js"></script>
+	 <script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
+	 <script defer src="js/me_innovation.min.js"></script>
 	</body>
 </html>
