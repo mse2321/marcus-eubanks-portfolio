@@ -44,14 +44,14 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.select = function(item) {
 		var items = $scope.items;
 
-	  	angular.forEach(items, function(item) {
-	   		item.selected = false;
-	  	});
+	 angular.forEach(items, function(item) {
+	  item.selected = false;
+	 });
 	        	
-	  	item.selected = true;
+	 item.selected = true;
 	};
 
- 	// this controls the gallery overlay for smaller screens
+ // this controls the gallery overlay for smaller screens
 	$scope.overlay = function() {
 		if (window.innerWidth < 899) {
 			var overlayDiv = document.getElementById("metadata");
