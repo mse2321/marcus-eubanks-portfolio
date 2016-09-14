@@ -53,11 +53,19 @@ h1, h2 {
   padding-left: 20px;
   width: 70%; }
 
-.fade {
+.slide-show {
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -o-transition: 1s;
-  opacity: 0.2; }
+  opacity: 1;
+  width: 70%; }
+
+.slide-hide {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  opacity: 0;
+  width: 0; }
 
 /* Intro */
 #intro_logo {
@@ -85,14 +93,13 @@ aside {
   color: #37474F;
   padding: 20px 30px;
   font-size: 40px;
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 70%;
+  width: 0;
   z-index: 500;
-  transition: 0.5s linear all; }
+  opacity: 0; }
 
 nav a {
   color: #263238;
