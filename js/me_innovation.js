@@ -44,26 +44,26 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.select = function(item) {
 		var items = $scope.items;
 
-  angular.forEach(items, function(item) {
-   item.selected = false;
-  });
-        	
-  item.selected = true;
- };
+	  	angular.forEach(items, function(item) {
+	   		item.selected = false;
+	  	});
+	        	
+	  	item.selected = true;
+	};
 
- // this controls the gallery overlay for smaller screens
+ 	// this controls the gallery overlay for smaller screens
 	$scope.overlay = function() {
 		if (window.innerWidth < 899) {
 			var overlayDiv = document.getElementById("metadata");
-	  if(overlayDiv.style.visibility == "hidden") {
-	   overlayDiv.style.opacity = "1";
-	   overlayDiv.style.visibility = "visible";
-	   overlayDiv.style.width = "90%";
-	  } else {
-	   overlayDiv.style.opacity = "0";
-	   overlayDiv.style.visibility = "hidden";
-	   overlayDiv.style.width = "0";
-	  }
+		  if(overlayDiv.style.visibility == "hidden") {
+		   overlayDiv.style.opacity = "1";
+		   overlayDiv.style.visibility = "visible";
+		   overlayDiv.style.width = "90%";
+		  } else {
+		   overlayDiv.style.opacity = "0";
+		   overlayDiv.style.visibility = "hidden";
+		   overlayDiv.style.width = "0";
+		  }
 		}
 	};
 
