@@ -51,8 +51,8 @@
 						<p>Swipe through the images or use the dots below to view projects.<br><span>Double tap the images for more details.</span></p>
 					</div> <!-- end of instructions -->
 					<div id="gallery_wrap">
-						<gallery hm-tap="overlay" ng-click="overlay">
-							<photo>
+						<gallery>
+							<photo hm-tap="overlay" ng-click="overlay">
 								<img id="gallery_image" class="slide-animation" ng-repeat="item in items" ng-hide="!newIndex($index)" ng-src="{{ item.image }}"  alt="{{ item.title }}"  hm-swiperight="nextItem" hm-swipeleft="lastItem"> 
 							</photo>
 							<div class="slide_selection">

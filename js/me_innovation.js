@@ -42,7 +42,7 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	};
 
 	$scope.select = function(item) {
-		var items = $scope.items;
+	 var items = $scope.items;
 
 	 angular.forEach(items, function(item) {
 	  item.selected = false;
