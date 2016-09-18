@@ -41,7 +41,7 @@ h1, h2 {
 
 .contact_icon img {
   width: 16%;
-  margin: 0 20px;
+  margin: 0 10px;
   cursor: pointer; }
 
 #contact_wrap {
@@ -258,7 +258,6 @@ footer {
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .contact_icon img {
     width: 7%;
-    margin: 0 10px;
     cursor: pointer; }
 
   #metadata {
@@ -291,7 +290,6 @@ footer {
 
   .contact_icon img {
     width: 6%;
-    margin: 0 10px;
     cursor: pointer; }
 
   #intro_logo {
@@ -372,7 +370,6 @@ footer {
 
   .contact_icon img {
     width: 6%;
-    margin: 0 10px;
     cursor: pointer; }
 
   #intro_logo {
@@ -452,7 +449,6 @@ footer {
 
   .contact_icon img {
     width: 5%;
-    margin: 0 10px;
     cursor: pointer; }
 
   #intro_logo {
@@ -548,7 +544,7 @@ footer {
     margin: 20px; }
 
   #metadata {
-    height: 100%;
+    height: 130%;
     top: 850px; } }
 @media screen and (max-height: 399px) and (max-width: 1029px) {
   #metadata {
