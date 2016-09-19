@@ -182,7 +182,7 @@ photo img {
   background-color: #B0BEC5;
   position: absolute;
   top: 680px;
-  height: 70%;
+  height: 100%;
   right: 0;
   left: 0;
   bottom: 0;
@@ -261,7 +261,7 @@ footer {
     cursor: pointer; }
   #metadata {
     top: 650px;
-    height: 70%;
+    height: 90%;
     cursor: pointer; }
   #intro_logo {
     width: 80%; }
@@ -481,7 +481,7 @@ footer {
     display: inline;
     margin: 20px; }
   #metadata {
-    height: 130%;
+    height: 100%;
     top: 850px; } }
 
 @media screen and (max-height: 399px) and (max-width: 1029px) {
