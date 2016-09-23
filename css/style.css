@@ -125,10 +125,12 @@ nav a:hover {
 /* About */
 #about_wrap {
   padding: 30px;
-  font-size: 16px; }
+  font-size: 16px;
+  text-align: center; }
 
 .stats_wrap {
-  padding: 20px; }
+  padding: 20px;
+  margin: 0 auto; }
 
 .fa-code, .fa-wrench, .fa-battery-quarter {
   display: inline-block;
@@ -186,7 +188,7 @@ photo img {
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 30px 10px 0 20px;
+  padding: 0 10px 0 20px;
   z-index: 2000;
   visibility: hidden;
   cursor: pointer;
@@ -299,13 +301,14 @@ footer {
     right: 0;
     left: 57.9%;
     bottom: 0;
-    padding: 50px 0 0 10px;
+    padding-left: 10px;
     z-index: 0;
     display: inline-block;
     visibility: visible;
     opacity: 1;
     width: 39%;
-    text-align: right; }
+    text-align: right;
+    height: 70%; }
   .meta_close {
     display: none; }
   .meta_wrap {
@@ -361,12 +364,13 @@ footer {
     right: 0;
     left: 57.9%;
     bottom: 0;
-    padding: 50px 0 0 10px;
+    padding-left: 10px;
     z-index: 0;
     visibility: visible;
     opacity: 1;
     width: 39%;
-    text-align: right; }
+    text-align: right;
+    height: 70%; }
   .meta_close {
     display: none; }
   .meta_wrap {
@@ -420,14 +424,15 @@ footer {
     position: absolute;
     top: 850px;
     right: 10px;
-    left: 62%;
+    left: 63%;
     bottom: 0;
-    padding: 50px 0 0 10px;
+    padding-left: 10px;
     z-index: 0;
     visibility: visible;
     opacity: 1;
-    width: 35%;
-    text-align: right; }
+    width: 33.5%;
+    text-align: right;
+    height: 70%; }
   .meta_wrap {
     padding-left: 100px; }
   .meta_close {

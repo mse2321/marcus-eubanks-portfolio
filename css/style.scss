@@ -57,9 +57,9 @@ nav a:hover { color: #fff; }
 
 
 /* About */
-#about_wrap { padding: 30px; font-size: 16px; }
+#about_wrap { padding: 30px; font-size: 16px; text-align: center; }
 
-.stats_wrap { padding: 20px; }
+.stats_wrap { padding: 20px; margin: 0 auto; }
 
 .fa-code, .fa-wrench, .fa-battery-quarter { display: inline-block; color: $meinnovation-gray; }
 
@@ -87,7 +87,7 @@ photo img { width: 90%; cursor: pointer; }
 
 .slide_selection i { font-size: 40px; vertical-align: middle; margin-bottom: 15px; color: $meinnovation-ltgray; }
 
-#metadata { background-color: $meinnovation-ltgray; position: absolute; top: 680px; height: 100%; right: 0; left: 0; bottom: 0; padding: 30px 10px 0 20px; z-index: 2000; visibility: hidden; cursor: pointer; -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; opacity: 0; }
+#metadata { background-color: $meinnovation-ltgray; position: absolute; top: 680px; height: 100%; right: 0; left: 0; bottom: 0; padding: 0 10px 0 20px; z-index: 2000; visibility: hidden; cursor: pointer; -webkit-transition: 1s; -moz-transition: 1s; -o-transition: 1s; opacity: 0; }
 
 #metadata button { background-color: $meinnovation-black; color: white; font-weight: bold; width: 90%; padding: 10px 0; margin: 40px auto 10px auto; font-family: 'Orbitron', sans-serif; border: none; font-size: 24px; cursor: pointer; }
 
@@ -131,7 +131,7 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
 	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: white; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; display: inline-block; visibility: visible; opacity: 1; width: 39%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 750px; right: 0; left: 57.9%; bottom: 0; padding-left: 10px; z-index: 0; display: inline-block; visibility: visible; opacity: 1; width: 39%; text-align: right; height: 70%; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -155,7 +155,7 @@ footer { text-align: center; }
 	#intro_logo { width: 70%; }
 	#intro_logo_wrap p { font-size: 60px; }
 	aside { padding: 20px; font-size: 50px; width: 40%; }
-	#metadata { background-color: white; position: absolute; top: 710px; right: 0; left: 57.9%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; visibility: visible; opacity: 1; width: 39%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 710px; right: 0; left: 57.9%; bottom: 0; padding-left: 10px; z-index: 0; visibility: visible; opacity: 1; width: 39%; text-align: right; height: 70%; }
 	.meta_close { display: none; }
 	.meta_wrap { padding-left: 100px; }
 	.metadata_button_wrap { text-align: right; }
@@ -179,7 +179,7 @@ footer { text-align: center; }
 	#intro_logo { width: 60%; }
 	#intro_logo_wrap p { font-size: 80px; }
 	aside { padding: 20px; font-size: 60px; width: 30%; }
-	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 62%; bottom: 0; padding: 50px 0 0 10px; z-index: 0; visibility: visible; opacity: 1; width: 35%; text-align: right; }
+	#metadata { background-color: white; position: absolute; top: 850px; right: 10px; left: 63%; bottom: 0; padding-left: 10px; z-index: 0; visibility: visible; opacity: 1; width: 33.5%; text-align: right; height: 70%; }
 	.meta_wrap { padding-left: 100px; }
 	.meta_close { display: none; }
 	.metadata_button_wrap { text-align: right; }
