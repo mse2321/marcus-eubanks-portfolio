@@ -8,9 +8,10 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.nav_menu = "-hide";
 	$scope.defaultIndex = 0;
 	$scope.stats = [
-		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Fireworks, Eclipse IDE, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMP, Gulp, Karma"},
-		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
-		{heading: "In Progress", attributes: "Android, Swift, ECMAScript 6/ES6, React, Google App Engine"}
+		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMPP, Bower, NPM, Gulp, Karma, SourceTree, Grunt, Google App Engine"},
+		{heading: "Technologies", attributes: "HTML/CSS3(OOCSS), JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
+		{heading: "CMS", attributes: "Wordpress, Adobe CQ"},
+		{heading: "In Progress", attributes: "React, ECMAScript 6/ES6, React, Android, Swift"}
 	];
 	$scope.items = [
 		{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Song preview search engine w/ custom player", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2-min.jpg"},

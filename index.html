@@ -13,6 +13,7 @@
 		<script defer src="bower_components/angular/angular.min.js"></script>
 		<script defer src="bower_components/hammerjs/hammer.min.js"></script>
 		<script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
+		<!--<script defer src="js/me_innovation.min.js"></script>-->
 		<script defer src="js/me_innovation.min.js"></script>
 	</head>
 	<body ng-app="demo" ng-controller="ctrl">
@@ -100,6 +101,10 @@
 						<div class="stats_col">
 							<div class="stats_heading" hm-tap="stats_index_item(3); about_overlay()"><i class="fa fa-battery-quarter" aria-hidden="true"></i><h3>{{ stats[2].heading }}</h3></div>
 							<div class="stats">{{ stats[2].attributes }}</div>
+						</div> <!-- end of stats_col 3 -->
+						<div class="stats_col">
+							<div class="stats_heading" hm-tap="stats_index_item(4); about_overlay()"><i class="fa fa-battery-quarter" aria-hidden="true"></i><h3>{{ stats[3].heading }}</h3></div>
+							<div class="stats">{{ stats[3].attributes }}</div>
 						</div> <!-- end of stats_col 3 -->
 					</div> <!-- end of stats_wrap -->
 				</div> <!-- end of about_wrap -->
