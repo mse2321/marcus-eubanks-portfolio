@@ -8,10 +8,10 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.nav_menu = "-hide";
 	$scope.defaultIndex = 0;
 	$scope.stats = [
-		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMPP, Bower, NPM, Gulp, Karma, SourceTree, Grunt, Google App Engine"},
+		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Google Analytics, SVN, Github/Git, WAMP/XAMPP, Bower, NPM, Gulp, Karma, Grunt, Google App Engine"},
 		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
 		{heading: "CMS", attributes: "Wordpress, Adobe CQ"},
-		{heading: "In Progress", attributes: "React, ECMAScript 6/ES6, Android, Swift"}
+		{heading: "In Progress", attributes: "React/Redux, Webpack, ECMAScript 6/ES6, Android, Swift"}
 	];
 	$scope.items = [
 		{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator", link: "http://www.meinnovation.net/xp-calculator/index.html", link2:"https://github.com/mse2321/xp-calculator", image: "build/img/sample-image4-min.jpg"},
@@ -19,6 +19,9 @@ demo.controller('ctrl',  ['$scope', function($scope){
 		{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", desc: "Simple quiz app", link: "http://mse2321.github.io/basketball-quiz/", link2:"https://github.com/mse2321/basketball-quiz", image: "build/img/sample-image3-min.jpg"},
 		{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Song preview search engine w/ custom player", link: "http://mse2321.github.io/muzak/", link2:"https://github.com/mse2321/muzak", image: "build/img/sample-image2-min.jpg"}
 	];
+
+	//this sets the first gallery dot to active
+	$scope.items[0].selected = true;
 
 	// This helps to display correct stats under each category for mobile
 	$scope.stats_index_item = function(stats_item) {
@@ -70,6 +73,7 @@ demo.controller('ctrl',  ['$scope', function($scope){
 
 	// this controls the sidebar nav
 	$scope.nav = function() {
+		console.log("Im here");
 		if($scope.nav_menu == "-show") {
 			$scope.nav_menu = "-hide";
 		} else if($scope.nav_menu == "-hide") {

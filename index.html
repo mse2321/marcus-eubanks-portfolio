@@ -9,11 +9,6 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="build/img/favicon-16x16.png">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron:900|Roboto" rel="stylesheet"> 
 		<link rel="stylesheet" href="build/css/styles_min.css">
-		<script src="js/google_font.js"></script>
-		<script defer src="bower_components/angular/angular.min.js"></script>
-		<script defer src="bower_components/hammerjs/hammer.min.js"></script>
-		<script defer src="bower_components/AngularHammer/angular.hammer.min.js"></script>
-		<script defer src="js/me_innovation.min.js"></script>
 	</head>
 	<body ng-app="demo" ng-controller="ctrl">
 		<div id="container">
@@ -30,8 +25,8 @@
 					</a>
 				</div> <!-- end of contact_wrap -->
 				<div id="button_wrap">
-					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav"></i>
-					<i class="fa fa-times" aria-hidden="true" hm-tap="nav"></i>
+					<i class="fa fa-bars" aria-hidden="true" hm-tap="nav()"></i>
+					<i class="fa fa-times" aria-hidden="true" hm-tap="nav()"></i>
 		  		</div> <!-- end of button wrap -->
 			</header>
 			<section id="intro_wrap">
@@ -118,8 +113,12 @@
 				</nav>
 			</aside>
 			<footer>
-				<p>&copy;2016 ME Innovation</p>
+				<p>&copy;2017 ME Innovation</p>
 			</footer>
 		</div>
+		<script defer src="bower_components/angular/angular.min.js"></script>
+		<script defer src="bower_components/hammerjs/hammer.min.js"></script>
+		<script defer src="bower_components/angular-hammer/angular-hammer.js"></script>
+		<script defer src="js/me_innovation.min.js"></script>
 	</body>
 </html>

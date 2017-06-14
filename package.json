@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/mse2321/marcus-eubanks-portfolio#readme",
   "devDependencies": {
+    "bower": "^1.8.0",
     "browserify": "^13.0.0",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.11",

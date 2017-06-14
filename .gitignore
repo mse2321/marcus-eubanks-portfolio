@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 connect.php
 meInnovation.php
+bower_components
