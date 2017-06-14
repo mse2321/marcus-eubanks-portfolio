@@ -9,15 +9,15 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.defaultIndex = 0;
 	$scope.stats = [
 		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Google Analytics, Sublime Text, SVN, Github/Git, WAMP/XAMPP, Bower, NPM, Gulp, Karma, SourceTree, Grunt, Google App Engine"},
-		{heading: "Technologies", attributes: "HTML/CSS3(OOCSS), JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
+		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
 		{heading: "CMS", attributes: "Wordpress, Adobe CQ"},
-		{heading: "In Progress", attributes: "React, ECMAScript 6/ES6, React, Android, Swift"}
+		{heading: "In Progress", attributes: "React, ECMAScript 6/ES6, Android, Swift"}
 	];
 	$scope.items = [
-		{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Song preview search engine w/ custom player", link: "http://mse2321.github.io/muzak/", image: "build/img/sample-image2-min.jpg"},
-		{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator", link: "http://www.meinnovation.net/xp-calculator/index.html", image: "build/img/sample-image4-min.jpg"},
-		{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", desc: "Angular API project to look up country data.", link: "http://mse2321.github.io/countries_capitals/index.html#/", image: "build/img/sample-image1-min.jpg"},
-		{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", desc: "Simple quiz app", link: "http://mse2321.github.io/basketball-quiz/", image: "build/img/sample-image3-min.jpg"}
+		{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator", link: "http://www.meinnovation.net/xp-calculator/index.html", link2:"https://github.com/mse2321/xp-calculator", image: "build/img/sample-image4-min.jpg"},
+		{title: "Countries & Capitals", tech: "HTML5, CSS3, JavaScript, Angular, Geonames API, Responsive", desc: "Angular API project to look up country data.", link: "http://mse2321.github.io/countries_capitals/index.html#/", link2:"https://github.com/mse2321/countries_capitals", image: "build/img/sample-image1-min.jpg"},
+		{title: "Basketball Quiz", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Responsive", desc: "Simple quiz app", link: "http://mse2321.github.io/basketball-quiz/", link2:"https://github.com/mse2321/basketball-quiz", image: "build/img/sample-image3-min.jpg"},
+		{title: "Muzak", tech: "HTML5, CSS3, JavaScript, jQuery, Bootstrap, Angular, Spotify API, Responsive", desc: "Song preview search engine w/ custom player", link: "http://mse2321.github.io/muzak/", link2:"https://github.com/mse2321/muzak", image: "build/img/sample-image2-min.jpg"}
 	];
 
 	// This helps to display correct stats under each category for mobile
