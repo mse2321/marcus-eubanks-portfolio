@@ -8,10 +8,10 @@ demo.controller('ctrl',  ['$scope', function($scope){
 	$scope.nav_menu = "-hide";
 	$scope.defaultIndex = 0;
 	$scope.stats = [
-		{heading: "Tools", attributes: "Illustrator, InDesign, Dreamweaver, PhotoShop, Google Analytics, SVN, Github/Git, WAMP/XAMPP, Bower, NPM, Gulp, Karma, Grunt, Google App Engine"},
-		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript, SQL, SASS, jQuery, Bootstrap, Angular, Jasmine, Velocity, JSON, PHP"},
-		{heading: "CMS", attributes: "Wordpress, Adobe CQ"},
-		{heading: "In Progress", attributes: "React/Redux, Webpack, ECMAScript 6/ES6, Android, Swift"}
+		{heading: "Tools", attributes: "Illustrator, Dreamweaver, PhotoShop, Github/Git, SVN, WAMP/XAMPP, NPM, Gulp, Karma, Grunt, Webpack, Babel"},
+		{heading: "Technologies", attributes: "HTML/CSS3, JavaScript (ES6), SQL, SASS, jQuery, Bootstrap, Angular 1.5, Jasmine, Velocity, JSON, PHP, React"},
+		{heading: "CMS", attributes: "Wordpress"},
+		{heading: "In Progress", attributes: "React Native, Redux, Swift"}
 	];
 	$scope.items = [
 		{title: "XP Calculator", tech: "HTML5, CSS3, JavaScript, jQuery Mobile, Angular, Angular-Material, Responsive", desc: "Table-top RPG experience calculator", link: "http://www.meinnovation.net/xp-calculator/index.html", link2:"https://github.com/mse2321/xp-calculator", image: "build/img/sample-image4-min.jpg"},
