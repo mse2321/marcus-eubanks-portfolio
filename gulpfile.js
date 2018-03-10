@@ -3,14 +3,9 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
-//var imageminPngcrush = require('imagemin-pngcrush');
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
 var minifyHTML = require('gulp-minify-html');
-//var jasmine = require('gulp-jasmine');
-//var jasmineBrowser = require('gulp-jasmine-browser');
-//var cleanCSS = require('gulp-clean-css');
-//var gzip = require('gulp-gzip');
 var concat = require('gulp-concat');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
@@ -20,14 +15,6 @@ gulp.task('default', ['sass', 'watch']);
 
 // Build task
 gulp.task('build', ['sass', 'html', 'styles', 'images', 'scripts']);
-
-// JavaScript linting task
-/*gulp.task('jshint', function() {
-  return gulp.src('js/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'));
-});
-*/
 
 // Compile Sass task
 gulp.task('sass', function() {
@@ -42,7 +29,6 @@ gulp.task('watch', function() {
   gulp.watch('css/*.scss', ['sass']);
 });
 
-
 // Minify index
 gulp.task('html', function() {
   return gulp.src('*.html')
@@ -50,10 +36,9 @@ gulp.task('html', function() {
     .pipe(gulp.dest('build/'));
 });
 
-
 // JavaScript build task, removes whitespace and concatenates all files
 gulp.task('scripts', function() {
-  return browserify('js/jquery1113.js','js/bootstrap.min.js', 'bower_components/angular/angular.min.js', 'bower_components/angular-route/angular-route.min.js', 'bower_components/hammerjs/hammer.min.js', 'bower_components/angular-animate/angular-animate.min.js','bower_components/AngularHammer/angular.hammer.min.js', 'js/me_innovation.js', 'js/ui-bootstrap-tpls-0.13.0.min.js')
+  return browserify('js/jquery1113.js','js/bootstrap.min.js', 'node_modules/angular-hammer/node_modules/angular/angular.min.js', 'node_modules/angular-hammer/node_modules/hammerjs/hammer.min.js', 'node_modules/angular-hammer/angular.hammer.min.js', 'js/me_innovation.js', 'js/ui-bootstrap-tpls-0.13.0.min.js')
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
