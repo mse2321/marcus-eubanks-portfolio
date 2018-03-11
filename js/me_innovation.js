@@ -73,7 +73,6 @@ demo.controller('ctrl',  ['$scope', function($scope){
 
 	// this controls the sidebar nav
 	$scope.nav = function() {
-		console.log("Im here");
 		if($scope.nav_menu == "-show") {
 			$scope.nav_menu = "-hide";
 		} else if($scope.nav_menu == "-hide") {
